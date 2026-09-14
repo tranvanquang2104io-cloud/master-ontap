@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>E-Business — Ôn thi cuối kỳ</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">E-Business — Ôn thi cuối kỳ</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#chương-1-tổng-quan-về-e-business"
+id="toc-chương-1-tổng-quan-về-e-business">CHƯƠNG 1 — TỔNG QUAN VỀ
+E-BUSINESS</a>
+<ul>
+<li><a href="#phần-1.-các-khái-niệm-của-e-business"
+id="toc-phần-1.-các-khái-niệm-của-e-business">PHẦN 1. CÁC KHÁI NIỆM CỦA
+E-BUSINESS</a>
+<ul>
+<li><a href="#bối-cảnh-ra-đời" id="toc-bối-cảnh-ra-đời">1.1. Bối cảnh ra
+đời</a></li>
+<li><a href="#e-business-là-gì" id="toc-e-business-là-gì">1.2.
+E-business là gì?</a></li>
+<li><a href="#phân-biệt-e-commerce-và-e-business"
+id="toc-phân-biệt-e-commerce-và-e-business">1.3. Phân biệt E-commerce và
+E-business ⭐</a></li>
+<li><a href="#ba-cách-hiểu-về-quan-hệ-e-commerce-e-business"
+id="toc-ba-cách-hiểu-về-quan-hệ-e-commerce-e-business">1.4. Ba cách hiểu
+về quan hệ E-commerce ↔︎ E-business ⭐</a></li>
+<li><a href="#phân-biệt-buy-side-và-sell-side-e-commerce"
+id="toc-phân-biệt-buy-side-và-sell-side-e-commerce">1.5. Phân biệt
+Buy-side và Sell-side E-commerce ⭐⭐</a></li>
+<li><a href="#quan-hệ-giữa-intranet-extranet-và-internet"
+id="toc-quan-hệ-giữa-intranet-extranet-và-internet">1.6. Quan hệ giữa
+Intranet, Extranet và Internet ⭐</a></li>
+<li><a href="#các-loại-hình-e-business-11-loại"
+id="toc-các-loại-hình-e-business-11-loại">1.7. Các loại hình E-business
+(11 loại) ⭐⭐</a></li>
+<li><a href="#các-ứng-dụng-của-e-business-bảng-1.2"
+id="toc-các-ứng-dụng-của-e-business-bảng-1.2">1.8. Các ứng dụng của
+E-business (Bảng 1.2)</a></li>
+</ul></li>
+<li><a href="#phần-2.-công-nghệ-sử-dụng-trong-e-business"
+id="toc-phần-2.-công-nghệ-sử-dụng-trong-e-business">PHẦN 2. CÔNG NGHỆ SỬ
+DỤNG TRONG E-BUSINESS</a>
+<ul>
+<li><a href="#mô-hình-5-lớp-hạ-tầng-e-business"
+id="toc-mô-hình-5-lớp-hạ-tầng-e-business">2.1. Mô hình 5 lớp hạ tầng
+E-business ⭐⭐</a></li>
+<li><a href="#internet-nền-tảng-công-nghệ"
+id="toc-internet-nền-tảng-công-nghệ">2.2. Internet: nền tảng công
+nghệ</a></li>
+<li><a href="#packet-switching-chuyển-mạch-gói"
+id="toc-packet-switching-chuyển-mạch-gói">2.3. Packet Switching (Chuyển
+mạch gói)</a></li>
+<li><a href="#tcpip" id="toc-tcpip">2.4. TCP/IP</a></li>
+<li><a href="#clientserver-computing-nền-tảng-di-động"
+id="toc-clientserver-computing-nền-tảng-di-động">2.5. Client/Server
+Computing &amp; nền tảng di động</a></li>
+<li><a href="#điện-toán-đám-mây-cloud-computing"
+id="toc-điện-toán-đám-mây-cloud-computing">2.6. Điện toán đám mây (Cloud
+Computing)</a></li>
+<li><a href="#các-giao-thức-tiện-ích-khác"
+id="toc-các-giao-thức-tiện-ích-khác">2.7. Các giao thức &amp; tiện ích
+khác</a></li>
+<li><a href="#kiến-trúc-hạ-tầng-internet"
+id="toc-kiến-trúc-hạ-tầng-internet">2.8. Kiến trúc hạ tầng
+Internet</a></li>
+<li><a href="#ai-quản-trị-internet" id="toc-ai-quản-trị-internet">2.9.
+Ai quản trị Internet?</a></li>
+<li><a href="#web-htmlxml-web-server-browser"
+id="toc-web-htmlxml-web-server-browser">2.10. Web, HTML/XML, Web server
+&amp; browser</a></li>
+<li><a href="#các-tính-năng-nền-tảng-của-internet-và-web"
+id="toc-các-tính-năng-nền-tảng-của-internet-và-web">2.11. Các tính năng
+nền tảng của Internet và Web</a></li>
+</ul></li>
+<li><a href="#checklist-ôn-chương-1" id="toc-checklist-ôn-chương-1">❖
+CHECKLIST ÔN CHƯƠNG 1</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="chương-1-tổng-quan-về-e-business">CHƯƠNG 1 — TỔNG QUAN VỀ
+E-BUSINESS</h1>
+<blockquote>
+<p><strong>Mục tiêu chương:</strong> Định nghĩa E-business; phân biệt
+E-commerce và E-business; các loại hình E-business; ứng dụng của
+E-business; công nghệ nền tảng dùng trong E-business.</p>
+</blockquote>
+<hr />
+<h2 id="phần-1.-các-khái-niệm-của-e-business">PHẦN 1. CÁC KHÁI NIỆM CỦA
+E-BUSINESS</h2>
+<h3 id="bối-cảnh-ra-đời">1.1. Bối cảnh ra đời</h3>
+<ul>
+<li>Trong khoảng mười năm gần đây, <strong>Internet và World Wide
+Web</strong> đã làm thay đổi cách con người giao tiếp, kinh doanh và
+sinh hoạt hằng ngày.</li>
+<li>Sự tăng trưởng của Internet/Web là <strong>kết quả của tiến bộ phần
+cứng và phần mềm</strong>.</li>
+<li>Thế giới bước vào <strong>Kỷ nguyên Tri thức (Knowledge
+Age)</strong> hay <strong>Kỷ nguyên Số (Digital Age)</strong>. Hai câu
+nói thường được dùng khi bàn về kinh doanh trực tuyến: <em>“Knowledge is
+power”</em> (Tri thức là sức mạnh) và <em>“Content is king”</em> (Nội
+dung là vua).</li>
+</ul>
+<p><strong>Những thay đổi mà E-business/E-commerce mang
+lại:</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Khía cạnh</th>
+<th>Thay đổi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Giao dịch</td>
+<td>Hoàn tất <strong>nhanh hơn và dễ hơn</strong></td>
+</tr>
+<tr>
+<td>Công nghệ</td>
+<td>Doanh nghiệp phải <strong>liên tục thích nghi</strong>, tích hợp hệ
+thống nhanh và hiệu quả hơn, đáp ứng nhu cầu khách hàng toàn cầu</td>
+</tr>
+<tr>
+<td>Sản xuất</td>
+<td>Sản phẩm được <strong>chuẩn bị riêng theo khách hàng
+(build-to-order)</strong> thay vì tồn kho chờ đơn hàng</td>
+</tr>
+<tr>
+<td>Nhân sự</td>
+<td><strong>Khó tìm và giữ</strong> nhân sự giỏi</td>
+</tr>
+<tr>
+<td>Cạnh tranh</td>
+<td>Khách hàng chỉ cần “đi một quãng rất ngắn” để mua của nhà cung cấp
+khác ⇒ các doanh nghiệp cạnh tranh <strong>buộc phải hợp tác</strong> để
+tồn tại</td>
+</tr>
+<tr>
+<td>Năng lực</td>
+<td>Vận hành một E-business (nhất là khối lượng giao dịch lớn) đòi hỏi
+đồng thời năng lực <strong>kỹ thuật + marketing + quảng
+cáo</strong></td>
+</tr>
+<tr>
+<td>Hệ sinh thái</td>
+<td>Nhờ tiến bộ ICT, xuất hiện <strong>E-service, E-business,
+E-commerce, E-government</strong>…</td>
+</tr>
+</tbody>
+</table>
+<h3 id="e-business-là-gì">1.2. E-business là gì?</h3>
+<blockquote>
+<p><strong>Định nghĩa:</strong> <em>Electronic business
+(E-business)</em> là <strong>việc sử dụng Internet để kết nối (network)
+và thực hiện các quy trình nghiệp vụ, thương mại điện tử, truyền thông
+và cộng tác trong tổ chức cũng như với khách hàng, nhà cung cấp và các
+bên liên quan khác.</strong></p>
+</blockquote>
+<ul>
+<li>Các E-business sử dụng <strong>Internet, intranet, extranet</strong>
+và các mạng khác để hỗ trợ quy trình kinh doanh của mình.</li>
+</ul>
+<h3 id="phân-biệt-e-commerce-và-e-business">1.3. Phân biệt E-commerce và
+E-business ⭐</h3>
+<p><strong>E-commerce (Thương mại điện tử):</strong> - Mọi hoạt động
+<strong>trao đổi thông tin qua trung gian điện tử giữa tổ chức và các
+bên liên quan BÊN NGOÀI</strong>. - Là việc <strong>mua – bán, marketing
+và phục vụ</strong> sản phẩm/dịch vụ qua mạng máy tính. - Là các
+<strong>giao dịch thương mại được số hóa</strong> giữa các tổ chức với
+nhau và giữa tổ chức với cá nhân.</p>
+<p><strong>E-business (Kinh doanh điện tử):</strong> - Mọi hoạt động
+trao đổi thông tin qua trung gian điện tử <strong>cả BÊN TRONG tổ chức
+lẫn với bên ngoài</strong>, được hỗ trợ bởi <strong>phạm vi quy trình
+nghiệp vụ rộng hơn</strong>. - Là việc <strong>số hóa các giao dịch và
+quy trình nội bộ doanh nghiệp</strong>, dựa trên các hệ thống thông tin
+do doanh nghiệp kiểm soát. - Theo cách hiểu hẹp này, E-business
+<strong>không bao gồm</strong> các giao dịch thương mại có trao đổi giá
+trị vượt ranh giới tổ chức.</p>
+<p><strong>Bảng 1.1 — So sánh (dạng dễ nhớ để đi thi):</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tiêu chí</th>
+<th><strong>E-commerce</strong></th>
+<th><strong>E-business</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phạm vi trao đổi thông tin điện tử</td>
+<td>Giữa tổ chức <strong>và các bên liên quan bên ngoài</strong></td>
+<td><strong>Cả nội bộ tổ chức lẫn bên ngoài</strong>, dựa trên dải quy
+trình nghiệp vụ rộng hơn</td>
+</tr>
+<tr>
+<td>Ứng dụng số</td>
+<td>Cho phép thương mại số giữa các tổ chức và giữa DN với cá nhân</td>
+<td>Hệ thống thông tin do DN kiểm soát cho phép số hóa giao dịch &amp;
+quy trình <strong>bên trong</strong> DN</td>
+</tr>
+<tr>
+<td>Khác</td>
+<td>—</td>
+<td><strong>Loại trừ</strong> các giao dịch thương mại xuyên ranh giới
+tổ chức</td>
+</tr>
+<tr>
+<td>Quan hệ bao hàm</td>
+<td>Thường được xem là <strong>tập con</strong></td>
+<td>Tập lớn hơn</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ba-cách-hiểu-về-quan-hệ-e-commerce-e-business">1.4. Ba cách hiểu
+về quan hệ E-commerce ↔︎ E-business ⭐</h3>
+<figure>
+<img src="assets/C1-11.png"
+alt="Ba định nghĩa về quan hệ E-commerce và E-business" />
+<figcaption aria-hidden="true">Ba định nghĩa về quan hệ E-commerce và
+E-business</figcaption>
+</figure>
+<p><em>Hình 1.2 — Ba định nghĩa về mối quan hệ giữa E-commerce (EC) và
+E-business (EB):</em></p>
+<ul>
+<li><strong>(a)</strong> EC <strong>giao nhau một phần</strong> với EB
+(có phần chồng lấn).</li>
+<li><strong>(b)</strong> EC <strong>tương đương</strong> EB (EC =
+EB).</li>
+<li><strong>(c)</strong> EC là <strong>tập con</strong> của EB (cách
+hiểu phổ biến nhất và thường được chọn khi trả lời thi).</li>
+</ul>
+<h3 id="phân-biệt-buy-side-và-sell-side-e-commerce">1.5. Phân biệt
+Buy-side và Sell-side E-commerce ⭐⭐</h3>
+<figure>
+<img src="assets/C1-12.png" alt="Buy-side và Sell-side E-commerce" />
+<figcaption aria-hidden="true">Buy-side và Sell-side
+E-commerce</figcaption>
+</figure>
+<p><em>Hình 1.1 — Phân biệt buy-side và sell-side E-commerce.</em></p>
+<p><strong>Cách đọc hình:</strong> - Ở <strong>trung tâm</strong> là
+<strong>Intranet</strong> — các quy trình tổ chức và đơn vị chức năng
+của doanh nghiệp. - <strong>Bên trái (buy-side e-commerce — phía
+mua):</strong> Suppliers’ suppliers → Suppliers → Intermediaries → doanh
+nghiệp. Kết nối qua <strong>Internet và extranet</strong>. Đây là
+<strong>thượng nguồn (upstream)</strong>, gắn với <strong>quản trị chuỗi
+cung ứng điện tử (e-SCM)</strong> và <strong>e-Procurement</strong>. -
+<strong>Bên phải (sell-side e-commerce — phía bán):</strong> doanh
+nghiệp → Intermediaries → Customers → Customers’ customers. Cũng qua
+<strong>Internet và extranet</strong>. Đây là <strong>hạ nguồn
+(downstream)</strong>, gắn với <strong>e-Marketing / CRM</strong>. -
+<strong>Toàn bộ hai phía cộng với intranet nội bộ =
+E-business.</strong></p>
+<blockquote>
+<p>📌 <strong>Câu chốt đi thi:</strong> <em>E-business = Buy-side
+e-commerce + Nội bộ (intranet) + Sell-side e-commerce.</em></p>
+</blockquote>
+<h3 id="quan-hệ-giữa-intranet-extranet-và-internet">1.6. Quan hệ giữa
+Intranet, Extranet và Internet ⭐</h3>
+<figure>
+<img src="assets/C1-13.png"
+alt="Quan hệ Intranet - Extranet - Internet" />
+<figcaption aria-hidden="true">Quan hệ Intranet - Extranet -
+Internet</figcaption>
+</figure>
+<p><em>Hình 1.3 — Quan hệ giữa intranet, extranet và Internet.</em></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Mạng</th>
+<th>Ai truy cập được</th>
+<th>Bộ phận sử dụng điển hình</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Intranet</strong></td>
+<td><strong>Chỉ trong công ty</strong> (company only)</td>
+<td>Phòng CNTT; truyền thông nội bộ</td>
+</tr>
+<tr>
+<td><strong>Extranet</strong></td>
+<td><strong>Nhà cung cấp, khách hàng, đối tác cộng tác</strong> được cấp
+quyền</td>
+<td>Marketing / Mua hàng (purchasing)</td>
+</tr>
+<tr>
+<td><strong>Internet</strong></td>
+<td><strong>Toàn thế giới (the world)</strong></td>
+<td>Marketing</td>
+</tr>
+</tbody>
+</table>
+<p>Mô hình vòng tròn đồng tâm: <strong>Intranet ⊂ Extranet ⊂
+Internet</strong>.</p>
+<h3 id="các-loại-hình-e-business-11-loại">1.7. Các loại hình E-business
+(11 loại) ⭐⭐</h3>
+<p><img src="assets/C1-17.png" alt="Types of E-business: B2C, B2B" />
+<img src="assets/C1-18.png" alt="Types of E-business: B2E, B2G" /> <img
+src="assets/C1-19.png" alt="Types of E-business: C2B, E2B" /> <img
+src="assets/C1-20.png" alt="Types of E-business: G2B, G2C" /> <img
+src="assets/C1-21.png" alt="Types of E-business: C2C, D2C, B2B2C" /></p>
+<p><strong>Bảng tổng hợp (Hình 1.7 – 1.11):</strong></p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Ký hiệu</th>
+<th>Tên đầy đủ</th>
+<th>Quan hệ</th>
+<th>Ví dụ minh họa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>B2C</strong></td>
+<td>Business to Consumer</td>
+<td>Doanh nghiệp → Người tiêu dùng</td>
+<td>Tiki, Shopee Mall, Amazon bán lẻ</td>
+</tr>
+<tr>
+<td><strong>B2B</strong></td>
+<td>Business to Business</td>
+<td>Doanh nghiệp → Doanh nghiệp</td>
+<td>Alibaba, SupplyOn, Grainger</td>
+</tr>
+<tr>
+<td><strong>B2E</strong></td>
+<td>Business to Employee</td>
+<td>Doanh nghiệp → Nhân viên</td>
+<td>Cổng nhân sự nội bộ, e-learning nội bộ</td>
+</tr>
+<tr>
+<td><strong>B2G</strong></td>
+<td>Business to Government</td>
+<td>Doanh nghiệp → Chính phủ</td>
+<td>Đấu thầu qua mạng, nộp thuế điện tử</td>
+</tr>
+<tr>
+<td><strong>C2B</strong></td>
+<td>Consumer to Business</td>
+<td>Người tiêu dùng → Doanh nghiệp</td>
+<td>Freelancer chào giá, KOL bán dịch vụ cho DN</td>
+</tr>
+<tr>
+<td><strong>E2B</strong></td>
+<td>Employee to Business</td>
+<td>Nhân viên → Doanh nghiệp</td>
+<td>Nhân viên đề xuất/khiếu nại qua hệ thống</td>
+</tr>
+<tr>
+<td><strong>G2B</strong></td>
+<td>Government to Business</td>
+<td>Chính phủ → Doanh nghiệp</td>
+<td>Cổng dịch vụ công cho DN, cấp phép online</td>
+</tr>
+<tr>
+<td><strong>G2C</strong></td>
+<td>Government to Consumer</td>
+<td>Chính phủ → Người dân</td>
+<td>Cổng dịch vụ công quốc gia, VNeID</td>
+</tr>
+<tr>
+<td><strong>C2C</strong></td>
+<td>Consumer to Consumer</td>
+<td>Người tiêu dùng ↔︎ Người tiêu dùng</td>
+<td>Chợ Tốt, eBay, Facebook Marketplace</td>
+</tr>
+<tr>
+<td><strong>D2C</strong></td>
+<td>Direct to Consumer</td>
+<td>Nhà sản xuất → Người tiêu dùng</td>
+<td>Hãng bán thẳng không qua đại lý</td>
+</tr>
+<tr>
+<td><strong>B2B2C</strong></td>
+<td>Business to Business to Consumer</td>
+<td>DN → DN (B2C) → Người tiêu dùng</td>
+<td>Nhà sản xuất bán qua sàn TMĐT tới người dùng</td>
+</tr>
+</tbody>
+</table>
+<h3 id="các-ứng-dụng-của-e-business-bảng-1.2">1.8. Các ứng dụng của
+E-business (Bảng 1.2)</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>Ứng dụng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>ERP</strong> — Enterprise Resource Planning (Hoạch định
+nguồn lực doanh nghiệp)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>CRM</strong> — Customer Relationship Management (Quản trị
+quan hệ khách hàng)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>SCM</strong> — Supply Chain Management (Quản trị chuỗi cung
+ứng)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>IEMS</strong> — Integrated Enterprise Management System (Hệ
+thống quản trị doanh nghiệp tích hợp)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>EDI</strong> — Electronic Data Interchange (Trao đổi dữ liệu
+điện tử)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Quản lý kho / tồn kho &amp; mua hàng</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Mạng xã hội / Quảng cáo trực tuyến</td>
+</tr>
+<tr>
+<td>8</td>
+<td>E-procurement / E-banking / E-commerce / E-marketplace</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Quản trị nguồn nhân lực (HRM)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Hệ thống đặt chỗ (Booking system)</td>
+</tr>
+</tbody>
+</table>
+<p><em>(Nguồn: Hadi Putra &amp; Santoso, Heliyon, 2020)</em></p>
+<hr />
+<h2 id="phần-2.-công-nghệ-sử-dụng-trong-e-business">PHẦN 2. CÔNG NGHỆ SỬ
+DỤNG TRONG E-BUSINESS</h2>
+<h3 id="mô-hình-5-lớp-hạ-tầng-e-business">2.1. Mô hình 5 lớp hạ tầng
+E-business ⭐⭐</h3>
+<figure>
+<img src="assets/C1-25.png" alt="Mô hình 5 lớp hạ tầng E-business" />
+<figcaption aria-hidden="true">Mô hình 5 lớp hạ tầng
+E-business</figcaption>
+</figure>
+<p><em>Hình 1.12 — A five-layer model of e-business
+infrastructure.</em></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Lớp</th>
+<th>Tên lớp</th>
+<th>Ví dụ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>I</strong></td>
+<td><strong>E-business services — applications layer</strong> (Dịch vụ
+E-business — lớp ứng dụng)</td>
+<td>CRM, SCM, khai phá dữ liệu (data mining), hệ quản trị nội dung
+(CMS)</td>
+</tr>
+<tr>
+<td><strong>II</strong></td>
+<td><strong>Systems software layer</strong> (Lớp phần mềm hệ thống)</td>
+<td>Trình duyệt &amp; phần mềm máy chủ web và chuẩn của chúng, phần mềm
+mạng, hệ quản trị CSDL</td>
+</tr>
+<tr>
+<td><strong>III</strong></td>
+<td><strong>Transport or network layer</strong> (Lớp truyền
+tải/mạng)</td>
+<td>Mạng vật lý và chuẩn truyền tải (<strong>TCP/IP</strong>)</td>
+</tr>
+<tr>
+<td><strong>IV</strong></td>
+<td><strong>Storage/physical layer</strong> (Lớp lưu trữ/vật lý)</td>
+<td>Lưu trữ từ tính vĩnh viễn trên web server, sao lưu quang học, lưu
+tạm trên RAM</td>
+</tr>
+<tr>
+<td><strong>V</strong></td>
+<td><strong>Content and data layer</strong> (Lớp nội dung &amp; dữ
+liệu)</td>
+<td>Nội dung web cho intranet/extranet/Internet, dữ liệu khách hàng, dữ
+liệu giao dịch, dữ liệu clickstream</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Mẹo nhớ:</strong> đi từ trên xuống là <strong>Ứng dụng →
+Phần mềm hệ thống → Mạng → Lưu trữ → Nội dung/Dữ liệu</strong>.</p>
+</blockquote>
+<h3 id="internet-nền-tảng-công-nghệ">2.2. Internet: nền tảng công
+nghệ</h3>
+<ul>
+<li><strong>Internet:</strong> mạng liên kết của hàng nghìn mạng và hàng
+triệu máy tính; kết nối doanh nghiệp, cơ sở giáo dục, cơ quan chính phủ
+và cá nhân.</li>
+<li><strong>World Wide Web (Web):</strong> một trong những dịch vụ phổ
+biến nhất của Internet; cho phép truy cập hàng tỷ (có thể hàng nghìn tỷ)
+trang web.</li>
+</ul>
+<p><strong>Ba giai đoạn tiến hóa của Internet (1961 – nay):</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Giai đoạn</th>
+<th>Thời gian</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Innovation Phase</strong> (Đổi mới)</td>
+<td>1961–1974</td>
+<td>Tạo ra các khối xây dựng nền tảng</td>
+</tr>
+<tr>
+<td><strong>Institutionalization Phase</strong> (Thể chế hóa)</td>
+<td>1975–1995</td>
+<td>Các định chế lớn cấp kinh phí và hợp thức hóa</td>
+</tr>
+<tr>
+<td><strong>Commercialization Phase</strong> (Thương mại hóa)</td>
+<td>1995–nay</td>
+<td>Các tập đoàn tư nhân tiếp quản, mở rộng đường trục và dịch vụ nội
+vùng</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ba khái niệm công nghệ then chốt:</strong> 1. <strong>Packet
+switching</strong> (chuyển mạch gói) 2. <strong>Giao thức
+TCP/IP</strong> 3. <strong>Client/server computing</strong></p>
+<p>Internet được định nghĩa là mạng: dùng <strong>địa chỉ IP</strong>,
+hỗ trợ <strong>TCP/IP</strong>, cung cấp dịch vụ cho người dùng theo
+cách tương tự hệ thống điện thoại.</p>
+<h3 id="packet-switching-chuyển-mạch-gói">2.3. Packet Switching (Chuyển
+mạch gói)</h3>
+<ul>
+<li>Cắt thông điệp số thành các <strong>gói (packets)</strong>.</li>
+<li>Gửi các gói theo <strong>các đường truyền khác nhau</strong> khi
+đường đó sẵn sàng.</li>
+<li><strong>Ghép lại (reassemble)</strong> các gói khi tới đích.</li>
+<li>Sử dụng <strong>router</strong>.</li>
+<li><strong>Rẻ hơn và ít lãng phí hơn</strong> chuyển mạch kênh (circuit
+switching).</li>
+</ul>
+<h3 id="tcpip">2.4. TCP/IP</h3>
+<ul>
+<li><strong>TCP (Transmission Control Protocol):</strong> thiết lập kết
+nối giữa máy gửi và máy nhận; xử lý việc <strong>đóng gói</strong> tại
+điểm truyền và <strong>ghép gói</strong> tại điểm nhận.</li>
+<li><strong>IP (Internet Protocol):</strong> định tuyến/địa chỉ.</li>
+<li><strong>Bốn lớp TCP/IP:</strong> Network interface layer → Internet
+layer → Transport layer → <strong>Application layer</strong>.</li>
+</ul>
+<p><strong>Địa chỉ IP:</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>IPv4</th>
+<th>IPv6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Độ dài</td>
+<td><strong>32 bit</strong></td>
+<td><strong>128 bit</strong></td>
+</tr>
+<tr>
+<td>Dạng</td>
+<td>4 nhóm số cách nhau bởi dấu chấm, ví dụ
+<code>201.61.186.227</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td>Không gian địa chỉ</td>
+<td>~4 tỷ</td>
+<td>tới ~1 triệu tỷ (1 quadrillion)</td>
+</tr>
+<tr>
+<td>Ghi chú</td>
+<td>Địa chỉ lớp C: 3 nhóm đầu xác định mạng, nhóm cuối xác định máy</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Domain Name, DNS và URL:</strong> - <strong>Domain
+name:</strong> địa chỉ IP được biểu diễn bằng ngôn ngữ tự nhiên. -
+<strong>DNS (Domain Name System):</strong> cho phép chuyển địa chỉ IP số
+sang ngôn ngữ tự nhiên. - <strong>URL (Uniform Resource
+Locator):</strong> địa chỉ trình duyệt dùng để xác định vị trí nội dung
+trên Web. Ví dụ: <code>https://vnexpress.net/</code>.</p>
+<h3 id="clientserver-computing-nền-tảng-di-động">2.5. Client/Server
+Computing &amp; nền tảng di động</h3>
+<ul>
+<li><strong>Client/Server:</strong> các máy tính cá nhân mạnh (client)
+nối mạng với một hoặc nhiều <strong>server</strong>; server thực hiện
+các chức năng chung: lưu trữ tệp, chạy ứng dụng, chia sẻ máy in…</li>
+<li><strong>Mobile platform:</strong> truy cập Internet chủ yếu hiện nay
+qua <strong>máy tính bảng và smartphone</strong>; smartphone là
+<strong>công nghệ đột phá (disruptive technology)</strong>; hơn
+<strong>3,3 tỷ</strong> người truy cập Internet bằng smartphone.</li>
+</ul>
+<h3 id="điện-toán-đám-mây-cloud-computing">2.6. Điện toán đám mây (Cloud
+Computing)</h3>
+<ul>
+<li>Doanh nghiệp và cá nhân <strong>thuê năng lực tính toán và phần mềm
+qua Internet</strong>.</li>
+<li><strong>Ba loại dịch vụ:</strong> <strong>IaaS</strong> (hạ tầng),
+<strong>SaaS</strong> (phần mềm), <strong>PaaS</strong> (nền tảng).</li>
+<li><strong>Ba mô hình triển khai:</strong> public, private, hybrid
+cloud.</li>
+<li><strong>Nhược điểm:</strong> rủi ro bảo mật; chuyển trách nhiệm lưu
+trữ và kiểm soát sang nhà cung cấp.</li>
+<li><strong>Ưu điểm:</strong> giảm mạnh chi phí xây dựng &amp; vận hành
+website, hạ tầng, hỗ trợ CNTT, phần cứng, phần mềm.</li>
+</ul>
+<h3 id="các-giao-thức-tiện-ích-khác">2.7. Các giao thức &amp; tiện ích
+khác</h3>
+<ul>
+<li><strong>Giao thức:</strong> HTTP; Email: <strong>SMTP, POP3,
+IMAP</strong>; <strong>FTP, Telnet, SSL/TLS</strong>.</li>
+<li><strong>Tiện ích:</strong> Ping, Tracert…</li>
+</ul>
+<h3 id="kiến-trúc-hạ-tầng-internet">2.8. Kiến trúc hạ tầng Internet</h3>
+<p>Internet tăng trưởng mà không đổ vỡ là nhờ: 1. <strong>Mô hình
+client/server</strong> 2. <strong>Kiến trúc phân lớp hình đồng hồ cát
+(hourglass)</strong> gồm 4 tầng: - Network Technology Substrates -
+Transport Services and Representation Standards - Middleware Services -
+Applications</p>
+<p><strong>Internet Backbone:</strong> cáp quang (hàng trăm sợi thủy
+tinh dùng ánh sáng truyền dữ liệu) → tốc độ nhanh hơn, băng thông lớn
+hơn, cáp mỏng nhẹ hơn, ít nhiễu hơn, an toàn dữ liệu hơn. Do
+<strong>Tier 1 ISP (transit ISP)</strong> vận hành; cáp quang biển và
+liên kết vệ tinh.</p>
+<p><strong>IXP (Internet Exchange Points):</strong> trung tâm vùng nơi
+các Tier 1 ISP kết nối vật lý với nhau và với Tier 2 ISP. Tier 2 cung
+cấp truy cập cho <strong>Tier 3 ISP</strong>. Trước đây gọi là NAP hoặc
+MAE.</p>
+<p><strong>Tier 3 ISP:</strong> nhà cung cấp bán lẻ (Comcast, AT&amp;T,
+Verizon…) — dịch vụ: <strong>Narrowband, Broadband, DSL, Cable Internet,
+Satellite Internet</strong>.</p>
+<p><strong>Truy cập Internet di động:</strong> hai loại — dựa trên điện
+thoại (4G, <strong>5G</strong> tốc độ tới 10 Gbps+, 6G…) và dựa trên
+mạng máy tính không dây (<strong>Wi-Fi 802.11, WiMax,
+Bluetooth</strong>).</p>
+<p><strong>IoT (Internet of Things):</strong> vật thể kết nối Internet
+qua cảm biến/RFID; “smart things”; các vấn đề về chuẩn tương tác; mối lo
+<strong>bảo mật và quyền riêng tư</strong>.</p>
+<h3 id="ai-quản-trị-internet">2.9. Ai quản trị Internet?</h3>
+<p><strong>ICANN, IETF, IRTF, IESG, IAB, ISOC, IGF, W3C,
+NOGs.</strong></p>
+<h3 id="web-htmlxml-web-server-browser">2.10. Web, HTML/XML, Web server
+&amp; browser</h3>
+<p><strong>Lịch sử Web:</strong> - <strong>1989–1991:</strong> Tim
+Berners-Lee tại CERN phát minh Web (HTML, HTTP, web server, web
+browser). - <strong>1993:</strong> Mosaic — trình duyệt có GUI
+(Andreessen, NCSA). - <strong>1994:</strong> Netscape Navigator — trình
+duyệt thương mại đầu tiên. - <strong>1995:</strong> Microsoft Internet
+Explorer. - <strong>Hiện nay:</strong> Chrome, Firefox, Microsoft Edge,
+Opera…</p>
+<p><strong>Hypertext:</strong> văn bản có nhúng liên kết; dùng
+<strong>HTTP</strong> và <strong>URL</strong> để định vị tài nguyên.</p>
+<p><strong>Ngôn ngữ đánh dấu:</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th><strong>HTML</strong></th>
+<th><strong>XML</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bản chất</td>
+<td>Tập thẻ (tag) <strong>định sẵn</strong> để định dạng văn bản</td>
+<td>Ngôn ngữ mô tả <strong>dữ liệu và thông tin</strong></td>
+</tr>
+<tr>
+<td>Thẻ</td>
+<td>Cố định</td>
+<td><strong>Do người dùng tự định nghĩa</strong></td>
+</tr>
+<tr>
+<td>Vai trò</td>
+<td>Điều khiển giao diện trang web, dùng chung với <strong>CSS</strong>;
+HTML5 là bản mới nhất</td>
+<td>Mô tả cấu trúc dữ liệu</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Web server software:</strong> cho phép máy tính phân phát
+trang web tới client theo yêu cầu HTTP. Năng lực cơ bản: dịch vụ bảo
+mật, FTP, công cụ tìm kiếm, thu thập dữ liệu. <strong>Web
+client:</strong> bất kỳ thiết bị nào nối Internet có thể gửi yêu cầu
+HTTP và hiển thị trang HTML.</p>
+<h3 id="các-tính-năng-nền-tảng-của-internet-và-web">2.11. Các tính năng
+nền tảng của Internet và Web</h3>
+<p>Communication tools · Search engines · Downloadable &amp; streaming
+media · Web 2.0 · VR/AR · Intelligent digital assistants…</p>
+<p><strong>Công cụ truyền thông:</strong> E-mail (ứng dụng được dùng
+nhiều nhất), Messaging/Instant messaging, Online message boards,
+<strong>Internet telephony (VOIP)</strong>, Video
+conferencing/telepresence.</p>
+<p><strong>Cách hoạt động của Search Engine — 3 tác vụ liên
+tục:</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Bước</th>
+<th>Tên</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Crawling</strong> (Thu thập)</td>
+<td>Dùng “crawler” — chương trình truy cập <strong>mọi trang của mọi
+site</strong> để xác định nội dung</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Indexing</strong> (Lập chỉ mục)</td>
+<td>Tạo <strong>chỉ mục</strong> cho toàn bộ nội dung lưu trên mạng</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Ranking</strong> (Xếp hạng)</td>
+<td>Xếp hạng kết quả dựa trên <strong>mức liên quan (relevancy) và uy
+tín/độ phổ biến (authority)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Search engine còn đóng vai trò: công cụ mua sắm, phương tiện quảng
+cáo (search engine marketing), công cụ bên trong site TMĐT. Nhà cung cấp
+hàng đầu: Google, Bing.</p>
+<p><strong>Web 2.0:</strong> Online social networks; Blogs;
+<strong>Wikis</strong> (viết tài liệu tập thể — Wikipedia).</p>
+<p><strong>VR &amp; AR:</strong> - <strong>VR (Virtual
+Reality):</strong> đưa người dùng vào thế giới ảo, thường qua kính
+<strong>HMD</strong> (VD: PlayStation VR). - <strong>AR (Augmented
+Reality):</strong> phủ vật thể ảo lên thế giới thực qua thiết bị di động
+hoặc HMD.</p>
+<p><strong>Intelligent Digital Assistants:</strong> dùng ngôn ngữ tự
+nhiên, giao diện hội thoại, lệnh bằng giọng nói, nhận biết ngữ cảnh. VD:
+<strong>Siri, Google Now, Google Assistant, ChatGPT</strong>.</p>
+<p><strong>Mobile Apps:</strong> bùng nổ; là phương tiện giải trí phổ
+biến nhất, vượt TV; công cụ mua sắm luôn hiện diện; hầu hết 100 thương
+hiệu hàng đầu đều có app. Nền tảng: <strong>iOS, Android</strong>. Chợ
+ứng dụng: Google Play, App Store, Amazon Appstore.</p>
+<hr />
+<h2 id="checklist-ôn-chương-1">❖ CHECKLIST ÔN CHƯƠNG 1</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" />Định nghĩa E-business (học thuộc câu
+định nghĩa)</label></li>
+<li><label><input type="checkbox" />Bảng so sánh E-commerce vs
+E-business (3 tiêu chí)</label></li>
+<li><label><input type="checkbox" />Ba cách hiểu quan hệ EC–EB (vẽ được
+3 vòng tròn)</label></li>
+<li><label><input type="checkbox" /><strong>Vẽ và giải thích được hình
+buy-side / sell-side</strong></label></li>
+<li><label><input type="checkbox" />Intranet ⊂ Extranet ⊂ Internet — ai
+truy cập được</label></li>
+<li><label><input type="checkbox" />11 loại hình E-business + ví dụ Việt
+Nam</label></li>
+<li><label><input type="checkbox" />10 ứng dụng E-business</label></li>
+<li><label><input type="checkbox" /><strong>Mô hình 5 lớp hạ
+tầng</strong> (kể đủ 5 lớp + ví dụ)</label></li>
+<li><label><input type="checkbox" />3 khái niệm công nghệ then chốt; 4
+lớp TCP/IP</label></li>
+<li><label><input type="checkbox" />3 giai đoạn tiến hóa
+Internet</label></li>
+<li><label><input type="checkbox" />Cloud: IaaS/SaaS/PaaS + ưu nhược
+điểm</label></li>
+<li><label><input type="checkbox" />Crawling – Indexing –
+Ranking</label></li>
+</ul>
+</body>
+</html>

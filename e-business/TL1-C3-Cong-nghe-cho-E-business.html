@@ -1,0 +1,4353 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>E-Business — Ôn thi cuối kỳ</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">E-Business — Ôn thi cuối kỳ</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#chương-3-công-nghệ-cho-e-business"
+id="toc-chương-3-công-nghệ-cho-e-business">CHƯƠNG 3 — CÔNG NGHỆ CHO
+E-BUSINESS</a></li>
+<li><a href="#phần-1.-hệ-thống-thuế-và-pháp-luật-cho-e-business"
+id="toc-phần-1.-hệ-thống-thuế-và-pháp-luật-cho-e-business">PHẦN 1. HỆ
+THỐNG THUẾ VÀ PHÁP LUẬT CHO E-BUSINESS</a>
+<ul>
+<li><a href="#mô-hình-tổ-chức-các-vấn-đề-đạo-đức-xã-hội-chính-trị"
+id="toc-mô-hình-tổ-chức-các-vấn-đề-đạo-đức-xã-hội-chính-trị">1.1. Mô
+hình tổ chức các vấn đề đạo đức – xã hội – chính trị ⭐</a></li>
+<li><a href="#quyền-riêng-tư-và-quyền-thông-tin"
+id="toc-quyền-riêng-tư-và-quyền-thông-tin">1.2. Quyền riêng tư và quyền
+thông tin ⭐⭐</a>
+<ul>
+<li><a href="#profiling-behavioral-targeting-và-retargeting"
+id="toc-profiling-behavioral-targeting-và-retargeting">Profiling,
+Behavioral Targeting và Retargeting</a></li>
+<li><a href="#gdpr-bảo-vệ-quyền-riêng-tư-tại-châu-âu"
+id="toc-gdpr-bảo-vệ-quyền-riêng-tư-tại-châu-âu">GDPR — Bảo vệ quyền
+riêng tư tại châu Âu ⭐</a></li>
+<li><a href="#giải-pháp-công-nghệ-bảo-vệ-quyền-riêng-tư"
+id="toc-giải-pháp-công-nghệ-bảo-vệ-quyền-riêng-tư">Giải pháp công nghệ
+bảo vệ quyền riêng tư</a></li>
+</ul></li>
+<li><a href="#quyền-sở-hữu-trí-tuệ" id="toc-quyền-sở-hữu-trí-tuệ">1.3.
+Quyền sở hữu trí tuệ ⭐⭐</a></li>
+<li><a href="#hệ-thống-văn-bản-pháp-luật-việt-nam"
+id="toc-hệ-thống-văn-bản-pháp-luật-việt-nam">1.4. Hệ thống văn bản pháp
+luật Việt Nam ⭐</a>
+<ul>
+<li><a href="#định-hướng-chủ-trương-của-bộ-chính-trị"
+id="toc-định-hướng-chủ-trương-của-bộ-chính-trị">Định hướng, chủ trương
+của Bộ Chính trị</a></li>
+<li><a href="#các-luật-liên-quan-tới-e-business-ở-việt-nam"
+id="toc-các-luật-liên-quan-tới-e-business-ở-việt-nam">Các luật liên quan
+tới E-business ở Việt Nam</a></li>
+<li><a
+href="#văn-bản-pháp-luật-riêng-về-thương-mại-điện-tử-tại-việt-nam"
+id="toc-văn-bản-pháp-luật-riêng-về-thương-mại-điện-tử-tại-việt-nam">Văn
+bản pháp luật riêng về Thương mại điện tử tại Việt Nam ⭐⭐</a></li>
+</ul></li>
+<li><a href="#các-loại-thuế-liên-quan-tới-e-business-ở-việt-nam"
+id="toc-các-loại-thuế-liên-quan-tới-e-business-ở-việt-nam">1.5. Các loại
+thuế liên quan tới E-business ở Việt Nam ⭐</a></li>
+</ul></li>
+<li><a href="#phần-2.-phần-mềm-e-business-và-web-hosting"
+id="toc-phần-2.-phần-mềm-e-business-và-web-hosting">PHẦN 2. PHẦN MỀM
+E-BUSINESS VÀ WEB HOSTING</a>
+<ul>
+<li><a href="#xây-dựng-sự-hiện-diện-tmđt-building-e-commerce-presence"
+id="toc-xây-dựng-sự-hiện-diện-tmđt-building-e-commerce-presence">2.1.
+XÂY DỰNG SỰ HIỆN DIỆN TMĐT (Building E-commerce Presence)</a>
+<ul>
+<li><a href="#a-hình-dung-sự-hiện-diện-tmđt-các-câu-hỏi-cần-trả-lời"
+id="toc-a-hình-dung-sự-hiện-diện-tmđt-các-câu-hỏi-cần-trả-lời">a) Hình
+dung sự hiện diện TMĐT — các câu hỏi cần trả lời ⭐</a></li>
+<li><a href="#b-e-commerce-presence-map"
+id="toc-b-e-commerce-presence-map">b) E-commerce Presence Map
+⭐⭐</a></li>
+</ul></li>
+<li><a href="#xây-dựng-site-tmđt-cách-tiếp-cận-hệ-thống"
+id="toc-xây-dựng-site-tmđt-cách-tiếp-cận-hệ-thống">2.2. XÂY DỰNG SITE
+TMĐT: CÁCH TIẾP CẬN HỆ THỐNG</a>
+<ul>
+<li><a href="#a-vòng-đời-phát-triển-hệ-thống-sdlc"
+id="toc-a-vòng-đời-phát-triển-hệ-thống-sdlc">a) Vòng đời phát triển hệ
+thống (SDLC) ⭐⭐⭐</a></li>
+<li><a href="#b-bước-1-phân-tíchlập-kế-hoạch-hệ-thống"
+id="toc-b-bước-1-phân-tíchlập-kế-hoạch-hệ-thống">b) Bước 1 — Phân
+tích/Lập kế hoạch hệ thống ⭐⭐⭐</a></li>
+<li><a href="#c-bước-2-thiết-kế-hệ-thống"
+id="toc-c-bước-2-thiết-kế-hệ-thống">c) Bước 2 — Thiết kế hệ thống
+⭐⭐</a></li>
+<li><a href="#d-bước-3-xây-dựng-hệ-thống-tự-làm-hay-thuê-ngoài"
+id="toc-d-bước-3-xây-dựng-hệ-thống-tự-làm-hay-thuê-ngoài">d) Bước 3 —
+Xây dựng hệ thống: tự làm hay thuê ngoài ⭐⭐</a></li>
+<li><a href="#e-bước-4-kiểm-thử-hệ-thống"
+id="toc-e-bước-4-kiểm-thử-hệ-thống">e) Bước 4 — Kiểm thử hệ thống
+⭐</a></li>
+<li><a href="#f-bước-5-triển-khai-bảo-trì-và-tối-ưu"
+id="toc-f-bước-5-triển-khai-bảo-trì-và-tối-ưu">f) Bước 5 — Triển khai,
+bảo trì và tối ưu</a></li>
+<li><a href="#g-các-phương-pháp-phát-triển-web-thay-thế"
+id="toc-g-các-phương-pháp-phát-triển-web-thay-thế">g) Các phương pháp
+phát triển web thay thế</a></li>
+</ul></li>
+<li><a href="#kiến-trúc-site-tmđt" id="toc-kiến-trúc-site-tmđt">2.3.
+KIẾN TRÚC SITE TMĐT ⭐⭐</a></li>
+<li><a href="#các-công-cụ-phần-mềm-cho-site-tmđt"
+id="toc-các-công-cụ-phần-mềm-cho-site-tmđt">2.4. CÁC CÔNG CỤ PHẦN MỀM
+CHO SITE TMĐT</a>
+<ul>
+<li><a href="#a-site-management-tools"
+id="toc-a-site-management-tools">a) Site Management Tools</a></li>
+<li><a href="#b-dynamic-page-generation-tools"
+id="toc-b-dynamic-page-generation-tools">b) Dynamic Page Generation
+Tools ⭐</a></li>
+<li><a href="#c-application-servers" id="toc-c-application-servers">c)
+Application Servers</a></li>
+<li><a href="#d-e-commerce-merchant-server-software"
+id="toc-d-e-commerce-merchant-server-software">d) E-commerce Merchant
+Server Software ⭐</a></li>
+</ul></li>
+<li><a href="#tối-ưu-hóa-nền-tảng-phần-cứng"
+id="toc-tối-ưu-hóa-nền-tảng-phần-cứng">2.5. TỐI ƯU HÓA NỀN TẢNG PHẦN
+CỨNG</a>
+<ul>
+<li><a href="#a-phía-cầu-demand-side" id="toc-a-phía-cầu-demand-side">a)
+Phía cầu (Demand Side)</a></li>
+<li><a href="#b-phía-cung-supply-side-scalability"
+id="toc-b-phía-cung-supply-side-scalability">b) Phía cung (Supply Side)
+— Scalability ⭐</a></li>
+</ul></li>
+<li><a href="#thiết-kế-website-tmđt" id="toc-thiết-kế-website-tmđt">2.6.
+THIẾT KẾ WEBSITE TMĐT</a>
+<ul>
+<li><a href="#a-tối-ưu-công-cụ-tìm-kiếm-seo"
+id="toc-a-tối-ưu-công-cụ-tìm-kiếm-seo">a) Tối ưu công cụ tìm kiếm
+(SEO)</a></li>
+<li><a href="#b-các-tính-năng-website-làm-khách-hàng-khó-chịu"
+id="toc-b-các-tính-năng-website-làm-khách-hàng-khó-chịu">b) Các tính
+năng website làm KHÁCH HÀNG KHÓ CHỊU ⭐⭐</a></li>
+<li><a
+href="#c-tám-yếu-tố-quan-trọng-nhất-của-thiết-kế-site-tmđt-thành-công"
+id="toc-c-tám-yếu-tố-quan-trọng-nhất-của-thiết-kế-site-tmđt-thành-công">c)
+Tám yếu tố quan trọng nhất của thiết kế site TMĐT thành công
+⭐⭐</a></li>
+<li><a href="#d-công-cụ-tạo-tương-tác-và-nội-dung-động"
+id="toc-d-công-cụ-tạo-tương-tác-và-nội-dung-động">d) Công cụ tạo tương
+tác và nội dung động</a></li>
+<li><a href="#e-công-cụ-cá-nhân-hóa" id="toc-e-công-cụ-cá-nhân-hóa">e)
+Công cụ cá nhân hóa ⭐</a></li>
+<li><a href="#f-bộ-chính-sách-thông-tin-information-policy-set"
+id="toc-f-bộ-chính-sách-thông-tin-information-policy-set">f) Bộ chính
+sách thông tin (Information Policy Set)</a></li>
+</ul></li>
+<li><a href="#phát-triển-website-và-ứng-dụng-di-động"
+id="toc-phát-triển-website-và-ứng-dụng-di-động">2.7. PHÁT TRIỂN WEBSITE
+VÀ ỨNG DỤNG DI ĐỘNG ⭐</a>
+<ul>
+<li><a href="#a-bốn-loại-phần-mềm-m-commerce"
+id="toc-a-bốn-loại-phần-mềm-m-commerce">a) Bốn loại phần mềm
+m-commerce</a></li>
+<li><a
+href="#b-bốn-đặc-điểm-riêng-phải-tính-đến-khi-thiết-kế-hiện-diện-di-động"
+id="toc-b-bốn-đặc-điểm-riêng-phải-tính-đến-khi-thiết-kế-hiện-diện-di-động">b)
+Bốn đặc điểm riêng phải tính đến khi thiết kế hiện diện di động
+⭐⭐</a></li>
+<li><a href="#c-cân-nhắc-thiết-kế" id="toc-c-cân-nhắc-thiết-kế">c) Cân
+nhắc thiết kế</a></li>
+</ul></li>
+<li><a href="#phần-mềm-giỏ-hàng-shopping-cart-software"
+id="toc-phần-mềm-giỏ-hàng-shopping-cart-software">2.8. PHẦN MỀM GIỎ HÀNG
+(SHOPPING CART SOFTWARE) ⭐⭐⭐</a>
+<ul>
+<li><a href="#a-định-nghĩa" id="toc-a-định-nghĩa">a) Định nghĩa</a></li>
+<li><a href="#b-chín-tính-năng-quan-trọng-của-phần-mềm-giỏ-hàng"
+id="toc-b-chín-tính-năng-quan-trọng-của-phần-mềm-giỏ-hàng">b) Chín tính
+năng quan trọng của phần mềm giỏ hàng ⭐</a></li>
+<li><a href="#c-quy-trình-mua-hàng-trực-tuyến-qua-phần-mềm-giỏ-hàng"
+id="toc-c-quy-trình-mua-hàng-trực-tuyến-qua-phần-mềm-giỏ-hàng">c) QUY
+TRÌNH MUA HÀNG TRỰC TUYẾN QUA PHẦN MỀM GIỎ HÀNG ⭐⭐⭐</a></li>
+<li><a href="#d-ba-loại-phần-mềm-giỏ-hàng"
+id="toc-d-ba-loại-phần-mềm-giỏ-hàng">d) Ba loại phần mềm giỏ hàng
+⭐</a></li>
+</ul></li>
+<li><a href="#quản-trị-quan-hệ-khách-hàng-crm"
+id="toc-quản-trị-quan-hệ-khách-hàng-crm">2.9. QUẢN TRỊ QUAN HỆ KHÁCH
+HÀNG (CRM) ⭐⭐</a>
+<ul>
+<li><a href="#a-crm-là-gì" id="toc-a-crm-là-gì">a) CRM là gì?</a></li>
+<li><a href="#b-các-thành-phần-của-hệ-thống-crm-điển-hình"
+id="toc-b-các-thành-phần-của-hệ-thống-crm-điển-hình">b) Các thành phần
+của hệ thống CRM điển hình ⭐⭐</a></li>
+<li><a href="#c-phần-mềm-crm" id="toc-c-phần-mềm-crm">c) Phần mềm
+CRM</a></li>
+</ul></li>
+<li><a href="#quản-trị-chuỗi-cung-ứng-scm"
+id="toc-quản-trị-chuỗi-cung-ứng-scm">2.10. QUẢN TRỊ CHUỖI CUNG ỨNG (SCM)
+⭐⭐⭐</a>
+<ul>
+<li><a href="#a-định-nghĩa-1" id="toc-a-định-nghĩa-1">a) Định
+nghĩa</a></li>
+<li><a href="#b-thành-viên-của-chuỗi-cung-ứng"
+id="toc-b-thành-viên-của-chuỗi-cung-ứng">b) Thành viên của chuỗi cung
+ứng ⭐⭐⭐</a></li>
+<li><a href="#c-một-chuỗi-cung-ứng-điển-hình-ví-dụ-the-b2b-company"
+id="toc-c-một-chuỗi-cung-ứng-điển-hình-ví-dụ-the-b2b-company">c) Một
+chuỗi cung ứng điển hình (ví dụ The B2B Company) ⭐⭐⭐</a></li>
+<li><a href="#d-tiếp-cận-push-và-pull-trong-scm"
+id="toc-d-tiếp-cận-push-và-pull-trong-scm">d) Tiếp cận PUSH và PULL
+trong SCM ⭐⭐⭐</a></li>
+<li><a href="#e-hai-mô-hình-thay-thế-của-chuỗi-giá-trị"
+id="toc-e-hai-mô-hình-thay-thế-của-chuỗi-giá-trị">e) Hai mô hình thay
+thế của chuỗi giá trị ⭐⭐⭐</a></li>
+<li><a href="#f-hạ-tầng-httt-điển-hình-cho-scm"
+id="toc-f-hạ-tầng-httt-điển-hình-cho-scm">f) Hạ tầng HTTT điển hình cho
+SCM ⭐⭐⭐</a></li>
+<li><a href="#g-lợi-ích-của-việc-áp-dụng-httt-vào-scm"
+id="toc-g-lợi-ích-của-việc-áp-dụng-httt-vào-scm">g) Lợi ích của việc áp
+dụng HTTT vào SCM ⭐⭐</a></li>
+</ul></li>
+<li><a href="#e-procurement-mua-sắm-điện-tử"
+id="toc-e-procurement-mua-sắm-điện-tử">2.11. E-PROCUREMENT (MUA SẮM ĐIỆN
+TỬ) ⭐⭐⭐</a>
+<ul>
+<li><a href="#a-định-nghĩa-2" id="toc-a-định-nghĩa-2">a) Định
+nghĩa</a></li>
+<li><a href="#b-5-quyền-5-rights-của-e-procurement"
+id="toc-b-5-quyền-5-rights-của-e-procurement">b) 5 quyền (5 rights) của
+E-procurement ⭐⭐</a></li>
+<li><a href="#c-các-hoạt-động-mua-sắm-chính-trong-một-tổ-chức"
+id="toc-c-các-hoạt-động-mua-sắm-chính-trong-một-tổ-chức">c) CÁC HOẠT
+ĐỘNG MUA SẮM CHÍNH TRONG MỘT TỔ CHỨC ⭐⭐⭐</a></li>
+<li><a href="#d-các-loại-hình-mua-sắm"
+id="toc-d-các-loại-hình-mua-sắm">d) Các loại hình mua sắm ⭐</a></li>
+<li><a href="#e-tám-loại-trung-gian-trong-mua-sắm-trực-tuyến"
+id="toc-e-tám-loại-trung-gian-trong-mua-sắm-trực-tuyến">e) Tám loại
+trung gian trong mua sắm trực tuyến</a></li>
+<li><a href="#f-rủi-ro-và-tác-động-của-e-procurement"
+id="toc-f-rủi-ro-và-tác-động-của-e-procurement">f) Rủi ro và tác động
+của E-procurement ⭐⭐</a></li>
+<li><a href="#g-triển-khai-e-procurement"
+id="toc-g-triển-khai-e-procurement">g) Triển khai E-procurement
+⭐⭐</a></li>
+<li><a href="#h-ba-mô-hình-e-procurement-cho-người-mua"
+id="toc-h-ba-mô-hình-e-procurement-cho-người-mua">h) Ba mô hình
+E-procurement cho người mua ⭐⭐⭐</a></li>
+<li><a href="#i-các-loại-thị-trường-marketplace"
+id="toc-i-các-loại-thị-trường-marketplace">i) Các loại thị trường
+(Marketplace) ⭐</a></li>
+</ul></li>
+<li><a href="#hoạch-định-nguồn-lực-doanh-nghiệp-erp"
+id="toc-hoạch-định-nguồn-lực-doanh-nghiệp-erp">2.12. HOẠCH ĐỊNH NGUỒN
+LỰC DOANH NGHIỆP (ERP) ⭐⭐</a>
+<ul>
+<li><a href="#a-erp-là-gì" id="toc-a-erp-là-gì">a) ERP là gì?</a></li>
+<li><a href="#b-tích-hợp-hệ-thống-erp-với-edi"
+id="toc-b-tích-hợp-hệ-thống-erp-với-edi">b) Tích hợp hệ thống ERP với
+EDI ⭐⭐⭐</a></li>
+<li><a href="#c-nhà-cung-cấp-erp" id="toc-c-nhà-cung-cấp-erp">c) Nhà
+cung cấp ERP</a></li>
+</ul></li>
+<li><a href="#web-hosting" id="toc-web-hosting">2.13. WEB HOSTING
+⭐⭐</a>
+<ul>
+<li><a href="#a-định-nghĩa-3" id="toc-a-định-nghĩa-3">a) Định
+nghĩa</a></li>
+<li><a href="#b-tính-năng-do-nhà-cung-cấp-web-hosting-cung-cấp"
+id="toc-b-tính-năng-do-nhà-cung-cấp-web-hosting-cung-cấp">b) Tính năng
+do nhà cung cấp Web Hosting cung cấp</a></li>
+<li><a href="#c-tiêu-chí-chọn-nhà-cung-cấp-web-hosting"
+id="toc-c-tiêu-chí-chọn-nhà-cung-cấp-web-hosting">c) Tiêu chí chọn nhà
+cung cấp Web Hosting ⭐</a></li>
+<li><a href="#d-năm-loại-web-hosting" id="toc-d-năm-loại-web-hosting">d)
+Năm loại Web Hosting ⭐⭐⭐</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#phần-3.-an-ninh-trực-tuyến-online-security"
+id="toc-phần-3.-an-ninh-trực-tuyến-online-security">PHẦN 3. AN NINH TRỰC
+TUYẾN (ONLINE SECURITY)</a>
+<ul>
+<li><a href="#môi-trường-an-ninh-tmđt"
+id="toc-môi-trường-an-ninh-tmđt">3.1. Môi trường an ninh TMĐT</a></li>
+<li><a href="#sáu-chiều-an-ninh-tmđt"
+id="toc-sáu-chiều-an-ninh-tmđt">3.2. SÁU CHIỀU AN NINH TMĐT
+⭐⭐⭐</a></li>
+<li><a href="#ba-điểm-dễ-bị-tổn-thương"
+id="toc-ba-điểm-dễ-bị-tổn-thương">3.3. BA ĐIỂM DỄ BỊ TỔN THƯƠNG ⭐⭐</a>
+<ul>
+<li><a href="#một-giao-dịch-tmđt-điển-hình"
+id="toc-một-giao-dịch-tmđt-điển-hình">Một giao dịch TMĐT điển hình
+⭐⭐⭐</a></li>
+<li><a href="#các-điểm-dễ-bị-tổn-thương-trong-giao-dịch-tmđt"
+id="toc-các-điểm-dễ-bị-tổn-thương-trong-giao-dịch-tmđt">Các điểm dễ bị
+tổn thương trong giao dịch TMĐT ⭐⭐⭐</a></li>
+</ul></li>
+<li><a href="#các-mối-đe-dọa-an-ninh"
+id="toc-các-mối-đe-dọa-an-ninh">3.4. CÁC MỐI ĐE DỌA AN NINH ⭐⭐</a>
+<ul>
+<li><a href="#a-malicious-code-mã-độc"
+id="toc-a-malicious-code-mã-độc">a) Malicious Code (Mã độc)</a></li>
+<li><a
+href="#b-potentially-unwanted-programs-chương-trình-không-mong-muốn"
+id="toc-b-potentially-unwanted-programs-chương-trình-không-mong-muốn">b)
+Potentially Unwanted Programs (Chương trình không mong muốn)</a></li>
+<li><a href="#c-phishing" id="toc-c-phishing">c) Phishing</a></li>
+<li><a href="#d-hacking-cybervandalism-và-hacktivism"
+id="toc-d-hacking-cybervandalism-và-hacktivism">d) Hacking,
+Cybervandalism và Hacktivism</a></li>
+<li><a href="#e-data-breaches-rò-rỉ-dữ-liệu"
+id="toc-e-data-breaches-rò-rỉ-dữ-liệu">e) Data Breaches (Rò rỉ dữ
+liệu)</a></li>
+<li><a href="#f-credit-card-fraudtheft"
+id="toc-f-credit-card-fraudtheft">f) Credit Card Fraud/Theft</a></li>
+<li><a href="#g-identity-fraudtheft" id="toc-g-identity-fraudtheft">g)
+Identity Fraud/Theft</a></li>
+<li><a href="#h-spoofing-pharming-và-spam-websites"
+id="toc-h-spoofing-pharming-và-spam-websites">h) Spoofing, Pharming và
+Spam websites</a></li>
+<li><a href="#i-sniffing-và-man-in-the-middle"
+id="toc-i-sniffing-và-man-in-the-middle">i) Sniffing và
+Man-In-The-Middle</a></li>
+<li><a href="#j-dos-và-ddos" id="toc-j-dos-và-ddos">j) DoS và DDoS
+⭐</a></li>
+<li><a href="#k-insider-attacks-tấn-công-từ-bên-trong"
+id="toc-k-insider-attacks-tấn-công-từ-bên-trong">k) Insider Attacks (Tấn
+công từ bên trong) ⭐</a></li>
+<li><a href="#l-phần-mềm-thiết-kế-kém"
+id="toc-l-phần-mềm-thiết-kế-kém">l) Phần mềm thiết kế kém</a></li>
+<li><a href="#m-các-môi-trường-rủi-ro-khác"
+id="toc-m-các-môi-trường-rủi-ro-khác">m) Các môi trường rủi ro
+khác</a></li>
+</ul></li>
+<li><a href="#giải-pháp-công-nghệ" id="toc-giải-pháp-công-nghệ">3.5.
+GIẢI PHÁP CÔNG NGHỆ ⭐⭐⭐</a>
+<ul>
+<li><a href="#a-mã-hóa-encryption" id="toc-a-mã-hóa-encryption">a) Mã
+hóa (Encryption) ⭐⭐</a></li>
+<li><a href="#b-mã-hóa-khóa-đối-xứng-symmetric-key-cryptography"
+id="toc-b-mã-hóa-khóa-đối-xứng-symmetric-key-cryptography">b) Mã hóa
+khóa đối xứng (Symmetric Key Cryptography)</a></li>
+<li><a href="#c-mã-hóa-khóa-công-khai-public-key-cryptography"
+id="toc-c-mã-hóa-khóa-công-khai-public-key-cryptography">c) Mã hóa khóa
+công khai (Public Key Cryptography) ⭐⭐</a></li>
+<li><a href="#d-chữ-ký-số-và-hash-digest"
+id="toc-d-chữ-ký-số-và-hash-digest">d) Chữ ký số và Hash Digest
+⭐⭐</a></li>
+<li><a href="#e-digital-envelope-phong-bì-số"
+id="toc-e-digital-envelope-phong-bì-số">e) Digital Envelope (Phong bì
+số) ⭐</a></li>
+<li><a href="#f-chứng-thư-số-và-pki" id="toc-f-chứng-thư-số-và-pki">f)
+Chứng thư số và PKI ⭐⭐</a></li>
+<li><a href="#g-bảo-mật-kênh-truyền-thông"
+id="toc-g-bảo-mật-kênh-truyền-thông">g) Bảo mật kênh truyền thông
+⭐</a></li>
+<li><a href="#h-bảo-vệ-mạng" id="toc-h-bảo-vệ-mạng">h) Bảo vệ mạng
+⭐</a></li>
+<li><a href="#i-bảo-vệ-server-và-client"
+id="toc-i-bảo-vệ-server-và-client">i) Bảo vệ server và client</a></li>
+</ul></li>
+<li><a href="#chính-sách-quản-trị-quy-trình-nghiệp-vụ-và-luật-công"
+id="toc-chính-sách-quản-trị-quy-trình-nghiệp-vụ-và-luật-công">3.6. CHÍNH
+SÁCH QUẢN TRỊ, QUY TRÌNH NGHIỆP VỤ VÀ LUẬT CÔNG ⭐⭐</a>
+<ul>
+<li><a href="#kế-hoạch-an-ninh-quy-trình-5-bước"
+id="toc-kế-hoạch-an-ninh-quy-trình-5-bước">KẾ HOẠCH AN NINH: QUY TRÌNH 5
+BƯỚC ⭐⭐⭐</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#phần-4.-hệ-thống-thanh-toán-trực-tuyến"
+id="toc-phần-4.-hệ-thống-thanh-toán-trực-tuyến">PHẦN 4. HỆ THỐNG THANH
+TOÁN TRỰC TUYẾN</a>
+<ul>
+<li><a href="#các-thực-thể-của-e-payment"
+id="toc-các-thực-thể-của-e-payment">4.1. Các thực thể của E-payment
+⭐⭐</a></li>
+<li><a href="#bốn-giai-đoạn-của-e-payment"
+id="toc-bốn-giai-đoạn-của-e-payment">4.2. BỐN GIAI ĐOẠN CỦA E-PAYMENT
+⭐⭐⭐</a></li>
+<li><a href="#phân-loại-hệ-thống-thanh-toán"
+id="toc-phân-loại-hệ-thống-thanh-toán">4.3. Phân loại hệ thống thanh
+toán ⭐⭐</a>
+<ul>
+<li><a href="#a-theo-công-cụ-thanh-toán-payment-instruments"
+id="toc-a-theo-công-cụ-thanh-toán-payment-instruments">a) Theo công cụ
+thanh toán (Payment instruments)</a></li>
+<li><a href="#b-theo-thời-điểm-thanh-toán-payment-time"
+id="toc-b-theo-thời-điểm-thanh-toán-payment-time">b) Theo thời điểm
+thanh toán (Payment time) ⭐⭐</a></li>
+<li><a href="#c-ưu-điểm-của-hệ-thống-online"
+id="toc-c-ưu-điểm-của-hệ-thống-online">c) Ưu điểm của hệ thống
+online</a></li>
+</ul></li>
+<li><a href="#giao-thức-set-secure-electronic-transaction"
+id="toc-giao-thức-set-secure-electronic-transaction">4.4. GIAO THỨC SET
+(SECURE ELECTRONIC TRANSACTION) ⭐⭐⭐</a>
+<ul>
+<li><a href="#a-set-là-gì" id="toc-a-set-là-gì">a) SET là gì?</a></li>
+<li><a href="#b-năm-đặc-tính-chính-của-set"
+id="toc-b-năm-đặc-tính-chính-của-set">b) Năm đặc tính chính của
+SET</a></li>
+<li><a href="#c-sáu-bên-tham-gia-hệ-thống-set"
+id="toc-c-sáu-bên-tham-gia-hệ-thống-set">c) Sáu bên tham gia hệ thống
+SET ⭐</a></li>
+<li><a href="#d-trình-tự-giao-dịch-set-11-bước"
+id="toc-d-trình-tự-giao-dịch-set-11-bước">d) TRÌNH TỰ GIAO DỊCH SET (11
+bước) ⭐⭐⭐</a></li>
+<li><a href="#e-ưu-và-nhược-điểm-của-set"
+id="toc-e-ưu-và-nhược-điểm-của-set">e) Ưu và nhược điểm của SET
+⭐⭐</a></li>
+</ul></li>
+<li><a href="#hệ-thống-thanh-toán-tmđt"
+id="toc-hệ-thống-thanh-toán-tmđt">4.5. HỆ THỐNG THANH TOÁN TMĐT</a>
+<ul>
+<li><a href="#chu-trình-giao-dịch-thẻ-tín-dụng-trực-tuyến"
+id="toc-chu-trình-giao-dịch-thẻ-tín-dụng-trực-tuyến">CHU TRÌNH GIAO DỊCH
+THẺ TÍN DỤNG TRỰC TUYẾN ⭐⭐⭐</a></li>
+</ul></li>
+<li><a href="#các-hệ-thống-thanh-toán-thay-thế"
+id="toc-các-hệ-thống-thanh-toán-thay-thế">4.6. Các hệ thống thanh toán
+thay thế ⭐</a></li>
+<li><a href="#blockchain-và-tiền-mã-hóa"
+id="toc-blockchain-và-tiền-mã-hóa">4.7. Blockchain và Tiền mã hóa
+⭐⭐</a>
+<ul>
+<li><a href="#a-blockchain" id="toc-a-blockchain">a) Blockchain</a></li>
+<li><a href="#b-cryptocurrencies-tiền-mã-hóa"
+id="toc-b-cryptocurrencies-tiền-mã-hóa">b) Cryptocurrencies (Tiền mã
+hóa)</a></li>
+</ul></li>
+<li><a href="#checklist-ôn-chương-3" id="toc-checklist-ôn-chương-3">❖
+CHECKLIST ÔN CHƯƠNG 3</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="chương-3-công-nghệ-cho-e-business">CHƯƠNG 3 — CÔNG NGHỆ CHO
+E-BUSINESS</h1>
+<blockquote>
+<p><strong>Nội dung chương (4 phần):</strong> 1. Hệ thống thuế và pháp
+luật cho E-business 2. Phần mềm E-business và Web hosting 3. An ninh
+trực tuyến (Online security) 4. Hệ thống thanh toán trực tuyến (Online
+payment system)</p>
+</blockquote>
+<hr />
+<h1 id="phần-1.-hệ-thống-thuế-và-pháp-luật-cho-e-business">PHẦN 1. HỆ
+THỐNG THUẾ VÀ PHÁP LUẬT CHO E-BUSINESS</h1>
+<h2 id="mô-hình-tổ-chức-các-vấn-đề-đạo-đức-xã-hội-chính-trị">1.1. Mô
+hình tổ chức các vấn đề đạo đức – xã hội – chính trị ⭐</h2>
+<p>Các vấn đề do Internet và TMĐT đặt ra có thể nhìn ở <strong>ba cấp:
+cá nhân (individual), xã hội (social), chính trị
+(political)</strong>.</p>
+<p><strong>Bốn nhóm vấn đề chính (The Moral Dimensions of an Internet
+Society):</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Nhóm vấn đề</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Information rights</strong></td>
+<td>Quyền về thông tin (quyền riêng tư)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Property rights</strong></td>
+<td>Quyền sở hữu (sở hữu trí tuệ)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Governance</strong></td>
+<td>Quản trị (ai quản lý Internet, thuế, chủ quyền)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Public safety and welfare</strong></td>
+<td>An toàn và phúc lợi công cộng</td>
+</tr>
+</tbody>
+</table>
+<h2 id="quyền-riêng-tư-và-quyền-thông-tin">1.2. Quyền riêng tư và quyền
+thông tin ⭐⭐</h2>
+<blockquote>
+<p><strong>Privacy (Quyền riêng tư):</strong> <strong>quyền đạo đức của
+cá nhân được ở một mình, không bị giám sát hay can thiệp</strong> bởi cá
+nhân, tổ chức hoặc nhà nước khác.</p>
+</blockquote>
+<p><strong>Information privacy — 4 quyền:</strong> 1. Quyền <strong>kiểm
+soát thông tin</strong> được thu thập về mình 2. Quyền <strong>được biết
+khi nào thông tin bị thu thập và được đồng ý (consent)</strong> 3. Quyền
+được <strong>xử lý thông tin cá nhân theo trình tự chính đáng (due
+process)</strong> 4. Quyền có <strong>thông tin cá nhân được lưu trữ an
+toàn</strong></p>
+<p><strong>Khu vực công (Public sector):</strong> Quyền riêng tư có lịch
+sử lâu đời (Tu chính án 1, 4, 14 của Hoa Kỳ). Tuy nhiên các quyền riêng
+tư ngầm định trong Hiến pháp <strong>không bao phủ việc thu thập và sử
+dụng thông tin cá nhân</strong> ⇒ có <strong>Privacy Act 1974</strong>
+và luật liên bang/tiểu bang bảo vệ cá nhân khỏi can thiệp bất hợp lý của
+chính phủ.</p>
+<p><strong>Khu vực tư (Private sector):</strong> Luật riêng tư mang tính
+<strong>chắp vá (piecemeal)</strong>, áp dụng cho từng ngành cụ thể.
+Lịch sử ít có yêu sách riêng tư trong thị trường mở. Sự xuất hiện của
+Internet tạo ra <strong>kho dữ liệu cá nhân khổng lồ</strong> ⇒
+<strong>môi trường lý tưởng để doanh nghiệp và chính phủ xâm phạm quyền
+riêng tư</strong> (Google, Amazon, Netflix…).</p>
+<p><strong>Thông tin do website thu thập:</strong> - <strong>PII
+(Personally identifiable information)</strong> — thông tin định danh cá
+nhân - <strong>Anonymous information</strong> — thông tin ẩn danh</p>
+<p><strong>Các loại dữ liệu:</strong> tên, địa chỉ, điện thoại, email,
+số an sinh xã hội; tài khoản ngân hàng và thẻ tín dụng, giới tính, tuổi,
+nghề nghiệp, học vấn; <strong>dữ liệu sở thích, dữ liệu giao dịch, dữ
+liệu clickstream, loại trình duyệt</strong>.</p>
+<p><strong>Năm mối lo hàng đầu về quyền riêng tư trực tuyến:</strong> 1.
+<strong>Profiling and ad targeting</strong> (Lập hồ sơ và nhắm quảng
+cáo) 2. <strong>Social network privacy</strong> 3. <strong>Sharing of
+information by marketers</strong> 4. <strong>Mobile phone
+privacy</strong> 5. <strong>Digital assistant privacy</strong></p>
+<h3 id="profiling-behavioral-targeting-và-retargeting">Profiling,
+Behavioral Targeting và Retargeting</h3>
+<blockquote>
+<p><strong>Profiling:</strong> tạo <strong>ảnh dữ liệu (data
+images)</strong> đặc trưng hóa hành vi cá nhân và nhóm trên mạng. Gồm
+<strong>anonymous profiles</strong> và <strong>personal
+profiles</strong>; <strong>nhận diện khuôn mặt</strong> là chiều
+mới.</p>
+</blockquote>
+<p><strong>Advertising networks:</strong> theo dõi hành vi tiêu dùng và
+duyệt web; <strong>điều chỉnh động</strong> nội dung hiển thị; xây và
+làm mới hồ sơ người tiêu dùng.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Góc nhìn doanh nghiệp</th>
+<th>Góc nhìn người phê phán</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tăng hiệu quả quảng cáo</strong>, trợ giá cho nội dung miễn
+phí</td>
+<td><strong>Phá vỡ kỳ vọng về ẩn danh và riêng tư</strong></td>
+</tr>
+<tr>
+<td><strong>Cảm nhận được nhu cầu</strong> cho sản phẩm mới</td>
+<td><strong>Cho phép phân biệt giá (price discrimination)</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mạng xã hội:</strong> khuyến khích chia sẻ thông tin cá nhân;
+đặt ra thách thức riêng cho quyền riêng tư. Facebook: CSDL khổng lồ,
+phục vụ quảng cáo cho cả người không dùng Facebook, chia sẻ thông tin
+với bên thứ ba ⇒ <strong>mâu thuẫn giữa quyền kiểm soát thông tin cá
+nhân và mong muốn kiếm tiền từ mạng xã hội của tổ chức</strong>.</p>
+<p><strong>Thiết bị di động:</strong> ứng dụng cung cấp thông tin cá
+nhân cho nhà quảng cáo di động; theo dõi và lưu vị trí; theo dõi việc
+dùng ứng dụng khác. <strong>Theo dõi vị trí không ngừng.</strong> Tòa án
+Tối cao Mỹ phán quyết <strong>cảnh sát cần lệnh khám xét
+(warrant)</strong> trước khi khám điện thoại.</p>
+<h3 id="gdpr-bảo-vệ-quyền-riêng-tư-tại-châu-âu">GDPR — Bảo vệ quyền
+riêng tư tại châu Âu ⭐</h3>
+<ul>
+<li>Bảo vệ quyền riêng tư ở châu Âu <strong>mạnh hơn nhiều</strong> so
+với Mỹ.</li>
+<li><strong>GDPR 2016 (General Data Protection Regulation)</strong>:
+<ul>
+<li>Thay thế <strong>Data Protection Directive 1998</strong></li>
+<li>Áp dụng cho <strong>mọi tổ chức hoạt động tại EU</strong></li>
+<li><strong>Tăng cường quyền của công dân</strong> đối với dữ liệu cá
+nhân của họ</li>
+<li><strong>Tăng cường giám sát doanh nghiệp</strong> để đảm bảo tuân
+thủ</li>
+</ul></li>
+<li>Môi trường đã quay lưng với các công ty Mỹ như Facebook về việc
+<strong>thu thập và sử dụng dữ liệu cá nhân không giới
+hạn</strong>.</li>
+</ul>
+<h3 id="giải-pháp-công-nghệ-bảo-vệ-quyền-riêng-tư">Giải pháp công nghệ
+bảo vệ quyền riêng tư</h3>
+<p>Intelligent Tracking Protection (ITP) · Differential privacy software
+· Privacy default browsers · Message encryption · Spyware blockers ·
+Pop-up &amp; ad blockers · Secure e-mail, anonymous remailers · Cookie
+managers · <strong>Public key encryption</strong>.</p>
+<p><strong>Bảo vệ quyền riêng tư như một ngành kinh doanh:</strong>
+<strong>Personal Data Economy (PDE)</strong>, <strong>Life Management
+tools</strong>; các <strong>nhóm vận động quyền riêng tư (privacy
+advocacy groups)</strong>.</p>
+<h2 id="quyền-sở-hữu-trí-tuệ">1.3. Quyền sở hữu trí tuệ ⭐⭐</h2>
+<blockquote>
+<p><strong>Intellectual property:</strong> <strong>mọi sản phẩm hữu hình
+và vô hình của trí tuệ con người.</strong></p>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Cấp độ</th>
+<th>Vấn đề</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Đạo đức</strong></td>
+<td>Nên xử lý tài sản thuộc về người khác như thế nào?</td>
+</tr>
+<tr>
+<td><strong>Xã hội</strong></td>
+<td>Việc bảo vệ sở hữu trí tuệ trong thời đại Internet còn giá trị
+không?</td>
+</tr>
+<tr>
+<td><strong>Chính trị</strong></td>
+<td>Làm sao điều tiết/quản trị Internet và TMĐT để bảo vệ sở hữu trí
+tuệ?</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bốn hình thức bảo hộ chính:</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Hình thức</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Copyright</strong> (Bản quyền)</td>
+<td>Bảo hộ <strong>hình thức thể hiện gốc (không bảo hộ ý
+tưởng)</strong> khỏi bị sao chép trong một khoảng thời
+gian.<br><strong>Digital Millennium Copyright Act 1998 (DMCA)</strong> —
+nỗ lực lớn đầu tiên điều chỉnh luật bản quyền cho thời đại Internet;
+thực thi Hiệp ước Bản quyền WIPO, <strong>cấm sản xuất, phân phối hoặc
+sử dụng thiết bị vượt qua các biện pháp bảo vệ kỹ thuật</strong> đối với
+tài liệu có bản quyền</td>
+</tr>
+<tr>
+<td><strong>Patent</strong> (Bằng sáng chế)</td>
+<td>Trao cho chủ sở hữu <strong>độc quyền 20 năm</strong> đối với ý
+tưởng đằng sau một sáng chế. Sáng chế phải <strong>mới và có tính sáng
+tạo (new and novel)</strong>. Khuyến khích nhà sáng chế; thúc đẩy phổ
+biến kỹ thuật mới qua <strong>cấp phép (licensing)</strong>;
+<strong>giảm cạnh tranh do nâng rào cản gia nhập</strong></td>
+</tr>
+<tr>
+<td><strong>Trademark</strong> (Nhãn hiệu)</td>
+<td><strong>Nhận diện, phân biệt hàng hóa và chỉ dẫn nguồn
+gốc</strong>.<br>Mục đích: đảm bảo người tiêu dùng <strong>nhận đúng thứ
+đã trả tiền/kỳ vọng</strong>; bảo vệ chủ sở hữu khỏi <strong>sao chép
+lậu và chiếm đoạt</strong>. Vấn đề: <strong>xâm phạm
+(infringement)</strong></td>
+</tr>
+<tr>
+<td><strong>Trade Secrets</strong> (Bí mật kinh doanh)</td>
+<td>Quy trình kinh doanh, công thức, phương pháp sản xuất và cung cấp
+dịch vụ. <strong>Không cần độc đáo hay mới</strong>. Điều kiện: (a)
+<strong>bí mật</strong>, (b) <strong>có giá trị thương mại</strong> với
+chủ sở hữu, (c) <strong>chủ sở hữu đã thực hiện các bước bảo
+vệ</strong>. Luật: <strong>Defend Trade Secrets Act 2016</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mục tiêu của luật sở hữu trí tuệ:</strong> <strong>cân bằng
+hai lợi ích cạnh tranh nhau — lợi ích công (public) và lợi ích tư
+(private)</strong>.</p>
+<p><strong>Bằng sáng chế trong TMĐT:</strong> - <strong>1998 — State
+Street Bank &amp; Trust v. Signature Financial Group:</strong> công nhận
+<strong>business method patents</strong>. - <strong>2014 — vụ Alice
+Corporation:</strong> Tòa án Tối cao phán quyết <strong>phần mềm KHÔNG
+làm cho một phương pháp kinh doanh cơ bản hoặc ý tưởng trừu tượng trở
+nên có thể cấp bằng sáng chế</strong>. - Ví dụ: <strong>Amazon —
+One-click purchasing</strong>; <strong>Akamai — hệ thống lưu trữ toàn
+cầu để phân phối nội dung Internet</strong>.</p>
+<h2 id="hệ-thống-văn-bản-pháp-luật-việt-nam">1.4. Hệ thống văn bản pháp
+luật Việt Nam ⭐</h2>
+<p><em>Hình 2 — Vietnam Legal Document System (theo Luật Ban hành văn
+bản quy phạm pháp luật số 64/2026/QH15 ngày 19/02/2025 và Luật số
+87/2025/QH15 sửa đổi, bổ sung — hiệu lực từ 01/7/2025).</em></p>
+<h3 id="định-hướng-chủ-trương-của-bộ-chính-trị">Định hướng, chủ trương
+của Bộ Chính trị</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Nghị quyết</th>
+<th>Ngày</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nghị quyết 57-NQ/TW</strong></td>
+<td>22/12/2024</td>
+<td>Về <strong>đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo
+và chuyển đổi số quốc gia</strong><br>→ <strong>Nghị quyết
+03/NQ-CP</strong> ngày 09/01/2025 của Chính phủ ban hành chương trình
+hành động thực hiện NQ 57</td>
+</tr>
+<tr>
+<td><strong>Nghị quyết 59-NQ/TW</strong></td>
+<td>24/01/2025</td>
+<td>Về <strong>hội nhập quốc tế trong tình hình mới</strong></td>
+</tr>
+<tr>
+<td><strong>Nghị quyết 66-NQ/TW</strong></td>
+<td>30/4/2025</td>
+<td>Về <strong>đổi mới công tác xây dựng và thi hành pháp luật</strong>
+đáp ứng yêu cầu phát triển đất nước trong kỷ nguyên mới</td>
+</tr>
+<tr>
+<td><strong>Nghị quyết 68-NQ/TW</strong></td>
+<td>04/5/2025</td>
+<td>Về <strong>phát triển kinh tế tư nhân</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="các-luật-liên-quan-tới-e-business-ở-việt-nam">Các luật liên quan
+tới E-business ở Việt Nam</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Luật</th>
+<th>Số hiệu / Ngày</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bộ luật Dân sự</strong></td>
+<td>91/2015/QH13, ngày 24/11/2015</td>
+</tr>
+<tr>
+<td><strong>Luật Doanh nghiệp</strong></td>
+<td>59/2020/QH14, ngày 11/01/2020 (sửa đổi bởi Luật 76/2025/QH15, hiệu
+lực 01/7/2025)</td>
+</tr>
+<tr>
+<td><strong>Luật Thương mại</strong></td>
+<td>17/VBHN-VPQH, ngày 05/7/2019</td>
+</tr>
+<tr>
+<td><strong>Luật Quản lý thuế</strong></td>
+<td>38/2019/QH14, ngày 13/6/2019 (sửa đổi bởi Luật 56/2024/QH15, hiệu
+lực 01/01/2025)</td>
+</tr>
+<tr>
+<td><strong>Luật Đầu tư</strong></td>
+<td>143/2025/QH15, ngày 11/12/2025 (hiệu lực chính thức 01/3/2026)</td>
+</tr>
+<tr>
+<td><strong>Luật Đầu tư công</strong></td>
+<td>39/2019/QH14, ngày 13/6/2019 (sửa đổi bởi Luật 58/2024/QH15 và
+90/2025/QH15, hiệu lực 01/7/2025)</td>
+</tr>
+<tr>
+<td><strong>Luật Đầu tư theo phương thức đối tác công tư
+(PPP)</strong></td>
+<td>64/2020/QH14, ngày 18/6/2020 (sửa đổi bởi Luật 57/2024/QH15 và
+90/2025/QH15, hiệu lực 01/7/2025)</td>
+</tr>
+<tr>
+<td><strong>Luật Cạnh tranh</strong></td>
+<td>23/2018/QH14, ngày 12/6/2018</td>
+</tr>
+<tr>
+<td><strong>Luật Đấu thầu</strong></td>
+<td>43/2013/QH13, ngày 26/11/2013 (sửa đổi bởi VBHN 74/VBHN-VPQH ngày
+25/3/2026)</td>
+</tr>
+<tr>
+<td><strong>Luật chuyên ngành khác</strong></td>
+<td>Luật Sở hữu trí tuệ; Luật Viễn thông; Luật Báo chí; Luật Bảo vệ môi
+trường; Luật Công nghệ thông tin; <strong>Luật An ninh
+mạng</strong>…</td>
+</tr>
+</tbody>
+</table>
+<h3 id="văn-bản-pháp-luật-riêng-về-thương-mại-điện-tử-tại-việt-nam">Văn
+bản pháp luật riêng về Thương mại điện tử tại Việt Nam ⭐⭐</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Số hiệu</th>
+<th>Tên văn bản</th>
+<th>Ngày ban hành</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>08/VBHN-BCT</strong></td>
+<td>Thông tư của Bộ Công Thương: <strong>Quy định về quản lý hoạt động
+TMĐT qua ứng dụng trên thiết bị di động</strong></td>
+<td>03/02/2026</td>
+</tr>
+<tr>
+<td><strong>85/2021/NĐ-CP</strong></td>
+<td>Nghị định của Chính phủ: <strong>Sửa đổi, bổ sung một số điều của
+Nghị định 52/2013/NĐ-CP về thương mại điện tử</strong></td>
+<td>28/9/2021</td>
+</tr>
+<tr>
+<td><strong>117/2025/NĐ-CP</strong></td>
+<td>Nghị định của Chính phủ: <strong>Quy định quản lý thuế đối với hoạt
+động kinh doanh TMĐT và nền tảng số của hộ, cá nhân</strong></td>
+<td>09/6/2025</td>
+</tr>
+<tr>
+<td><strong>98/2020/NĐ-CP</strong></td>
+<td>Nghị định: <strong>Xử phạt vi phạm hành chính trong hoạt động thương
+mại, sản xuất, buôn bán hàng giả, hàng cấm và bảo vệ quyền lợi người
+tiêu dùng</strong><br>Sửa đổi bởi NĐ 17/2022/NĐ-CP; NĐ 24/2025/NĐ-CP;
+VBHN 03/VBHN-BCT ngày 23/4/2025</td>
+<td>09/9/2020</td>
+</tr>
+<tr>
+<td><strong>122/2025/QH15</strong></td>
+<td><strong>LUẬT THƯƠNG MẠI ĐIỆN TỬ</strong> — hiệu lực từ
+<strong>01/7/2026</strong></td>
+<td>10/12/2025</td>
+</tr>
+</tbody>
+</table>
+<h2 id="các-loại-thuế-liên-quan-tới-e-business-ở-việt-nam">1.5. Các loại
+thuế liên quan tới E-business ở Việt Nam ⭐</h2>
+<p><strong>Thuế ảnh hưởng tới hầu hết hoạt động kinh doanh &amp; đầu
+tư:</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>Loại thuế</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Thuế thu nhập doanh nghiệp</strong> (Corporate income
+tax)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Thuế nhà thầu nước ngoài</strong> (Foreign Contractor
+Tax)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Thuế trên lãi vốn</strong> (Capital gains tax)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Thuế giá trị gia tăng — VAT</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Các loại thuế khấu trừ tại nguồn</strong> (Withholding
+taxes)</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Thuế nhập khẩu</strong> (Import duties)</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Thuế thu nhập cá nhân</strong> — với cả người Việt và người
+nước ngoài</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Bảo hiểm xã hội, bảo hiểm thất nghiệp, bảo hiểm y
+tế</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Các thuế khác áp dụng cho hoạt động cụ thể:</strong> Thuế
+tiêu thụ đặc biệt · Thuế tài nguyên · Thuế tài sản · Thuế xuất khẩu ·
+Thuế bảo vệ môi trường · Tiền thuê đất.</p>
+<hr />
+<h1 id="phần-2.-phần-mềm-e-business-và-web-hosting">PHẦN 2. PHẦN MỀM
+E-BUSINESS VÀ WEB HOSTING</h1>
+<h2 id="xây-dựng-sự-hiện-diện-tmđt-building-e-commerce-presence">2.1.
+XÂY DỰNG SỰ HIỆN DIỆN TMĐT (Building E-commerce Presence)</h2>
+<h3 id="a-hình-dung-sự-hiện-diện-tmđt-các-câu-hỏi-cần-trả-lời">a) Hình
+dung sự hiện diện TMĐT — các câu hỏi cần trả lời ⭐</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Câu hỏi</th>
+<th>Nội dung cần xác định</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>What’s the idea?</strong> (Ý tưởng là gì — <strong>the
+vision</strong>)</td>
+<td>Mission statement · Target audience · Intended market space ·
+Strategic analysis · Marketing matrix · Development timeline ·
+<strong>Preliminary budget</strong></td>
+</tr>
+<tr>
+<td><strong>Where’s the money?</strong> (Tiền ở đâu)</td>
+<td><strong>Business model(s)</strong> · <strong>Revenue
+model(s)</strong></td>
+</tr>
+<tr>
+<td><strong>Who and where is the target audience?</strong></td>
+<td>Nhân khẩu học, lối sống, mô hình tiêu dùng…</td>
+</tr>
+<tr>
+<td><strong>What does the marketplace characterize?</strong></td>
+<td>Quy mô, tăng trưởng, nhân khẩu, cấu trúc…</td>
+</tr>
+<tr>
+<td><strong>Where’s the content coming from?</strong></td>
+<td>Nguồn nội dung</td>
+</tr>
+<tr>
+<td><strong>Know yourself</strong></td>
+<td><strong>SWOT analysis</strong></td>
+</tr>
+<tr>
+<td><strong>Develop an e-commerce presence map</strong></td>
+<td>Bản đồ hiện diện</td>
+</tr>
+<tr>
+<td><strong>Develop a timeline</strong></td>
+<td><strong>Milestones</strong> (các mốc)</td>
+</tr>
+<tr>
+<td><strong>How much will this cost?</strong></td>
+<td>Website đơn giản: <strong>tới $5.000</strong><br>Start-up nhỏ:
+<strong>$25.000 – $50.000</strong><br>Website doanh nghiệp lớn:
+<strong>$100.000+ tới hàng triệu</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="b-e-commerce-presence-map">b) E-commerce Presence Map ⭐⭐</h3>
+<figure>
+<img src="assets/C3p2-09.png" alt="E-commerce Presence Map" />
+<figcaption aria-hidden="true">E-commerce Presence Map</figcaption>
+</figure>
+<p><em>Hình 4 — E-commerce Presence Map.</em></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Type of presence</strong></th>
+<th><strong>Platform</strong></th>
+<th><strong>Activity</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Website / app</strong></td>
+<td>Traditional · Mobile · Tablet</td>
+<td><strong>Search · Display · Affiliates · Sponsorships</strong></td>
+</tr>
+<tr>
+<td><strong>Social media</strong></td>
+<td>Facebook · Twitter · Pinterest · Instagram · Blogs</td>
+<td><strong>Conversation · Engagement · Sharing · Advice</strong></td>
+</tr>
+<tr>
+<td><strong>Offline media</strong></td>
+<td>Print · TV · Radio</td>
+<td><strong>Education · Exposure · Branding</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="xây-dựng-site-tmđt-cách-tiếp-cận-hệ-thống">2.2. XÂY DỰNG SITE
+TMĐT: CÁCH TIẾP CẬN HỆ THỐNG</h2>
+<p><strong>Hai thách thức quản trị quan trọng nhất:</strong> 1.
+<strong>Hiểu rõ mục tiêu kinh doanh</strong> 2. <strong>Biết cách chọn
+công nghệ phù hợp</strong> để đạt mục tiêu đó</p>
+<p><strong>Các yếu tố chính cần cân nhắc:</strong> Management · Hardware
+architecture · Software · Design · Telecommunications · Human
+resources.</p>
+<h3 id="a-vòng-đời-phát-triển-hệ-thống-sdlc">a) Vòng đời phát triển hệ
+thống (SDLC) ⭐⭐⭐</h3>
+<figure>
+<img src="assets/C3p2-12.png" alt="Systems Development Life Cycle" />
+<figcaption aria-hidden="true">Systems Development Life
+Cycle</figcaption>
+</figure>
+<p><em>Hình 5 — Systems Development Life Cycle.</em></p>
+<blockquote>
+<p><strong>SDLC:</strong> phương pháp luận để <strong>hiểu mục tiêu kinh
+doanh của một hệ thống và thiết kế giải pháp phù hợp.</strong></p>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>Bước</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Systems Analysis / Planning</strong></td>
+<td>Phân tích và lập kế hoạch hệ thống</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Systems Design</strong></td>
+<td>Thiết kế hệ thống</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Building the System</strong></td>
+<td>Xây dựng hệ thống</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Testing</strong></td>
+<td>Kiểm thử</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Implementation / Service Delivery</strong></td>
+<td>Triển khai và cung cấp dịch vụ</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Best Practices (thực hành tốt nhất):</strong> -
+<strong>Continuous availability 99%+</strong> (sẵn sàng liên tục trên
+99%) - <strong>Design for scalability</strong> (thiết kế để mở rộng) -
+<strong>Build in management for end-to-end delivery</strong> (tích hợp
+quản trị cho phân phối đầu-cuối) - <strong>Plan for growth</strong> (lập
+kế hoạch tăng trưởng) - <strong>Design system for high-speed
+performance</strong> - <strong>Understand and optimize workload on
+system</strong></p>
+<h3 id="b-bước-1-phân-tíchlập-kế-hoạch-hệ-thống">b) Bước 1 — Phân
+tích/Lập kế hoạch hệ thống ⭐⭐⭐</h3>
+<p>Ba khái niệm: - <strong>Business objectives:</strong> danh sách
+<strong>khả năng</strong> bạn muốn site có - <strong>System
+functionalities:</strong> danh sách <strong>năng lực hệ thống thông
+tin</strong> cần để đạt mục tiêu kinh doanh - <strong>Information
+requirements:</strong> các <strong>phần tử thông tin</strong> mà hệ
+thống phải tạo ra để đạt mục tiêu</p>
+<p><strong>Bảng 3 — Mục tiêu kinh doanh, chức năng hệ thống và yêu cầu
+thông tin cho một site TMĐT điển hình (BẢNG RẤT HAY RA
+THI):</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Business Objective</strong></th>
+<th><strong>System Functionality</strong></th>
+<th><strong>Information Requirements</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Display goods</strong> (Trưng bày hàng hóa)</td>
+<td>Digital Catalog</td>
+<td>Catalogue văn bản và đồ họa động</td>
+</tr>
+<tr>
+<td><strong>Provide product information</strong> (Cung cấp thông tin sản
+phẩm)</td>
+<td>Product database</td>
+<td>Mô tả sản phẩm, mã hàng (stocking numbers), mức tồn kho</td>
+</tr>
+<tr>
+<td><strong>Personalize/customize product</strong> (Cá nhân hóa sản
+phẩm)</td>
+<td>Customer on-site tracking</td>
+<td>Site log cho mỗi lượt khách; <strong>khả năng data mining</strong>
+để nhận diện đường đi phổ biến của khách và phản ứng phù hợp</td>
+</tr>
+<tr>
+<td><strong>Engage customers in conversations</strong> (Tương tác hội
+thoại)</td>
+<td>On-site blog; user forums</td>
+<td>Phần mềm có chức năng blog và diễn đàn cộng đồng</td>
+</tr>
+<tr>
+<td><strong>Execute a transaction</strong> (Thực hiện giao dịch)</td>
+<td>Shopping cart / payment system</td>
+<td><strong>Xử lý thẻ tín dụng an toàn; nhiều lựa chọn thanh
+toán</strong></td>
+</tr>
+<tr>
+<td><strong>Accumulate customer information</strong> (Tích lũy thông tin
+KH)</td>
+<td>Customer database</td>
+<td>Tên, địa chỉ, điện thoại, email của mọi khách; <strong>đăng ký khách
+hàng trực tuyến</strong></td>
+</tr>
+<tr>
+<td><strong>Provide after-sale customer support</strong> (Hỗ trợ sau
+bán)</td>
+<td>Sales database</td>
+<td>Customer ID, sản phẩm, ngày, thanh toán, ngày giao hàng</td>
+</tr>
+<tr>
+<td><strong>Coordinate marketing/advertising</strong> (Điều phối
+marketing/quảng cáo)</td>
+<td>Ad server, e-mail server, e-mail campaign manager, ad banner
+manager</td>
+<td>Log hành vi của khách tiềm năng và khách hàng, liên kết với chiến
+dịch email và banner</td>
+</tr>
+<tr>
+<td><strong>Understand marketing effectiveness</strong> (Hiểu hiệu quả
+marketing)</td>
+<td>Site tracking and reporting system</td>
+<td>Số khách truy cập duy nhất, số trang xem, sản phẩm đã mua,
+<strong>phân theo chiến dịch marketing</strong></td>
+</tr>
+<tr>
+<td><strong>Provide production and supplier links</strong> (Kết nối sản
+xuất &amp; nhà cung cấp)</td>
+<td>Inventory management system</td>
+<td>Mức sản phẩm &amp; tồn kho, <strong>ID và liên hệ nhà cung
+cấp</strong>, dữ liệu số lượng đặt theo sản phẩm</td>
+</tr>
+</tbody>
+</table>
+<h3 id="c-bước-2-thiết-kế-hệ-thống">c) Bước 2 — Thiết kế hệ thống
+⭐⭐</h3>
+<blockquote>
+<p><strong>System design specification:</strong> mô tả <strong>các thành
+phần chính của hệ thống và quan hệ giữa chúng</strong>.</p>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th><strong>Logical design</strong> (Thiết kế logic)</th>
+<th><strong>Physical design</strong> (Thiết kế vật lý)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nội dung</td>
+<td><strong>Data flow diagrams</strong>, các hàm xử lý, cơ sở dữ
+liệu</td>
+<td>Xác định <strong>thành phần vật lý, phần mềm, model thực
+tế</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ví dụ thiết kế logic cho một website đơn giản (Sơ đồ luồng dữ
+liệu — DFD) ⭐⭐⭐:</strong></p>
+<figure>
+<img src="assets/C3p2-17.png"
+alt="Thiết kế logic cho một website đơn giản" />
+<figcaption aria-hidden="true">Thiết kế logic cho một website đơn
+giản</figcaption>
+</figure>
+<p><em>Hình 6 — A Logical Design for a Simple Website (Simple Data Flow
+Diagram).</em></p>
+<p><strong>Đọc sơ đồ (quy trình mua hàng trên website):</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Bước</th>
+<th>Tiến trình</th>
+<th>Luồng dữ liệu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Website customer</strong> gửi <strong>HTTP
+request</strong></td>
+<td>→ <strong>Verify login</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Verify login</strong> ↔︎ <strong>Customer
+database</strong></td>
+<td>Trao đổi <strong>Customer information</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Verify login</strong> → <strong>Accept/reject
+visitor</strong></td>
+<td>→ <strong>Display catalog pages</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Display catalog pages</strong> ↔︎ <strong>Catalog
+database</strong></td>
+<td>Lấy dữ liệu sản phẩm</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Purchase products</strong> ↔︎ <strong>Order database</strong>
+và <strong>Customer database</strong></td>
+<td>Ghi nhận đơn hàng</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Purchase products</strong> → <strong>Fulfill order</strong>
+→ <strong>Ship products</strong></td>
+<td>Hoàn tất đơn</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Ship products</strong> → <strong>Order shipped
+confirmed</strong> → <strong>Website customer</strong></td>
+<td>Xác nhận đã giao</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>📌 <strong>Đây là sơ đồ nên vẽ lại khi đề bài yêu cầu “mô tả quy
+trình bán hàng trực tuyến trên website”.</strong></p>
+</blockquote>
+<h3 id="d-bước-3-xây-dựng-hệ-thống-tự-làm-hay-thuê-ngoài">d) Bước 3 —
+Xây dựng hệ thống: tự làm hay thuê ngoài ⭐⭐</h3>
+<figure>
+<img src="assets/C3p2-20.png" alt="Choices in Building and Hosting" />
+<figcaption aria-hidden="true">Choices in Building and
+Hosting</figcaption>
+</figure>
+<p><em>Hình 8 — Choices in Building and Hosting.</em></p>
+<p><strong>Hai trục quyết định: XÂY (Building) và VẬN HÀNH/LƯU TRỮ
+(Hosting).</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th><strong>Build: In-house</strong></th>
+<th><strong>Build: Outsource</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Host: In-house</strong></td>
+<td><strong>COMPLETELY IN-HOUSE</strong><br>Build: In — Host: In</td>
+<td><strong>MIXED RESPONSIBILITY</strong><br>Build: Out — Host: In</td>
+</tr>
+<tr>
+<td><strong>Host: Outsource</strong></td>
+<td><strong>MIXED RESPONSIBILITY</strong><br>Build: In — Host: Out</td>
+<td><strong>COMPLETELY OUTSOURCED</strong><br>Build: Out — Host:
+Out</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Khái niệm:</strong> - <strong>Outsourcing:</strong> thuê nhà
+cung cấp thực hiện các dịch vụ trong việc xây dựng site. - <strong>Build
+your own:</strong> cần đội ngũ <strong>kỹ năng đa dạng</strong>, phải
+chọn công cụ phần mềm; <strong>có rủi ro nhưng cũng có lợi ích tiềm
+năng</strong>. - <strong>Hosting:</strong> công ty hosting <strong>chịu
+trách nhiệm đảm bảo site truy cập được 24/7</strong> với phí hàng tháng.
+- <strong>Co-location:</strong> doanh nghiệp <strong>mua hoặc thuê máy
+chủ (có quyền kiểm soát vận hành)</strong>, nhưng <strong>máy chủ đặt
+tại cơ sở của nhà cung cấp</strong>.</p>
+<h3 id="e-bước-4-kiểm-thử-hệ-thống">e) Bước 4 — Kiểm thử hệ thống
+⭐</h3>
+<table>
+<thead>
+<tr>
+<th>Loại kiểm thử</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Unit testing</strong></td>
+<td>Kiểm thử đơn vị</td>
+</tr>
+<tr>
+<td><strong>System testing</strong></td>
+<td>Kiểm thử hệ thống</td>
+</tr>
+<tr>
+<td><strong>Acceptance testing</strong></td>
+<td>Kiểm thử chấp nhận</td>
+</tr>
+<tr>
+<td><strong>A/B testing (split testing)</strong></td>
+<td>So sánh 2 phiên bản</td>
+</tr>
+<tr>
+<td><strong>Multivariate testing</strong></td>
+<td>Kiểm thử đa biến</td>
+</tr>
+</tbody>
+</table>
+<h3 id="f-bước-5-triển-khai-bảo-trì-và-tối-ưu">f) Bước 5 — Triển khai,
+bảo trì và tối ưu</h3>
+<ul>
+<li><strong>Hệ thống hỏng hóc không đoán trước được</strong>;
+<strong>bảo trì là công việc liên tục</strong>.</li>
+<li><strong>Chi phí bảo trì tương đương chi phí phát triển:</strong> một
+site TMĐT trị giá <strong>$40K có thể cần $40K/năm</strong> để duy
+trì.</li>
+<li>Quy tắc chung (Chương 4): <strong>chi phí vận hành hằng năm bằng
+50–200% chi phí ban đầu</strong>.</li>
+</ul>
+<h3 id="g-các-phương-pháp-phát-triển-web-thay-thế">g) Các phương pháp
+phát triển web thay thế</h3>
+<p><strong>Prototyping · Agile development · DevOps · Component-based
+development · Web services.</strong></p>
+<h2 id="kiến-trúc-site-tmđt">2.3. KIẾN TRÚC SITE TMĐT ⭐⭐</h2>
+<blockquote>
+<p><strong>System architecture:</strong> cách sắp xếp <strong>phần mềm,
+máy móc và tác vụ</strong> trong một hệ thống thông tin để đạt một chức
+năng cụ thể.</p>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th><strong>Two-tier</strong></th>
+<th><strong>Multi-tier</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành phần</td>
+<td><strong>Web server + database server</strong></td>
+<td><strong>Web application servers</strong>; backend, legacy
+databases</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Kiến trúc đa tầng (Multi-Tier) — 3 lớp:</strong></p>
+<figure>
+<img src="assets/C3p2-27.png"
+alt="Multi-Tier E-commerce Site Architecture" />
+<figcaption aria-hidden="true">Multi-Tier E-commerce Site
+Architecture</figcaption>
+</figure>
+<p><em>Hình 11 — Multi-Tier E-commerce Site Architecture.</em></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Lớp</th>
+<th>Thành phần</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Web Server Layer</strong></td>
+<td><strong>Web Servers</strong> — nhận Incoming Internet Requests</td>
+</tr>
+<tr>
+<td><strong>Middle-tier Layer</strong></td>
+<td><strong>E-commerce Servers · Application Servers · Database Servers
+· Ad Servers · Mail Servers</strong></td>
+</tr>
+<tr>
+<td><strong>Backend Layer</strong></td>
+<td><strong>Corporate Applications · Finance · Production MRP ·
+Enterprise Systems · HR Systems</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="các-công-cụ-phần-mềm-cho-site-tmđt">2.4. CÁC CÔNG CỤ PHẦN MỀM
+CHO SITE TMĐT</h2>
+<h3 id="a-site-management-tools">a) Site Management Tools</h3>
+<ul>
+<li>Công cụ cơ bản có sẵn trong mọi web server: <strong>kiểm tra liên
+kết còn hợp lệ</strong>, <strong>xác định file mồ côi (orphan
+files)</strong>.</li>
+<li>Phần mềm bên thứ ba cho quản lý nâng cao: <strong>theo dõi giao dịch
+mua của khách</strong>, <strong>hiệu quả chiến dịch marketing</strong>,
+<strong>đếm lượt truy cập và các thống kê khác</strong>. Ví dụ:
+<strong>Webtrends Analytics</strong>.</li>
+</ul>
+<h3 id="b-dynamic-page-generation-tools">b) Dynamic Page Generation
+Tools ⭐</h3>
+<blockquote>
+<p><strong>Dynamic page generation:</strong> nội dung được <strong>lưu
+trong CSDL và lấy ra khi cần</strong>.</p>
+</blockquote>
+<p><strong>Công cụ phổ biến:</strong> CGI, ASP, JSP, ODBC, JDBC.</p>
+<p><strong>Ưu điểm:</strong> - <strong>Giảm chi phí menu (menu
+costs)</strong> - Cho phép <strong>phân khúc thị trường trực tuyến dễ
+dàng</strong> - Cho phép <strong>phân biệt giá (price discrimination)
+không tốn chi phí</strong> - Cho phép triển khai <strong>hệ quản trị nội
+dung (CMS)</strong></p>
+<h3 id="c-application-servers">c) Application Servers</h3>
+<ul>
+<li>Cung cấp <strong>chức năng nghiệp vụ cụ thể</strong> cho
+website.</li>
+<li>Là một dạng <strong>middleware</strong>.</li>
+<li><strong>Tách biệt ứng dụng nghiệp vụ khỏi web server và cơ sở dữ
+liệu</strong>.</li>
+<li>Các ứng dụng đơn chức năng đang được thay bằng <strong>công cụ tích
+hợp</strong> gộp mọi chức năng cần cho site TMĐT.</li>
+</ul>
+<h3 id="d-e-commerce-merchant-server-software">d) E-commerce Merchant
+Server Software ⭐</h3>
+<p><strong>Chức năng cơ bản cho bán hàng:</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chức năng</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Online catalog</strong></td>
+<td>Danh sách sản phẩm có trên website</td>
+</tr>
+<tr>
+<td><strong>Shopping cart</strong></td>
+<td>Cho phép người mua <strong>để dành, xem lại, chỉnh sửa lựa chọn rồi
+mua</strong></td>
+</tr>
+<tr>
+<td><strong>Credit card processing</strong></td>
+<td>Thường hoạt động cùng shopping cart; <strong>xác minh thẻ và ghi có
+vào tài khoản công ty</strong> khi thanh toán</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Gói phần mềm Merchant Server — môi trường tích hợp
+gồm:</strong> shopping cart · merchandise display · order
+management.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Quy mô doanh nghiệp</th>
+<th>Giải pháp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SME</strong></td>
+<td>Yahoo Small Business; các giải pháp mã nguồn mở</td>
+</tr>
+<tr>
+<td><strong>Tầm trung</strong></td>
+<td>IBM WebSphere Commerce Express; Sitecore Experience Commerce</td>
+</tr>
+<tr>
+<td><strong>Cao cấp</strong></td>
+<td>IBM WebSphere Professional/Enterprise; <strong>SAP Hybris</strong>;
+Oracle ATG Web Commerce</td>
+</tr>
+</tbody>
+</table>
+<p>Nhiều gói nay có sẵn dưới dạng <strong>SaaS trên nền
+cloud</strong>.</p>
+<p><strong>9 yếu tố then chốt khi chọn gói phần mềm:</strong> 1.
+Functionality (chức năng) 2. Hỗ trợ các <strong>mô hình kinh doanh khác
+nhau</strong>, kể cả <strong>m-commerce</strong> 3. <strong>Công cụ mô
+hình hóa quy trình kinh doanh</strong> (business process modeling tools)
+4. Quản lý site và báo cáo trực quan 5. <strong>Hiệu năng và khả năng mở
+rộng</strong> 6. <strong>Khả năng kết nối với hệ thống nghiệp vụ hiện
+có</strong> 7. <strong>Tuân thủ chuẩn</strong> 8. Khả năng toàn cầu và
+đa văn hóa 9. <strong>Quy tắc thuế bán hàng và vận chuyển địa
+phương</strong></p>
+<h2 id="tối-ưu-hóa-nền-tảng-phần-cứng">2.5. TỐI ƯU HÓA NỀN TẢNG PHẦN
+CỨNG</h2>
+<h3 id="a-phía-cầu-demand-side">a) Phía cầu (Demand Side)</h3>
+<p><strong>Nhu cầu khách hàng là yếu tố quan trọng nhất ảnh hưởng tốc độ
+site.</strong></p>
+<p>Các yếu tố cấu thành tổng cầu: - <strong>Số người dùng đồng thời ở
+giờ cao điểm</strong> - <strong>Bản chất yêu cầu của khách (user
+profile)</strong> - <strong>Loại nội dung</strong> (trang động vs trang
+tĩnh) - <strong>Mức bảo mật yêu cầu</strong> - <strong>Số lượng mặt hàng
+trong kho</strong> - <strong>Số lượt yêu cầu trang</strong> -
+<strong>Tốc độ các ứng dụng kế thừa (legacy)</strong></p>
+<h3 id="b-phía-cung-supply-side-scalability">b) Phía cung (Supply Side)
+— Scalability ⭐</h3>
+<blockquote>
+<p><strong>Scalability:</strong> khả năng <strong>site tăng quy mô theo
+nhu cầu</strong>.</p>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Cách mở rộng</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vertically</strong> (Theo chiều dọc)</td>
+<td><strong>Tăng sức mạnh xử lý của từng thành phần riêng
+lẻ</strong></td>
+</tr>
+<tr>
+<td><strong>Horizontally</strong> (Theo chiều ngang)</td>
+<td><strong>Dùng nhiều máy tính chia sẻ tải</strong></td>
+</tr>
+<tr>
+<td><strong>Improve processing architecture</strong></td>
+<td>Cải thiện kiến trúc xử lý</td>
+</tr>
+<tr>
+<td><strong>Outsource hosting</strong></td>
+<td>Thuê ngoài hosting, dùng <strong>CDN (content delivery
+network)</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bảng 5 — Kỹ thuật mở rộng dọc và ngang:</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Kỹ thuật</th>
+<th>Ứng dụng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Use a faster computer</strong></td>
+<td>Triển khai edge servers, presentation servers, data servers…</td>
+</tr>
+<tr>
+<td><strong>Create a cluster of computers</strong></td>
+<td>Dùng máy tính song song để <strong>cân bằng tải</strong></td>
+</tr>
+<tr>
+<td><strong>Use appliance servers</strong></td>
+<td>Máy chuyên dụng tối ưu cho một tác vụ</td>
+</tr>
+<tr>
+<td><strong>Segment workload</strong></td>
+<td>Phân luồng công việc đến các máy chuyên biệt</td>
+</tr>
+<tr>
+<td><strong>Batch requests</strong></td>
+<td>Gộp các yêu cầu dữ liệu liên quan thành nhóm, xử lý theo nhóm</td>
+</tr>
+<tr>
+<td><strong>Manage connections</strong></td>
+<td>Giảm số kết nối giữa tiến trình và máy tính xuống mức tối thiểu</td>
+</tr>
+<tr>
+<td><strong>Aggregate user data</strong></td>
+<td>Gộp dữ liệu người dùng từ ứng dụng kế thừa vào một kho dữ liệu duy
+nhất</td>
+</tr>
+<tr>
+<td><strong>Cache</strong></td>
+<td>Lưu dữ liệu dùng thường xuyên trong bộ đệm thay vì trên đĩa</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bảng 6 — Cải thiện kiến trúc xử lý của site:</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Cải tiến kiến trúc</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Separate static content from dynamic content</strong></td>
+<td>Dùng server chuyên biệt cho từng loại tải</td>
+</tr>
+<tr>
+<td><strong>Cache static content</strong></td>
+<td>Tăng RAM lên mức gigabyte và <strong>lưu nội dung tĩnh trong
+RAM</strong></td>
+</tr>
+<tr>
+<td><strong>Cache database lookup tables</strong></td>
+<td>Dùng bảng đệm để tra cứu bản ghi CSDL</td>
+</tr>
+<tr>
+<td><strong>Consolidate business logic on dedicated
+servers</strong></td>
+<td>Đặt <strong>shopping cart, xử lý thẻ tín dụng</strong> và hoạt động
+tốn CPU khác lên server riêng</td>
+</tr>
+<tr>
+<td><strong>Optimize ASP code</strong></td>
+<td>Rà soát mã để đảm bảo hoạt động hiệu quả</td>
+</tr>
+<tr>
+<td><strong>Optimize the database schema</strong></td>
+<td>Rà soát thời gian tìm kiếm CSDL và giảm thời gian truy cập</td>
+</tr>
+</tbody>
+</table>
+<h2 id="thiết-kế-website-tmđt">2.6. THIẾT KẾ WEBSITE TMĐT</h2>
+<h3 id="a-tối-ưu-công-cụ-tìm-kiếm-seo">a) Tối ưu công cụ tìm kiếm
+(SEO)</h3>
+<p><strong>Search engine placement:</strong> Metatags, titles, content ·
+Xác định <strong>ngách thị trường</strong> · Thể hiện <strong>chuyên
+môn</strong> · <strong>Liên kết (links)</strong> · <strong>Mua quảng
+cáo</strong> · <strong>Local e-commerce</strong>.</p>
+<h3 id="b-các-tính-năng-website-làm-khách-hàng-khó-chịu">b) Các tính
+năng website làm KHÁCH HÀNG KHÓ CHỊU ⭐⭐</h3>
+<p><strong>(Rất hay dùng làm cơ sở cho câu hỏi “đề xuất cải tiến
+website/quy trình”)</strong></p>
+<ol type="1">
+<li>Bắt xem quảng cáo hoặc trang giới thiệu trước khi vào nội dung</li>
+<li><strong>Quảng cáo pop-up và pop-under</strong></li>
+<li><strong>Quá nhiều cú click</strong> mới tới được nội dung</li>
+<li><strong>Liên kết hỏng (links that don’t work)</strong></li>
+<li><strong>Điều hướng khó hiểu; không có chức năng tìm
+kiếm</strong></li>
+<li><strong>Bắt buộc đăng ký và đăng nhập</strong> trước khi xem nội
+dung hoặc đặt hàng</li>
+<li><strong>Trang tải chậm</strong></li>
+<li><strong>Nội dung lỗi thời</strong></li>
+<li><strong>Không dùng được nút Back của trình duyệt</strong></li>
+<li><strong>Không có thông tin liên hệ</strong> (chỉ có web form)</li>
+<li>Splash/flash screens, animation không cần thiết</li>
+<li><strong>Nhạc hoặc âm thanh tự động phát</strong></li>
+<li>Yếu tố thiết kế thiếu chuyên nghiệp</li>
+<li><strong>Chữ khó đọc</strong> do kích thước, màu sắc, định dạng</li>
+<li><strong>Lỗi chính tả</strong></li>
+<li><strong>Không có hoặc không rõ chính sách đổi trả</strong></li>
+</ol>
+<h3
+id="c-tám-yếu-tố-quan-trọng-nhất-của-thiết-kế-site-tmđt-thành-công">c)
+Tám yếu tố quan trọng nhất của thiết kế site TMĐT thành công ⭐⭐</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>Yếu tố</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Functionality</strong></td>
+<td>Trang <strong>hoạt động được, tải nhanh</strong> và hướng khách hàng
+tới sản phẩm</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Informational</strong></td>
+<td><strong>Liên kết dễ tìm</strong> để khách khám phá thêm về công ty
+và sản phẩm</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Ease of use</strong></td>
+<td><strong>Điều hướng đơn giản, không thể sai (foolproof)</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Redundant navigation</strong></td>
+<td><strong>Đường dẫn thay thế</strong> tới cùng một nội dung</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Ease of purchase</strong></td>
+<td><strong>Một hoặc hai cú click là mua được</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Multi-browser functionality</strong></td>
+<td>Site <strong>hoạt động với các trình duyệt phổ biến
+nhất</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Simple graphics</strong></td>
+<td><strong>Tránh đồ họa và âm thanh gây phân tâm, khó chịu</strong> mà
+người dùng không kiểm soát được</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Legible text</strong></td>
+<td><strong>Tránh nền làm biến dạng hoặc khó đọc chữ</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="d-công-cụ-tạo-tương-tác-và-nội-dung-động">d) Công cụ tạo tương
+tác và nội dung động</h3>
+<p><strong>CGI · ASP/ASP.NET · Java, JSP, JavaScript (Angular JS, D3,
+jQuery, Ajax) · ActiveX và VBScript · ColdFusion · PHP, Ruby on Rails,
+Django · Widgets, mashups.</strong></p>
+<h3 id="e-công-cụ-cá-nhân-hóa">e) Công cụ cá nhân hóa ⭐</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Khái niệm</th>
+<th>Định nghĩa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Personalization</strong> (Cá nhân hóa)</td>
+<td>Khả năng <strong>đối xử với từng người dựa trên đặc điểm cá nhân và
+lịch sử tương tác trước</strong> với site</td>
+</tr>
+<tr>
+<td><strong>Customization</strong> (Tùy biến)</td>
+<td>Khả năng <strong>thay đổi sản phẩm</strong> để phù hợp hơn với nhu
+cầu khách hàng</td>
+</tr>
+<tr>
+<td><strong>Cookies</strong></td>
+<td><strong>Phương pháp chính</strong> để đạt được cá nhân hóa</td>
+</tr>
+</tbody>
+</table>
+<h3 id="f-bộ-chính-sách-thông-tin-information-policy-set">f) Bộ chính
+sách thông tin (Information Policy Set)</h3>
+<ul>
+<li><strong>Privacy policy:</strong> tập hợp các tuyên bố công khai về
+<strong>cách site xử lý thông tin cá nhân của khách hàng</strong> mà
+site thu thập.</li>
+<li><strong>Accessibility rules:</strong> tập hợp mục tiêu thiết kế đảm
+bảo <strong>người khuyết tật truy cập được site hiệu quả</strong>.</li>
+</ul>
+<h2 id="phát-triển-website-và-ứng-dụng-di-động">2.7. PHÁT TRIỂN WEBSITE
+VÀ ỨNG DỤNG DI ĐỘNG ⭐</h2>
+<h3 id="a-bốn-loại-phần-mềm-m-commerce">a) Bốn loại phần mềm
+m-commerce</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Đặc điểm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mobile website</strong></td>
+<td>Dùng <strong>Responsive Web design</strong></td>
+</tr>
+<tr>
+<td><strong>Mobile Web app</strong></td>
+<td>Chạy trong trình duyệt, có thể dùng <strong>browser
+API</strong></td>
+</tr>
+<tr>
+<td><strong>Native app</strong></td>
+<td>Ứng dụng gốc — <strong>dùng được phần cứng thiết bị, hoạt động
+offline</strong>; <strong>đắt nhất, cần nhiều lập trình
+nhất</strong></td>
+</tr>
+<tr>
+<td><strong>Hybrid app</strong></td>
+<td>Chạy trong <strong>native container</strong>; phân phối qua app
+store; xây bằng <strong>HTML5, CSS, JavaScript</strong></td>
+</tr>
+</tbody>
+</table>
+<h3
+id="b-bốn-đặc-điểm-riêng-phải-tính-đến-khi-thiết-kế-hiện-diện-di-động">b)
+Bốn đặc điểm riêng phải tính đến khi thiết kế hiện diện di động
+⭐⭐</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Đặc điểm</th>
+<th>Hệ quả cho nền tảng di động</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hardware</strong></td>
+<td>Phần cứng di động <strong>nhỏ hơn</strong>, <strong>hạn chế nhiều
+hơn</strong> về lưu trữ dữ liệu và năng lực xử lý</td>
+</tr>
+<tr>
+<td><strong>Connectivity</strong></td>
+<td>Nền tảng di động bị giới hạn bởi <strong>tốc độ kết nối chậm
+hơn</strong> so với website desktop</td>
+</tr>
+<tr>
+<td><strong>Displays</strong></td>
+<td>Màn hình <strong>nhỏ hơn nhiều, đòi hỏi đơn giản hóa</strong>; một
+số màn hình hiển thị kém dưới ánh nắng</td>
+</tr>
+<tr>
+<td><strong>Interface</strong></td>
+<td><strong>Công nghệ cảm ứng tạo ra thói quen tương tác mới</strong>,
+khác chuột và bàn phím. Nền tảng di động <strong>không phải công cụ nhập
+liệu tốt nhưng là công cụ điều hướng tốt</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="c-cân-nhắc-thiết-kế">c) Cân nhắc thiết kế</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Khái niệm</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Platform constraints</strong></td>
+<td>Giới hạn về đồ họa, kích thước file</td>
+</tr>
+<tr>
+<td><strong>Mobile first design</strong></td>
+<td><strong>Thiết kế cho mobile trước, desktop sau</strong> —
+<strong>hiệu quả nhất</strong></td>
+</tr>
+<tr>
+<td><strong>Responsive web design (RWD)</strong></td>
+<td>CSS <strong>điều chỉnh bố cục site theo độ phân giải màn hình thiết
+bị</strong></td>
+</tr>
+<tr>
+<td><strong>Adaptive web design (AWD)</strong></td>
+<td><strong>Server phân phối template/phiên bản site khác nhau</strong>
+tối ưu cho từng thiết bị</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Công cụ phát triển đa nền tảng:</strong> Appery.io, Codiqa,
+Swiftic, PhoneGap, Axway Appcelerator; Objective-C, Java.</p>
+<p><strong>Cân nhắc hiệu năng &amp; chi phí:</strong> - <strong>Mobile
+first design</strong> — hiệu quả nhất - <strong>Mobile website</strong>
+— <strong>chỉnh lại website hiện có cho mobile là rẻ nhất</strong> -
+<strong>Mobile web app</strong> — dùng được browser API - <strong>Native
+app</strong> — <strong>đắt nhất</strong></p>
+<h2 id="phần-mềm-giỏ-hàng-shopping-cart-software">2.8. PHẦN MỀM GIỎ HÀNG
+(SHOPPING CART SOFTWARE) ⭐⭐⭐</h2>
+<h3 id="a-định-nghĩa">a) Định nghĩa</h3>
+<blockquote>
+<p><strong>Shopping cart</strong> là một <strong>phần mềm TMĐT trên web
+server cho phép khách truy cập chọn các mặt hàng trên website để mua
+trực tuyến.</strong></p>
+</blockquote>
+<ul>
+<li>Dùng để <strong>theo dõi các mặt hàng khách chọn để
+mua</strong>.</li>
+<li>Cho phép khách <strong>xem lại toàn bộ các mặt hàng đã
+chọn</strong>.</li>
+</ul>
+<h3 id="b-chín-tính-năng-quan-trọng-của-phần-mềm-giỏ-hàng">b) Chín tính
+năng quan trọng của phần mềm giỏ hàng ⭐</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Tính năng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Payment Alternatives</strong> — Nhiều lựa chọn thanh
+toán</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Searching and Browsing Website</strong> — Tìm kiếm &amp;
+duyệt site</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Product Ratings and Reviews</strong> — Đánh giá &amp; nhận
+xét sản phẩm</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Gift Registry Options</strong> — Đăng ký quà tặng</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Inventory Management</strong> — Quản lý tồn kho</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Faster Checkout</strong> — Thanh toán nhanh hơn</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Tracking Orders</strong> — Theo dõi đơn hàng</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Special Offers</strong> — Ưu đãi đặc biệt</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Security for E-commerce Sites</strong> — Bảo mật cho site
+TMĐT</td>
+</tr>
+</tbody>
+</table>
+<h3 id="c-quy-trình-mua-hàng-trực-tuyến-qua-phần-mềm-giỏ-hàng">c) QUY
+TRÌNH MUA HÀNG TRỰC TUYẾN QUA PHẦN MỀM GIỎ HÀNG ⭐⭐⭐</h3>
+<figure>
+<img src="assets/C3p2-56.png"
+alt="Quy trình mua hàng trực tuyến bằng shopping cart" />
+<figcaption aria-hidden="true">Quy trình mua hàng trực tuyến bằng
+shopping cart</figcaption>
+</figure>
+<p><em>Hình 13 — The procedure for online purchase using shopping cart
+software.</em></p>
+<p><strong>Mô tả quy trình (7 bước — HỌC THUỘC ĐỂ VẼ LẠI):</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Bước</th>
+<th>Hoạt động</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Order placed by user</strong> — Người dùng đặt hàng (chọn
+sản phẩm trên website)</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>Sản phẩm được đưa vào <strong>Shopping Cart</strong> (giỏ hàng)</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Credit card is charged</strong> — Thẻ tín dụng được ghi nợ
+(thanh toán)</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Order is completed</strong> — Đơn hàng được hoàn tất (sinh
+Order Form)</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Email is sent to Customer and merchant</strong> — Email xác
+nhận gửi tới cả khách hàng và người bán</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Sent to Warehouse for fulfillment</strong> — Chuyển tới kho
+để hoàn tất đơn</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><strong>Shipping carrier picks up shipment</strong> →
+<strong>Shipment sent to Customer</strong> — Đơn vị vận chuyển nhận hàng
+và giao tới khách hàng</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Các đặc tính bổ sung của phần mềm giỏ hàng:</strong> - Khách
+hàng <strong>thêm mặt hàng mới và bỏ mặt hàng đã chọn</strong> khỏi giỏ.
+- Phần mềm cho phép <strong>lưu danh sách các mặt hàng để mua</strong>.
+- Khi <strong>checkout</strong>, phần mềm <strong>tính tổng đơn hàng gồm
+phí vận chuyển &amp; xử lý (shipping and handling) và các khoản thuế
+liên quan</strong>. - Hầu hết phần mềm giỏ hàng cung cấp <strong>thêm
+tính năng quản lý toàn bộ cửa hàng trực tuyến</strong>. - Dữ liệu về
+<strong>sản phẩm, danh mục, chiết khấu, đơn hàng và khách hàng</strong>
+được lưu trong <strong>CSDL và truy cập thời gian thực</strong>. - Các
+ứng dụng này thường cung cấp cách <strong>thu thập thông tin thanh toán
+của khách</strong>. - Còn được gọi là <strong>e-commerce software,
+e-store software</strong>.</p>
+<h3 id="d-ba-loại-phần-mềm-giỏ-hàng">d) Ba loại phần mềm giỏ hàng
+⭐</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Licensed software</strong> (Có bản quyền)</td>
+<td>Người bán trả <strong>phí license (thường một lần)</strong> và
+<strong>sở hữu phần mềm</strong>. Trong giới hạn hợp lý, có thể
+<strong>đặt phần mềm trên bất kỳ web server nào</strong> và thường
+<strong>có thể sửa đổi/tùy biến</strong>. <strong>Ưu điểm
+chính:</strong> sở hữu license nên <strong>host được trên bất kỳ web
+server nào đáp ứng yêu cầu</strong></td>
+</tr>
+<tr>
+<td><strong>Hosted service</strong> (Dịch vụ lưu trữ)</td>
+<td>Người bán trả <strong>phí định kỳ hằng tháng/năm</strong> để truy
+cập phần mềm. <strong>Không được chọn cấu hình hoặc vị trí web
+server</strong>, và <strong>không được sửa đổi/tùy biến</strong> phần
+mềm</td>
+</tr>
+<tr>
+<td><strong>Free licensed</strong> (Miễn phí có license)</td>
+<td>Phần mềm miễn phí, nhưng <strong>vẫn phải sở hữu/bảo trì hoặc thuê
+web server</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="quản-trị-quan-hệ-khách-hàng-crm">2.9. QUẢN TRỊ QUAN HỆ KHÁCH
+HÀNG (CRM) ⭐⭐</h2>
+<h3 id="a-crm-là-gì">a) CRM là gì?</h3>
+<blockquote>
+<p><strong>Technology-enabled relationship management</strong> xảy ra
+khi doanh nghiệp <strong>thu được thông tin chi tiết về hành vi, sở
+thích, nhu cầu và mô hình mua hàng của một khách hàng.</strong></p>
+</blockquote>
+<ul>
+<li>Dùng thông tin đó để <strong>định giá, thương lượng điều khoản, điều
+chỉnh khuyến mãi, bổ sung tính năng sản phẩm</strong> và <strong>tùy
+biến toàn bộ quan hệ với khách hàng đó</strong>.</li>
+<li>Còn gọi là <strong>CRM</strong> hoặc <strong>eCRM (electronic
+CRM)</strong>.</li>
+</ul>
+<p><strong>Mục tiêu của CRM:</strong> - <strong>Hiểu nhu cầu cụ thể của
+từng khách hàng</strong> rồi <strong>tùy biến sản phẩm/dịch vụ</strong>
+để đáp ứng. - Ý tưởng: <strong>khách hàng được đáp ứng đúng nhu cầu sẵn
+sàng trả giá cao hơn</strong>. - Công ty mọi quy mô đều áp dụng được kỹ
+thuật CRM, nhưng <strong>công ty lớn đủ khả năng mua và triển khai phần
+mềm tự động hóa nhiều chức năng CRM</strong>.</p>
+<h3 id="b-các-thành-phần-của-hệ-thống-crm-điển-hình">b) Các thành phần
+của hệ thống CRM điển hình ⭐⭐</h3>
+<figure>
+<img src="assets/C3p2-66.png" alt="Elements of typical CRM System" />
+<figcaption aria-hidden="true">Elements of typical CRM
+System</figcaption>
+</figure>
+<p><em>Hình 15 — Elements of typical CRM System (Schneider, Electronic
+Commerce 12th).</em></p>
+<p><strong>Bốn giai đoạn: Data gathering → Data storage → Data analysis
+→ Recommend actions</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Giai đoạn</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Data gathering</strong> (Thu thập dữ liệu)</td>
+<td><strong>Customer Touchpoints:</strong><br>• <em>Web site
+interactions:</em> clickstream data, log chat với khách, form yêu cầu
+thông tin do khách điền, bài đăng mạng xã hội<br>• <em>Customer
+communications:</em> cuộc gọi, e-mail, thư<br>• <em>Salesperson
+interactions:</em> báo cáo cuộc gọi, memo<br><strong>Company Operational
+Records:</strong> hóa đơn, đơn hàng chờ, hàng trả lại, sửa chữa bảo
+hành<br><strong>External Data Purchased:</strong> báo cáo xu hướng
+ngành, dự báo kinh tế, nghiên cứu thị trường, báo cáo tín dụng khách
+hàng</td>
+</tr>
+<tr>
+<td><strong>2. Data storage</strong> (Lưu trữ)</td>
+<td>Tất cả đổ vào <strong>Data Warehouse (Kho dữ liệu)</strong></td>
+</tr>
+<tr>
+<td><strong>3. Data analysis</strong> (Phân tích)</td>
+<td><strong>Data Mining (Analytical Processing)</strong> và
+<strong>Statistical Modeling</strong></td>
+</tr>
+<tr>
+<td><strong>4. Recommend actions</strong> (Khuyến nghị hành động)</td>
+<td><strong>CRM Analysts</strong> — <strong>xây dựng và điều chỉnh các
+chiến lược, chiến thuật</strong> để đáp ứng tốt hơn nhu cầu khách
+hàng</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sơ đồ thành phần chi tiết hơn:</strong></p>
+<figure>
+<img src="assets/C3p2-67.png" alt="Elements of a CRM System" />
+<figcaption aria-hidden="true">Elements of a CRM System</figcaption>
+</figure>
+<p><em>Hình 16 — Elements of a CRM System.</em></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Đầu vào</th>
+<th>Xử lý trong CRM System</th>
+<th>Kết quả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>• Data from customer touchpoints (clickstream, chat logs, form,
+social media, gọi điện, email, thư)<br>• Data from salespersons (call
+reports, memos)<br>• Data from transaction records (Sales, Returns)<br>•
+Data purchased from external sources</td>
+<td><strong>1. Data cleaning and aggregation</strong> (Làm sạch &amp;
+tổng hợp dữ liệu)<br>→ <strong>2. Data analysis, modeling, and report
+generation</strong> (Phân tích, mô hình hóa, tạo báo cáo)<br>↕
+<strong>Models</strong> — developed / stored / revised</td>
+<td><strong>Results and Implementation:</strong><br>• <strong>Customized
+pricing strategies</strong> (chiến lược giá tùy biến)<br>•
+<strong>Marketing campaign strategies</strong><br>• <strong>On-Web-site
+special offers</strong><br>• <strong>Catalog mailing
+strategies</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="c-phần-mềm-crm">c) Phần mềm CRM</h3>
+<ul>
+<li>Phải <strong>lấy dữ liệu từ phần mềm vận hành</strong> thực hiện các
+hoạt động như <strong>tự động hóa bán hàng, vận hành trung tâm dịch vụ
+khách hàng và chiến dịch marketing</strong>.</li>
+<li>Phải <strong>thu thập dữ liệu về hoạt động của khách trên
+website</strong> và mọi điểm tiếp xúc khác với khách hiện tại lẫn tiềm
+năng.</li>
+<li>Dùng dữ liệu này giúp nhà quản lý thực hiện <strong>hoạt động phân
+tích</strong>: thu thập <strong>business intelligence</strong>, lập
+<strong>chiến lược marketing</strong>, <strong>mô hình hóa hành vi khách
+hàng</strong>…</li>
+</ul>
+<h2 id="quản-trị-chuỗi-cung-ứng-scm">2.10. QUẢN TRỊ CHUỖI CUNG ỨNG (SCM)
+⭐⭐⭐</h2>
+<h3 id="a-định-nghĩa-1">a) Định nghĩa</h3>
+<blockquote>
+<p><strong>Supply chain management:</strong> <strong>việc điều phối tất
+cả các hoạt động cung ứng của một tổ chức, từ nhà cung cấp và đối tác
+tới khách hàng của tổ chức.</strong></p>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Khái niệm</th>
+<th>Định nghĩa</th>
+<th>Tương đương</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Upstream supply chain</strong> (Chuỗi cung ứng thượng
+nguồn)</td>
+<td>Giao dịch giữa tổ chức với <strong>nhà cung cấp và trung
+gian</strong></td>
+<td><strong>Buy-side e-commerce</strong></td>
+</tr>
+<tr>
+<td><strong>Downstream supply chain</strong> (Chuỗi cung ứng hạ
+nguồn)</td>
+<td>Giao dịch giữa tổ chức với <strong>khách hàng và trung
+gian</strong></td>
+<td><strong>Sell-side e-commerce</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="b-thành-viên-của-chuỗi-cung-ứng">b) Thành viên của chuỗi cung
+ứng ⭐⭐⭐</h3>
+<figure>
+<img src="assets/C3p2-71.png" alt="Members of the supply chain" />
+<figcaption aria-hidden="true">Members of the supply chain</figcaption>
+</figure>
+<p><em>Hình 17 — Members of the supply chain: (a) simplified view, (b)
+including intermediaries.</em></p>
+<p><strong>(a) Dạng đơn giản:</strong></p>
+<pre><code>[Supplier] → [Organization] → [Customer]
+  Upstream supply chain    |    Downstream supply chain
+  Buy-side e-commerce      |    Sell-side e-commerce</code></pre>
+<p><strong>(b) Có trung gian:</strong></p>
+<pre><code>[Supplier] → [Intermediaries] → [Organization] → [Intermediaries] → [Customer]
+       Upstream (Buy-side)      |       Downstream (Sell-side)
+       ← Inbound logistics →    |       ← Outbound logistics →</code></pre>
+<blockquote>
+<p>📌 <strong>Ghi nhớ:</strong> <strong>Inbound logistics</strong> ở
+phía thượng nguồn (mua), <strong>Outbound logistics</strong> ở phía hạ
+nguồn (bán).</p>
+</blockquote>
+<h3 id="c-một-chuỗi-cung-ứng-điển-hình-ví-dụ-the-b2b-company">c) Một
+chuỗi cung ứng điển hình (ví dụ The B2B Company) ⭐⭐⭐</h3>
+<figure>
+<img src="assets/C3p2-72.png" alt="A typical supply chain" />
+<figcaption aria-hidden="true">A typical supply chain</figcaption>
+</figure>
+<p><em>Hình 18 — A typical supply chain (an example from The B2B
+Company).</em></p>
+<p><strong>Upstream supply chain (từ nhà cung cấp về
+Manufacturer):</strong></p>
+<pre><code>Suppliers → Supplier warehouse → Independent wholesaler → B2B retailer or exchange
+          → Distributor → Manufacturer (The B2B Company)</code></pre>
+<p>Đồng thời có các <strong>đường tắt (by-pass)</strong>: Suppliers có
+thể đi <strong>thẳng</strong> tới Manufacturer, hoặc đi qua
+<strong>Supplier agent</strong> rồi tới Manufacturer.</p>
+<p><strong>Downstream supply chain (từ Manufacturer tới khách
+hàng):</strong></p>
+<pre><code>Manufacturer (The B2B Company) → B2B Company warehouse → Independent wholesaler
+          → B2B retailer or exchange → Distributor → Customers</code></pre>
+<p>Cũng có <strong>đường tắt</strong>: Manufacturer đi thẳng tới
+Customers, hoặc qua <strong>B2B Company agent</strong> rồi tới
+Customers.</p>
+<blockquote>
+<p>📌 <strong>Ý nghĩa các đường tắt = cơ hội DISINTERMEDIATION</strong>
+— dùng Internet để bán/mua trực tiếp, bỏ bớt trung gian, giảm chi phí và
+thời gian.</p>
+</blockquote>
+<h3 id="d-tiếp-cận-push-và-pull-trong-scm">d) Tiếp cận PUSH và PULL
+trong SCM ⭐⭐⭐</h3>
+<figure>
+<img src="assets/C3p2-73.png" alt="Push and Pull approaches to SCM" />
+<figcaption aria-hidden="true">Push and Pull approaches to
+SCM</figcaption>
+</figure>
+<p><em>Hình 19 — Push and pull approaches to supply chain
+management.</em></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tiêu chí</th>
+<th><strong>(a) PUSH — “Push to customer”</strong></th>
+<th><strong>(b) PULL — “Pull from customer”</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Chiều dòng chảy</strong></td>
+<td>Supplier → Manufacturer → Distributor → Retailer →
+<strong>Customer</strong></td>
+<td><strong>Customer</strong> → Retailer → Distributor → Manufacturer →
+Supplier</td>
+</tr>
+<tr>
+<td><strong>Typical aim</strong> (Mục tiêu điển hình)</td>
+<td><strong>Tối ưu quy trình sản xuất về chi phí và hiệu
+quả</strong></td>
+<td><strong>Nâng cao chất lượng sản phẩm và dịch vụ</strong></td>
+</tr>
+<tr>
+<td><strong>Typical characteristics</strong></td>
+<td>• <strong>Phát triển sản phẩm mới do nhà sản xuất dẫn
+dắt</strong><br>• <strong>Tích hợp dữ liệu kém</strong> do sử dụng công
+nghệ hạn chế<br>• <strong>Chu kỳ và thời gian đáp ứng dài</strong><br>•
+<strong>Mức tồn kho cao</strong></td>
+<td>• <strong>Do nghiên cứu thị trường dẫn dắt</strong><br>•
+<strong>Công nghệ được dùng để tích hợp nghiên cứu và dữ
+liệu</strong><br>• <strong>Chu kỳ và thời gian đáp ứng
+ngắn</strong><br>• <strong>Mức tồn kho thấp</strong></td>
+</tr>
+<tr>
+<td><strong>Use of IS</strong> (Sử dụng HTTT)</td>
+<td><strong>Quản lý dữ liệu độc lập bởi từng thành viên chuỗi. Sử dụng
+EDI hạn chế</strong></td>
+<td><strong>Hệ thống nội bộ tích hợp, chia sẻ thông tin giữa các thành
+viên. Sử dụng EDI và e-commerce rộng rãi, thường qua sàn B2B và trung
+gian</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>📌 <strong>ĐÂY LÀ MỘT TRONG NHỮNG CÂU HỎI DỄ RA NHẤT: “So sánh mô
+hình push và pull trong SCM; đề xuất chuyển từ push sang pull cho một
+doanh nghiệp cụ thể”.</strong></p>
+</blockquote>
+<h3 id="e-hai-mô-hình-thay-thế-của-chuỗi-giá-trị">e) Hai mô hình thay
+thế của chuỗi giá trị ⭐⭐⭐</h3>
+<figure>
+<img src="assets/C3p2-74.png"
+alt="Two alternative models of the value chain" />
+<figcaption aria-hidden="true">Two alternative models of the value
+chain</figcaption>
+</figure>
+<p><em>Hình 20 — Two alternative models of the value chain: (a)
+traditional, (b) revised (Deise et al., 2000).</em></p>
+<p><strong>(a) Mô hình chuỗi giá trị TRUYỀN THỐNG (Porter):</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Loại hoạt động</th>
+<th>Các hoạt động</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Secondary value chain activities</strong> (Hoạt động hỗ
+trợ)</td>
+<td><strong>Human resources · Finance · Information
+systems</strong></td>
+</tr>
+<tr>
+<td><strong>Primary value chain activities</strong> (Hoạt động
+chính)</td>
+<td><strong>Inbound logistics → Production → Outbound logistics → Sales
+and marketing</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>(b) Mô hình chuỗi giá trị SỬA ĐỔI (revised — Deise et
+al. 2000):</strong></p>
+<pre><code>Market research → New product development → Market products → Procure materials
+→ Procure products → Manage selling and fulfilment</code></pre>
+<p><strong>So sánh — điểm khác biệt cốt lõi:</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tiêu chí</th>
+<th><strong>Truyền thống</strong></th>
+<th><strong>Sửa đổi</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Điểm khởi đầu</td>
+<td><strong>Logistics đầu vào</strong> (bắt đầu từ nguyên vật liệu)</td>
+<td><strong>Market research</strong> (bắt đầu từ thị trường/khách
+hàng)</td>
+</tr>
+<tr>
+<td>Tư duy</td>
+<td><strong>Push</strong> — sản xuất rồi bán</td>
+<td><strong>Pull</strong> — nghiên cứu thị trường trước, mua &amp; sản
+xuất sau</td>
+</tr>
+<tr>
+<td>Vị trí “Procure”</td>
+<td>Ở đầu chuỗi (inbound logistics)</td>
+<td><strong>Ở SAU khi đã nghiên cứu thị trường và phát triển sản
+phẩm</strong></td>
+</tr>
+<tr>
+<td>Tính chất</td>
+<td>Tuyến tính, nội bộ</td>
+<td><strong>Định hướng khách hàng, tích hợp thông tin</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="f-hạ-tầng-httt-điển-hình-cho-scm">f) Hạ tầng HTTT điển hình cho
+SCM ⭐⭐⭐</h3>
+<figure>
+<img src="assets/C3p2-75.png"
+alt="A typical IS infrastructure for SCM" />
+<figcaption aria-hidden="true">A typical IS infrastructure for
+SCM</figcaption>
+</figure>
+<p><em>Hình 21 — A typical IS infrastructure for supply chain
+management.</em></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Bên trái: <strong>Supply chain PLANNING systems</strong></th>
+<th>Trung tâm: <strong>Cơ sở dữ liệu</strong></th>
+<th>Bên phải: <strong>Supply chain EXECUTION systems</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>• <strong>Network optimization</strong> (Tối ưu mạng lưới)<br>•
+<strong>Manufacturing planning (MRP)</strong><br>• <strong>Supply
+planning</strong> (Hoạch định cung)<br>• <strong>Demand
+planning</strong> (Hoạch định cầu)</td>
+<td>• <strong>Data warehouse (tactical)</strong> — Kho dữ liệu, cấp
+chiến thuật<br>• <strong>Enterprise Resource Planning database
+(operational)</strong> — CSDL ERP, cấp tác nghiệp</td>
+<td>• <strong>Procurement</strong> (Mua hàng)<br>•
+<strong>Manufacturing</strong> (Sản xuất)<br>• <strong>Warehouse
+management</strong> (Quản lý kho)<br>• <strong>Order processing</strong>
+(Xử lý đơn hàng)<br>• <strong>Distribution</strong> (Phân phối)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ở dưới cùng:</strong> <em>“Forecasting, monitoring and alerts
+delivered by <strong>intranet and extranet</strong>”</em> — Dự báo, giám
+sát và cảnh báo được phân phối qua intranet và extranet.</p>
+<h3 id="g-lợi-ích-của-việc-áp-dụng-httt-vào-scm">g) Lợi ích của việc áp
+dụng HTTT vào SCM ⭐⭐</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Lợi ích</th>
+<th>Kết quả cụ thể</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tăng hiệu quả từng quy trình riêng lẻ</strong></td>
+<td><strong>Giảm chu kỳ (cycle time) và chi phí trên mỗi đơn
+hàng</strong></td>
+</tr>
+<tr>
+<td><strong>Giảm độ phức tạp của chuỗi cung ứng</strong></td>
+<td><strong>Giảm chi phí phân phối và bán qua kênh</strong></td>
+</tr>
+<tr>
+<td><strong>Cải thiện tích hợp dữ liệu</strong> giữa các mắt xích</td>
+<td><strong>Giảm chi phí xử lý giấy tờ</strong></td>
+</tr>
+<tr>
+<td><strong>Giảm chi phí nhờ thuê ngoài (outsourcing)</strong></td>
+<td><strong>Chi phí thấp hơn nhờ cạnh tranh giá</strong></td>
+</tr>
+<tr>
+<td><strong>Đổi mới (Innovation)</strong></td>
+<td><strong>Đáp ứng khách hàng tốt hơn</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="e-procurement-mua-sắm-điện-tử">2.11. E-PROCUREMENT (MUA SẮM ĐIỆN
+TỬ) ⭐⭐⭐</h2>
+<h3 id="a-định-nghĩa-2">a) Định nghĩa</h3>
+<ul>
+<li><strong>Procurement (Mua sắm):</strong> <strong>mọi hoạt động để có
+được hàng hóa từ nhà cung cấp</strong>, bao gồm cả <strong>việc mua
+(purchasing)</strong> lẫn <strong>logistics đầu vào (inbound
+logistics)</strong> và <strong>lưu kho (warehousing)</strong>.</li>
+<li><strong>E-Procurement:</strong> <strong>việc tích hợp và quản lý
+toàn bộ các hoạt động mua sắm, bao gồm: yêu cầu mua (purchase request),
+phê duyệt (authorization), đặt hàng (ordering), giao hàng (delivery) và
+thanh toán (payment).</strong></li>
+</ul>
+<h3 id="b-5-quyền-5-rights-của-e-procurement">b) 5 quyền (5 rights) của
+E-procurement ⭐⭐</h3>
+<p>Mua hàng phải: 1. <strong>At the right price</strong> — đúng giá 2.
+<strong>Delivered at the right time</strong> — giao đúng thời điểm 3.
+<strong>Are of the right quality</strong> — đúng chất lượng 4.
+<strong>Of the right quantity</strong> — đúng số lượng 5. <strong>From
+the right source</strong> — từ đúng nguồn</p>
+<h3 id="c-các-hoạt-động-mua-sắm-chính-trong-một-tổ-chức">c) CÁC HOẠT
+ĐỘNG MUA SẮM CHÍNH TRONG MỘT TỔ CHỨC ⭐⭐⭐</h3>
+<figure>
+<img src="assets/C3p2-80.png"
+alt="Key procurement activities within an organization" />
+<figcaption aria-hidden="true">Key procurement activities within an
+organization</figcaption>
+</figure>
+<p><em>Hình 22 — Key procurement activities within an
+organization.</em></p>
+<p><strong>Bốn vai trò trong tổ chức mua hàng (procuring organization):
+Originator → Approver → Buyer → Accountant (+ Warehouse)</strong></p>
+<p><strong>QUY TRÌNH MUA SẮM ĐẦY ĐỦ (8 bước — HỌC THUỘC ĐỂ VẼ
+LẠI):</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Bước</th>
+<th>Chủ thể</th>
+<th>Hoạt động / Chứng từ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Originator</strong> (Người khởi tạo)</td>
+<td>Lập <strong>Requisition</strong> (Đề nghị mua hàng) và gửi cho
+Approver</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Approver</strong> (Người phê duyệt)</td>
+<td><strong>Phê duyệt</strong> đề nghị mua hàng, chuyển cho Buyer</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Buyer</strong> (Người mua)</td>
+<td>Phát hành <strong>Purchase order (Đơn đặt hàng)</strong> gửi tới
+<strong>Supplier</strong></td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Supplier</strong> (Nhà cung cấp)</td>
+<td>Giao hàng kèm <strong>Invoice and delivery note</strong> (Hóa đơn và
+phiếu giao hàng)</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Warehouse</strong> (Kho)</td>
+<td><strong>Nhận hàng và nhập kho</strong></td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Buyer → Accountant</strong></td>
+<td>Gửi <strong>Purchase order copy</strong> (bản sao đơn đặt hàng) cho
+Kế toán</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><strong>Accountant</strong> (Kế toán)</td>
+<td><strong>Đối chiếu 3 chứng từ</strong> (PO, phiếu giao hàng, hóa đơn)
+và lập lệnh <strong>Payment</strong></td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td><strong>Payment</strong></td>
+<td><strong>Thanh toán</strong> được gửi tới Supplier</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>📌 <strong>Đây là quy trình chuẩn để trả lời câu “Hãy mô tả quy trình
+mua hàng của doanh nghiệp và đề xuất cải tiến bằng
+e-procurement”.</strong></p>
+<p><strong>Cải tiến bằng e-procurement:</strong> thay chứng từ giấy bằng
+<strong>luồng điện tử (EDI / extranet / hệ thống
+e-procurement)</strong>; <strong>phê duyệt điện tử theo
+workflow</strong>; <strong>catalogue điện tử của nhà cung cấp</strong>;
+<strong>tự động đối chiếu ba chiều (3-way matching)</strong>;
+<strong>thanh toán điện tử</strong> ⇒ giảm chu kỳ, giảm sai sót, giảm
+chi phí xử lý giấy tờ, chống <strong>maverick purchasing</strong>.</p>
+</blockquote>
+<h3 id="d-các-loại-hình-mua-sắm">d) Các loại hình mua sắm ⭐</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Câu hỏi</th>
+<th>Phân loại</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>What is bought?</strong> (Mua gì?)</td>
+<td><strong>Production-related</strong> (liên quan sản xuất — hàng trực
+tiếp)<br><strong>Non-production related</strong> (không liên quan sản
+xuất — hàng gián tiếp, MRO)</td>
+</tr>
+<tr>
+<td><strong>How are items bought?</strong> (Mua thế nào?)</td>
+<td><strong>Systematic sourcing</strong> — <strong>quan hệ dài
+hạn</strong><br><strong>Spot sourcing</strong> — <strong>đáp ứng nhu cầu
+tức thời</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="e-tám-loại-trung-gian-trong-mua-sắm-trực-tuyến">e) Tám loại
+trung gian trong mua sắm trực tuyến</h3>
+<ol type="1">
+<li><strong>Traditional manufacturers</strong> (Nhà sản xuất truyền
+thống)</li>
+<li><strong>Direct sales manufacturers</strong> (Nhà sản xuất bán trực
+tiếp)</li>
+<li><strong>Procurement partners</strong> (Đối tác mua sắm)</li>
+<li><strong>Online hubs</strong> (Trung tâm trực tuyến)</li>
+<li><strong>Knowledge expert</strong> (Chuyên gia tri thức)</li>
+<li><strong>Online information services</strong> (Dịch vụ thông tin trực
+tuyến)</li>
+<li><strong>Online retailers</strong> (Nhà bán lẻ trực tuyến)</li>
+<li><strong>Portal communities</strong> (Cộng đồng cổng thông tin)</li>
+</ol>
+<h3 id="f-rủi-ro-và-tác-động-của-e-procurement">f) Rủi ro và tác động
+của E-procurement ⭐⭐</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Loại rủi ro</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tỷ lệ áp dụng thấp</strong></td>
+<td>Vì sao e-procurement ít được chấp nhận?</td>
+</tr>
+<tr>
+<td><strong>Rủi ro tổ chức</strong></td>
+<td><strong>Dịch chuyển/thay thế nhân viên (displace employees)</strong>
+và <strong>Maverick purchases</strong> (mua ngoài hệ thống, không tuân
+thủ quy trình)</td>
+</tr>
+<tr>
+<td><strong>Không đạt được mức giảm chi phí thực sự</strong></td>
+<td>Failure to achieve real cost reductions</td>
+</tr>
+<tr>
+<td><strong>Rủi ro công nghệ</strong></td>
+<td><strong>Công nghệ và mô hình mới liên tục xuất hiện; khó quyết định
+chọn cái nào</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="g-triển-khai-e-procurement">g) Triển khai E-procurement
+⭐⭐</h3>
+<ul>
+<li><strong>Doanh nghiệp nên CẢI TIẾN QUY TRÌNH KINH DOANH chứ không chỉ
+đơn thuần tự động hóa quy trình hiện có.</strong> <em>(Ý cực kỳ quan
+trọng — hay được hỏi!)</em></li>
+<li><strong>Thách thức lớn nhất:</strong>
+<ol type="1">
+<li><strong>Training / Change management</strong> (Đào tạo / Quản trị
+thay đổi)</li>
+<li><strong>Supplier relationship management</strong> (Quản trị quan hệ
+nhà cung cấp)</li>
+</ol></li>
+<li><strong>Nhà quản lý HTTT và đội mua hàng phải phối hợp cùng
+nhau.</strong></li>
+<li><strong>Các loại HTTT khác nhau có thể dùng cho các phần khác nhau
+của chu trình mua sắm.</strong></li>
+</ul>
+<h3 id="h-ba-mô-hình-e-procurement-cho-người-mua">h) Ba mô hình
+E-procurement cho người mua ⭐⭐⭐</h3>
+<figure>
+<img src="assets/C3p2-85.png"
+alt="Three main e-procurement model alternatives for buyers" />
+<figcaption aria-hidden="true">Three main e-procurement model
+alternatives for buyers</figcaption>
+</figure>
+<p><em>Hình 23 — The three main e-procurement model alternatives for
+buyers.</em></p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Mô hình</th>
+<th>Tên gọi</th>
+<th>Cơ chế</th>
+<th>Ai hưởng lợi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>(a) One-to-many</strong></td>
+<td><strong>Sell-side @ supplier site</strong></td>
+<td><strong>Trade via supplier’s web site</strong> — giao dịch qua
+website của <strong>nhà cung cấp</strong>; 1 nhà cung cấp phục vụ nhiều
+khách hàng</td>
+<td><strong>Nhà cung cấp</strong> kiểm soát</td>
+</tr>
+<tr>
+<td><strong>(b) Many-to-one</strong></td>
+<td><strong>Buy-side @ buyer site</strong></td>
+<td><strong>Trade via buyer’s web site</strong> — giao dịch qua website
+của <strong>người mua</strong>; nhiều nhà cung cấp phục vụ 1 người
+mua</td>
+<td><strong>Người mua</strong> kiểm soát (thường là DN lớn)</td>
+</tr>
+<tr>
+<td><strong>(c) Many-to-many</strong></td>
+<td><strong>Neutral exchanges</strong></td>
+<td><strong>Trade via intermediary web site</strong> — giao dịch qua
+website của <strong>trung gian trung lập</strong>; nhiều nhà cung cấp ↔︎
+nhiều khách hàng</td>
+<td><strong>Trung gian</strong> — sàn giao dịch</td>
+</tr>
+</tbody>
+</table>
+<h3 id="i-các-loại-thị-trường-marketplace">i) Các loại thị trường
+(Marketplace) ⭐</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Định nghĩa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vertical marketplace</strong></td>
+<td>Phục vụ <strong>cùng một ngành</strong></td>
+</tr>
+<tr>
+<td><strong>Horizontal marketplace</strong></td>
+<td>Phục vụ <strong>nhiều ngành</strong></td>
+</tr>
+<tr>
+<td><strong>Reverse aggregation</strong></td>
+<td><strong>Gộp sức mua</strong> (của nhiều người mua)</td>
+</tr>
+<tr>
+<td><strong>Forward aggregation</strong></td>
+<td><strong>Gộp nhiều nhà cung cấp hoặc nhiều chức năng chuỗi cung
+ứng</strong></td>
+</tr>
+<tr>
+<td><strong>Metamediaries</strong></td>
+<td>Trung gian của trung gian</td>
+</tr>
+</tbody>
+</table>
+<h2 id="hoạch-định-nguồn-lực-doanh-nghiệp-erp">2.12. HOẠCH ĐỊNH NGUỒN
+LỰC DOANH NGHIỆP (ERP) ⭐⭐</h2>
+<h3 id="a-erp-là-gì">a) ERP là gì?</h3>
+<blockquote>
+<p><strong>ERP</strong> là các <strong>gói phần mềm hệ thống kinh doanh
+tích hợp TOÀN BỘ các mặt của một doanh nghiệp.</strong></p>
+</blockquote>
+<p><strong>Bao gồm:</strong> kế toán (accounting), logistics, sản xuất
+(manufacturing), marketing, hoạch định (planning), quản trị dự án
+(project management), các chức năng ngân quỹ (treasury)…</p>
+<h3 id="b-tích-hợp-hệ-thống-erp-với-edi">b) Tích hợp hệ thống ERP với
+EDI ⭐⭐⭐</h3>
+<figure>
+<img src="assets/C3p2-89.png" alt="ERP system integration with EDI" />
+<figcaption aria-hidden="true">ERP system integration with
+EDI</figcaption>
+</figure>
+<p><em>Hình 24 — ERP system integration with EDI (Schneider, Electronic
+Commerce 12th).</em></p>
+<p><strong>Cấu trúc:</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ERP system</strong> (bên trái)</td>
+<td><strong>Order management · Financial management · Logistics
+management · Production management</strong></td>
+</tr>
+<tr>
+<td><strong>Kết nối</strong> (giữa)</td>
+<td><strong>Web or application server</strong></td>
+</tr>
+<tr>
+<td><strong>Hai kênh EDI</strong></td>
+<td><strong>Internet EDI</strong> (qua Internet) → <strong>Trading
+partner A, B</strong><br><strong>VAN</strong> (Value Added Network) →
+<strong>Trading partner C, D</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>📌 <strong>Ý nghĩa:</strong> ERP tích hợp nội bộ;
+<strong>EDI</strong> (qua <strong>Internet EDI</strong> hoặc
+<strong>VAN</strong>) kết nối ERP với <strong>các đối tác thương mại bên
+ngoài</strong> ⇒ đây chính là cầu nối giữa <strong>E-business nội
+bộ</strong> và <strong>E-commerce với bên ngoài</strong>.</p>
+</blockquote>
+<h3 id="c-nhà-cung-cấp-erp">c) Nhà cung cấp ERP</h3>
+<ul>
+<li><strong>Hai nhà cung cấp ERP lớn nhất: Oracle và SAP.</strong></li>
+<li>Doanh nghiệp trực tuyến nhỏ không đủ khả năng mua trọn gói ERP; có
+thể mua các sản phẩm như <strong>NetSuite</strong> — thuê bao phần mềm
+ERP cho mọi quy mô doanh nghiệp.</li>
+<li>Thay vì cài đặt và tùy biến ERP trên mạng riêng, doanh nghiệp
+<strong>dùng trình duyệt truy cập ERP trên site của nhà cung
+cấp</strong> — đây chính là <strong>SaaS (Software as a
+Service)</strong>.</li>
+</ul>
+<h2 id="web-hosting">2.13. WEB HOSTING ⭐⭐</h2>
+<h3 id="a-định-nghĩa-3">a) Định nghĩa</h3>
+<blockquote>
+<p><strong>Web hosting</strong> là <strong>dịch vụ cho phép tổ chức và
+cá nhân xuất bản (publish) hoặc tải lên (upload) một website/trang web
+lên Internet.</strong></p>
+</blockquote>
+<ul>
+<li><strong>Web host / web hosting service provider:</strong> doanh
+nghiệp cung cấp <strong>công nghệ và dịch vụ</strong> cần thiết để
+website được xem trên Internet.</li>
+<li>Website được <strong>lưu trữ trên các máy tính đặc biệt gọi là web
+server</strong>.</li>
+<li>Nhà cung cấp tiêu biểu: <strong>GoDaddy, Bluehost, Dreamhost,
+IONOS</strong>.</li>
+</ul>
+<p><strong>Các bước host một website:</strong> 1. <strong>Upload file từ
+máy tính lên server web hosting</strong> 2. <strong>Máy chủ làm cho site
+khả dụng trên Internet</strong> 3. <strong>Khách truy cập xem được
+website</strong></p>
+<h3 id="b-tính-năng-do-nhà-cung-cấp-web-hosting-cung-cấp">b) Tính năng
+do nhà cung cấp Web Hosting cung cấp</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Tính năng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Amount of Storage</strong> (Dung lượng lưu trữ)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Amount of Bandwidth</strong> (Băng thông)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Domain Registration</strong> (Đăng ký tên miền)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Number of Sub-domains</strong> (Số tên miền phụ)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Email Support</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Database Support</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Technical Support</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Site Backup</strong></td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Choice of Operating System</strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>24/7 Availability</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="c-tiêu-chí-chọn-nhà-cung-cấp-web-hosting">c) Tiêu chí chọn nhà
+cung cấp Web Hosting ⭐</h3>
+<ol type="1">
+<li><strong>Đánh giá nhu cầu dung lượng đĩa và băng thông</strong></li>
+<li><strong>Độ tin cậy và tính sẵn sàng</strong> (Reliability and
+availability)</li>
+<li><strong>Hỗ trợ 24/7</strong></li>
+<li><strong>Giá cả</strong></li>
+<li><strong>Chọn đúng hệ điều hành</strong></li>
+<li><strong>Bảo mật:</strong> firewall, sao lưu hằng ngày, xác thực
+người dùng…</li>
+<li><strong>Dịch vụ e-mail</strong></li>
+</ol>
+<h3 id="d-năm-loại-web-hosting">d) Năm loại Web Hosting ⭐⭐⭐</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Mô tả</th>
+<th>Ưu/Nhược</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Free Web Hosting</strong></td>
+<td>Nhiều nhà cung cấp bù chi phí bằng <strong>quảng cáo tự động chèn
+vào trang</strong> qua pop-up, frame, script. Có thể qua dịch vụ như
+<strong>Google Cloud Hosting</strong> hoặc qua <strong>ISP</strong></td>
+<td><strong>Bị giới hạn</strong> so với hosting trả phí: ít dung lượng
+và băng thông hơn</td>
+</tr>
+<tr>
+<td><strong>2. Shared Web Hosting</strong></td>
+<td><strong>Phổ biến nhất.</strong> Gọi là “shared” vì <strong>nhiều ứng
+dụng web (thường là website) được lưu trên MỘT máy chủ vật lý và chia sẻ
+tài nguyên</strong> (RAM, CPU). Trả tiền <strong>hằng tháng</strong> cho
+không gian và dịch vụ</td>
+<td><strong>Rẻ</strong>; giá phụ thuộc dịch vụ mong muốn (email, CSDL,
+bảo mật, thêm dung lượng, thêm băng thông…). <strong>Bị ảnh hưởng bởi
+các site khác</strong></td>
+</tr>
+<tr>
+<td><strong>3. Dedicated Web Hosting</strong></td>
+<td><strong>Ngược với shared:</strong> ứng dụng của khách hàng
+<strong>KHÔNG chia sẻ tài nguyên server</strong> với người khác. Server
+<strong>dùng toàn bộ băng thông khả dụng cho riêng mình</strong></td>
+<td>Dành cho <strong>website và ứng dụng lưu lượng cao</strong>.
+<strong>Đắt hơn</strong></td>
+</tr>
+<tr>
+<td><strong>4. Cloud Web Hosting</strong></td>
+<td>“Cloud” là cấu trúc điện tử nơi <strong>dữ liệu được lưu trên nhiều
+máy tính khác nhau</strong> và phục vụ qua kết nối mạng. Dữ liệu website
+(HTML, CSS, hình ảnh…) được <strong>trải trên một cụm ổ cứng liên kết
+với nhau</strong></td>
+<td><strong>Xu hướng nóng nhất</strong>; <strong>nhiều ưu điểm hơn
+shared hosting, đôi khi vượt cả dedicated hosting</strong>. Dựa trên
+công nghệ điện toán đám mây cho phép <strong>số lượng máy không giới hạn
+hoạt động như một hệ thống</strong></td>
+</tr>
+<tr>
+<td><strong>5. Co-location Web Hosting</strong></td>
+<td>Giống dedicated nhưng <strong>NGƯỜI DÙNG SỞ HỮU MÁY CHỦ</strong>.
+Công ty hosting cung cấp <strong>không gian vật lý</strong> đặt server
+và chăm sóc server. <strong>Mạnh nhất và đắt nhất.</strong> Khách hàng
+phải <strong>cử quản trị viên tới data center</strong> để nâng cấp/thay
+đổi phần cứng</td>
+<td>Có hai dạng: <strong>managed</strong> và <strong>unmanaged</strong>
+(“unmanaged” = doanh nghiệp/cá nhân <strong>tự xử lý toàn bộ quản trị
+server</strong>: cập nhật phần mềm, web server và chính site).
+<strong>Hoàn hảo cho công ty cần cấu hình phần mềm tùy biến hoặc bảo mật
+web nâng cao</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="phần-3.-an-ninh-trực-tuyến-online-security">PHẦN 3. AN NINH TRỰC
+TUYẾN (ONLINE SECURITY)</h1>
+<h2 id="môi-trường-an-ninh-tmđt">3.1. Môi trường an ninh TMĐT</h2>
+<ul>
+<li><strong>Quy mô vấn đề:</strong> tổng thiệt hại do tội phạm mạng
+<strong>chưa rõ ràng</strong>. Nghiên cứu McAfee/CSIS: <strong>tác động
+kinh tế toàn cầu của tội phạm mạng và gián điệp mạng từ 455 tới 600 tỷ
+USD</strong>.</li>
+<li>Báo cáo của các nhà cung cấp sản phẩm bảo mật cho thấy <strong>tội
+phạm mạng ngày càng tăng</strong>.</li>
+<li><strong>Gian lận thẻ tín dụng trực tuyến</strong> là một trong những
+dạng nổi bật nhất.</li>
+<li><strong>Chợ kinh tế ngầm (underground economy marketplaces)</strong>
+bán thông tin đánh cắp, mã độc…</li>
+</ul>
+<p><strong>An ninh TMĐT tốt là gì?</strong> - Để đạt mức bảo mật cao
+nhất cần: <strong>công nghệ mới + chính sách và quy trình của tổ chức +
+chuẩn ngành và luật pháp</strong>. - Yếu tố khác: <strong>giá trị thời
+gian của tiền</strong>, <strong>chi phí bảo mật so với tổn thất tiềm
+tàng</strong>.</p>
+<h2 id="sáu-chiều-an-ninh-tmđt">3.2. SÁU CHIỀU AN NINH TMĐT ⭐⭐⭐</h2>
+<p><strong>Bảng 9 — Góc nhìn của khách hàng và người bán về các chiều an
+ninh TMĐT:</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Chiều an ninh</th>
+<th><strong>Góc nhìn KHÁCH HÀNG</strong></th>
+<th><strong>Góc nhìn NGƯỜI BÁN</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Integrity</strong><br>(Toàn vẹn)</td>
+<td><em>Thông tin tôi gửi/nhận có bị thay đổi không?</em></td>
+<td><em>Dữ liệu trên site có bị thay đổi trái phép không? Dữ liệu nhận
+từ khách có hợp lệ không?</em></td>
+</tr>
+<tr>
+<td><strong>Nonrepudiation</strong><br>(Chống chối bỏ)</td>
+<td><em>Bên giao dịch với tôi có thể chối bỏ hành động đã thực hiện sau
+này không?</em></td>
+<td><em>Khách hàng có thể phủ nhận việc đã đặt hàng không?</em></td>
+</tr>
+<tr>
+<td><strong>Authenticity</strong><br>(Xác thực)</td>
+<td><em>Tôi đang giao dịch với ai? Làm sao chắc chắn người/tổ chức đó
+đúng là họ tuyên bố?</em></td>
+<td><em>Danh tính thật của khách hàng là gì?</em></td>
+</tr>
+<tr>
+<td><strong>Confidentiality</strong><br>(Bảo mật)</td>
+<td><em>Ngoài người nhận dự kiến, có ai khác đọc được tin nhắn của tôi
+không?</em></td>
+<td><em>Tin nhắn hoặc dữ liệu mật có bị ai ngoài người được phép truy
+cập không?</em></td>
+</tr>
+<tr>
+<td><strong>Privacy</strong><br>(Riêng tư)</td>
+<td><em>Tôi có kiểm soát được việc sử dụng thông tin về bản thân đã gửi
+cho người bán không?</em></td>
+<td><em>Dữ liệu cá nhân thu thập trong giao dịch TMĐT được dùng thế nào?
+Thông tin cá nhân của khách có bị dùng trái phép không?</em></td>
+</tr>
+<tr>
+<td><strong>Availability</strong><br>(Sẵn sàng)</td>
+<td><em>Tôi có truy cập được site không?</em></td>
+<td><em>Site có đang hoạt động không?</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Căng thẳng giữa an ninh và các giá trị khác:</strong> -
+<strong>Ease of use:</strong> <strong>càng thêm biện pháp bảo mật thì
+site càng khó dùng và càng chậm</strong>. - <strong>Public safety và
+việc tội phạm dùng Internet:</strong> tội phạm dùng công nghệ để lập kế
+hoạch phạm tội hoặc đe dọa quốc gia.</p>
+<h2 id="ba-điểm-dễ-bị-tổn-thương">3.3. BA ĐIỂM DỄ BỊ TỔN THƯƠNG
+⭐⭐</h2>
+<p><strong>Ba điểm yếu then chốt trong môi trường TMĐT:</strong> 1.
+<strong>Client</strong> (Máy khách) 2. <strong>Server</strong> (Máy chủ)
+3. <strong>Communications pipeline</strong> (Đường ống truyền thông —
+kênh truyền Internet)</p>
+<h3 id="một-giao-dịch-tmđt-điển-hình">Một giao dịch TMĐT điển hình
+⭐⭐⭐</h3>
+<figure>
+<img src="assets/C3p3-11.png" alt="A Typical E-commerce Transaction" />
+<figcaption aria-hidden="true">A Typical E-commerce
+Transaction</figcaption>
+</figure>
+<p><em>Hình 26 — A Typical E-commerce Transaction.</em></p>
+<p><strong>Các thành phần và luồng:</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Vai trò</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Online consumer</strong></td>
+<td>Người tiêu dùng trực tuyến (máy tính, điện thoại)</td>
+</tr>
+<tr>
+<td><strong>Internet service provider</strong></td>
+<td>Nhà cung cấp dịch vụ Internet — cầu nối người tiêu dùng tới
+merchant</td>
+</tr>
+<tr>
+<td><strong>Merchant website</strong></td>
+<td>Gồm <strong>Online store</strong> ↔︎ <strong>Merchant Web
+servers</strong> ↔︎ <strong>Database server</strong></td>
+</tr>
+<tr>
+<td><strong>Customer credit card bank</strong> ↔︎ <strong>Merchant
+bank</strong></td>
+<td>Hai ngân hàng trao đổi để thanh toán</td>
+</tr>
+<tr>
+<td><strong>Warehouse</strong></td>
+<td>Kho hàng — nhận lệnh từ database server</td>
+</tr>
+<tr>
+<td><strong>Shipping</strong></td>
+<td>Vận chuyển hàng tới <strong>Online consumer</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Luồng:</strong> Online consumer → ISP → Online store →
+Database server → Warehouse → Shipping → Online consumer; song song:
+Merchant Web servers ↔︎ Merchant bank ↔︎ Customer credit card bank.</p>
+<h3 id="các-điểm-dễ-bị-tổn-thương-trong-giao-dịch-tmđt">Các điểm dễ bị
+tổn thương trong giao dịch TMĐT ⭐⭐⭐</h3>
+<figure>
+<img src="assets/C3p3-12.png"
+alt="Vulnerable Points in an E-commerce Transaction" />
+<figcaption aria-hidden="true">Vulnerable Points in an E-commerce
+Transaction</figcaption>
+</figure>
+<p><em>Hình 27 — Vulnerable Points in an E-commerce
+Transaction.</em></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Vị trí</th>
+<th>Mối đe dọa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Giữa <strong>consumer và ISP</strong></td>
+<td><strong>Wi-Fi listening</strong> (nghe lén Wi-Fi), <strong>Wire
+tap</strong> (nghe lén đường truyền)</td>
+</tr>
+<tr>
+<td>Tại <strong>Online consumer</strong></td>
+<td><strong>Web beacons</strong></td>
+</tr>
+<tr>
+<td>Tại <strong>Online store</strong></td>
+<td><strong>Customer list hack</strong> (đánh cắp danh sách khách
+hàng)</td>
+</tr>
+<tr>
+<td>Tại <strong>Database server</strong></td>
+<td><strong>SQL injection</strong></td>
+</tr>
+<tr>
+<td>Giữa <strong>Customer credit card bank và Merchant
+bank</strong></td>
+<td><strong>Security breach</strong> (xâm phạm bảo mật)</td>
+</tr>
+<tr>
+<td>Tại <strong>Customer credit card bank</strong></td>
+<td><strong>DOS attack, Card theft, Hacked</strong></td>
+</tr>
+<tr>
+<td>Tại <strong>Shipping / Warehouse</strong></td>
+<td>Điểm yếu trong khâu giao nhận</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>📌 <strong>Câu hỏi rất hay ra: “Vẽ sơ đồ một giao dịch TMĐT điển hình
+và chỉ ra các điểm dễ bị tấn công cùng giải pháp phòng
+ngừa.”</strong></p>
+</blockquote>
+<h2 id="các-mối-đe-dọa-an-ninh">3.4. CÁC MỐI ĐE DỌA AN NINH ⭐⭐</h2>
+<h3 id="a-malicious-code-mã-độc">a) Malicious Code (Mã độc)</h3>
+<p><strong>Malvertising · Viruses · Worms · Ransomware · Trojan horses ·
+Backdoors · Drive-by downloads.</strong></p>
+<h3 id="b-potentially-unwanted-programs-chương-trình-không-mong-muốn">b)
+Potentially Unwanted Programs (Chương trình không mong muốn)</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Browser parasites</strong></td>
+<td><strong>Giám sát và thay đổi trình duyệt</strong> của người
+dùng</td>
+</tr>
+<tr>
+<td><strong>Adware</strong></td>
+<td><strong>Gọi quảng cáo pop-up</strong></td>
+</tr>
+<tr>
+<td><strong>Spyware</strong></td>
+<td><strong>Theo dõi thao tác bàn phím, email, tin nhắn</strong> của
+người dùng</td>
+</tr>
+</tbody>
+</table>
+<h3 id="c-phishing">c) Phishing</h3>
+<blockquote>
+<p>Mọi <strong>nỗ lực lừa đảo trực tuyến của bên thứ ba nhằm lấy thông
+tin bí mật để trục lợi tài chính</strong>.</p>
+</blockquote>
+<p><strong>Chiến thuật:</strong> <strong>Social engineering</strong> ·
+<strong>E-mail scams và BEC phishing</strong> · <strong>Spear
+phishing</strong>. Dùng cho <strong>gian lận và đánh cắp danh
+tính</strong>.</p>
+<h3 id="d-hacking-cybervandalism-và-hacktivism">d) Hacking,
+Cybervandalism và Hacktivism</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Khái niệm</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hacking</strong></td>
+<td><strong>Hackers vs crackers</strong>; <strong>White hats, black
+hats, grey hats</strong>; Mục tiêu: cybervandalism, data breaches</td>
+</tr>
+<tr>
+<td><strong>Cybervandalism</strong></td>
+<td><strong>Phá rối và phá hủy website</strong></td>
+</tr>
+<tr>
+<td><strong>Hacktivism</strong></td>
+<td>Tấn công mạng vì mục đích chính trị/xã hội</td>
+</tr>
+</tbody>
+</table>
+<h3 id="e-data-breaches-rò-rỉ-dữ-liệu">e) Data Breaches (Rò rỉ dữ
+liệu)</h3>
+<blockquote>
+<p>Tổ chức <strong>mất kiểm soát thông tin doanh nghiệp vào tay người
+ngoài</strong>.</p>
+</blockquote>
+<ul>
+<li>ITRC ghi nhận <strong>1.244 vụ rò rỉ năm 2018</strong> (giảm 23% so
+với 2017).</li>
+<li><strong>Facebook 2018:</strong> lộ thông tin cá nhân của <strong>30
+triệu người</strong>.</li>
+<li><strong>Nguyên nhân hàng đầu:</strong> <strong>Hacking · Truy cập
+trái phép · Lỗi/bất cẩn của nhân viên</strong>.</li>
+</ul>
+<h3 id="f-credit-card-fraudtheft">f) Credit Card Fraud/Theft</h3>
+<ul>
+<li>Thẻ tín dụng bị đánh cắp chiếm khoảng <strong>0,9% trên Web</strong>
+và <strong>0,8% giao dịch di động</strong>.</li>
+<li><strong>Nguyên nhân chính: hacking và cướp dữ liệu từ máy chủ doanh
+nghiệp.</strong></li>
+<li><strong>Vấn đề an ninh trung tâm: xác lập danh tính khách
+hàng</strong> — <strong>E-signatures · Multi-factor authentication ·
+Fingerprint identification</strong>.</li>
+</ul>
+<h3 id="g-identity-fraudtheft">g) Identity Fraud/Theft</h3>
+<blockquote>
+<p><strong>Sử dụng trái phép dữ liệu cá nhân của người khác để trục lợi
+tài chính bất hợp pháp</strong>: số an sinh xã hội, giấy phép lái xe, số
+thẻ tín dụng, username/password.</p>
+</blockquote>
+<p>2017: gần <strong>17 triệu</strong> người Mỹ bị; 2018: <strong>14,4
+triệu</strong>.</p>
+<h3 id="h-spoofing-pharming-và-spam-websites">h) Spoofing, Pharming và
+Spam websites</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Khái niệm</th>
+<th>Định nghĩa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Spoofing</strong></td>
+<td><strong>Che giấu danh tính thật bằng cách dùng email hoặc địa chỉ IP
+của người khác</strong></td>
+</tr>
+<tr>
+<td><strong>Pharming</strong></td>
+<td><strong>Tự động chuyển hướng một URL sang địa chỉ khác</strong> để
+hacker trục lợi</td>
+</tr>
+<tr>
+<td><strong>Spam (junk) websites</strong></td>
+<td>Cung cấp tập hợp quảng cáo cho site khác, <strong>có thể chứa mã
+độc</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="i-sniffing-và-man-in-the-middle">i) Sniffing và
+Man-In-The-Middle</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Khái niệm</th>
+<th>Định nghĩa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sniffer</strong></td>
+<td><strong>Chương trình nghe lén giám sát mạng</strong>; có thể phát
+hiện điểm sự cố mạng; cũng có thể bị tội phạm dùng để <strong>đánh cắp
+thông tin độc quyền</strong></td>
+</tr>
+<tr>
+<td><strong>E-mail wiretaps</strong></td>
+<td><strong>Ghi lại email tại cấp mail server</strong></td>
+</tr>
+<tr>
+<td><strong>Man-in-the-middle attack</strong></td>
+<td>Kẻ tấn công <strong>chặn và thay đổi liên lạc giữa hai bên</strong>
+đang tin rằng họ giao tiếp trực tiếp với nhau</td>
+</tr>
+</tbody>
+</table>
+<h3 id="j-dos-và-ddos">j) DoS và DDoS ⭐</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DoS (Denial of Service)</strong></td>
+<td><strong>Làm ngập website bằng ping và yêu cầu trang</strong>,
+<strong>áp đảo và có thể làm sập web server</strong>; thường kèm
+<strong>tống tiền</strong></td>
+</tr>
+<tr>
+<td><strong>DDoS (Distributed DoS)</strong></td>
+<td>Dùng <strong>hàng trăm/hàng nghìn máy tính</strong> tấn công mạng
+mục tiêu; có thể dùng <strong>thiết bị IoT và thiết bị di
+động</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="k-insider-attacks-tấn-công-từ-bên-trong">k) Insider Attacks (Tấn
+công từ bên trong) ⭐</h3>
+<ul>
+<li><strong>Mối đe dọa lớn nhất với doanh nghiệp đến từ biển thủ nội bộ
+(insider embezzlement).</strong></li>
+<li>Nhân viên có <strong>quyền truy cập thông tin đặc
+quyền</strong>.</li>
+<li><strong>Quy trình bảo mật kém.</strong></li>
+<li><strong>Người bên trong có khả năng là nguồn tấn công mạng cao hơn
+người ngoài.</strong></li>
+</ul>
+<h3 id="l-phần-mềm-thiết-kế-kém">l) Phần mềm thiết kế kém</h3>
+<p>Độ phức tạp và nhu cầu phần mềm tăng ⇒ tăng lỗi và lỗ hổng.
+<strong>SQL injection attacks · Zero-day vulnerability · Heartbleed bug;
+Shellshock (BashBug); FREAK.</strong></p>
+<h3 id="m-các-môi-trường-rủi-ro-khác">m) Các môi trường rủi ro khác</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Môi trường</th>
+<th>Vấn đề</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Social Network</strong></td>
+<td>Virus, chiếm quyền site, gian lận danh tính, app chứa mã độc,
+<strong>click hijacking</strong>, phishing, spam; <strong>Manual sharing
+scams</strong> (chia sẻ file dẫn tới site độc hại); <strong>fake
+services, fake Like buttons, fake apps</strong></td>
+</tr>
+<tr>
+<td><strong>Mobile Platform</strong></td>
+<td><strong>Nhận thức công chúng về lỗ hổng thiết bị di động còn
+thấp</strong>; 2017: Symantec xác định hơn <strong>26.500 biến thể mã
+độc di động</strong>; <strong>Vishing · Smishing · SMS spoofing ·
+Madware</strong></td>
+</tr>
+<tr>
+<td><strong>Cloud</strong></td>
+<td><strong>DDoS attacks · Infrastructure scanning · Phishing công nghệ
+thấp lấy mật khẩu và quyền truy cập · Dùng cloud storage để kết nối tài
+khoản liên kết · Thiếu mã hóa và quy trình bảo mật mạnh</strong></td>
+</tr>
+<tr>
+<td><strong>IoT</strong></td>
+<td><strong>Môi trường khó bảo vệ</strong>; <strong>số lượng liên kết
+kết nối khổng lồ</strong>; <strong>thiết bị gần như giống hệt nhau và
+vòng đời dài</strong>; <strong>nhiều thiết bị không có tính năng nâng
+cấp</strong>; <strong>khả năng quan sát hoạt động, dữ liệu, bảo mật rất
+hạn chế</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="giải-pháp-công-nghệ">3.5. GIẢI PHÁP CÔNG NGHỆ ⭐⭐⭐</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Nhóm</th>
+<th>Giải pháp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Protecting Internet communications</strong></td>
+<td><strong>Encryption</strong> (Mã hóa)</td>
+</tr>
+<tr>
+<td><strong>Securing channels of communication</strong></td>
+<td><strong>SSL, TLS, VPNs, Wi-Fi</strong></td>
+</tr>
+<tr>
+<td><strong>Protecting networks</strong></td>
+<td><strong>Firewalls, proxy servers, IDS, IPS</strong></td>
+</tr>
+<tr>
+<td><strong>Protecting servers and clients</strong></td>
+<td><strong>OS security, anti-virus software</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="a-mã-hóa-encryption">a) Mã hóa (Encryption) ⭐⭐</h3>
+<blockquote>
+<p><strong>Encryption:</strong> <strong>biến đổi dữ liệu thành bản mã
+(cipher text) mà chỉ người gửi và người nhận đọc được.</strong> Bảo vệ
+cả <strong>thông tin lưu trữ</strong> lẫn <strong>thông tin truyền
+đi</strong>.</p>
+</blockquote>
+<p><strong>Mã hóa cung cấp 4 trên 6 chiều an ninh TMĐT:</strong> 1.
+<strong>Message integrity</strong> 2. <strong>Nonrepudiation</strong> 3.
+<strong>Authentication</strong> 4. <strong>Confidentiality</strong></p>
+<p><em>(Không cung cấp: Privacy và Availability)</em></p>
+<h3 id="b-mã-hóa-khóa-đối-xứng-symmetric-key-cryptography">b) Mã hóa
+khóa đối xứng (Symmetric Key Cryptography)</h3>
+<ul>
+<li><strong>Người gửi và người nhận dùng CÙNG một khóa số để mã hóa và
+giải mã.</strong></li>
+<li><strong>Cần một bộ khóa khác nhau cho mỗi giao dịch.</strong></li>
+<li><strong>Độ mạnh = độ dài khóa nhị phân.</strong></li>
+<li>Chuẩn: <strong>DES (Data Encryption Standard)</strong>, <strong>AES
+(Advanced Encryption Standard)</strong>; các chuẩn khác dùng khóa tới
+<strong>2.048 bit</strong>.</li>
+</ul>
+<h3 id="c-mã-hóa-khóa-công-khai-public-key-cryptography">c) Mã hóa khóa
+công khai (Public Key Cryptography) ⭐⭐</h3>
+<ul>
+<li>Dùng <strong>hai khóa số liên quan toán học với nhau</strong>:
+<ul>
+<li><strong>Public key</strong> (khóa công khai — phân phát rộng
+rãi)</li>
+<li><strong>Private key</strong> (khóa riêng — chủ sở hữu giữ bí
+mật)</li>
+</ul></li>
+<li><strong>Cả hai khóa đều dùng để mã hóa và giải mã thông
+điệp.</strong></li>
+<li><strong>Khóa nào đã dùng để mã hóa thì KHÔNG dùng chính nó để giải
+mã được.</strong></li>
+<li><strong>Người gửi dùng khóa công khai của người nhận để mã hóa;
+người nhận dùng khóa riêng của mình để giải mã.</strong></li>
+</ul>
+<h3 id="d-chữ-ký-số-và-hash-digest">d) Chữ ký số và Hash Digest
+⭐⭐</h3>
+<p><strong>Quy trình:</strong> 1. Người gửi <strong>áp dụng thuật toán
+băm (hash function)</strong> lên thông điệp, rồi <strong>mã hóa thông
+điệp và kết quả băm bằng khóa công khai của người nhận</strong>. 2.
+Người gửi <strong>mã hóa thông điệp và kết quả băm bằng khóa RIÊNG của
+mình</strong> — tạo ra <strong>chữ ký số (digital signature)</strong>,
+phục vụ <strong>tính xác thực (authenticity)</strong> và <strong>chống
+chối bỏ (nonrepudiation)</strong>. 3. Người nhận <strong>trước tiên dùng
+khóa công khai của người gửi để xác thực thông điệp</strong>, sau đó
+<strong>dùng khóa riêng của mình để giải mã kết quả băm và thông
+điệp</strong>.</p>
+<h3 id="e-digital-envelope-phong-bì-số">e) Digital Envelope (Phong bì
+số) ⭐</h3>
+<p><strong>Giải quyết điểm yếu của cả hai phương pháp:</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Phương pháp</th>
+<th>Điểm yếu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Public key cryptography</strong></td>
+<td><strong>Chậm về tính toán</strong>, giảm tốc độ truyền, tăng thời
+gian xử lý</td>
+</tr>
+<tr>
+<td><strong>Symmetric key cryptography</strong></td>
+<td><strong>Đường truyền không an toàn</strong> (khó trao đổi khóa an
+toàn)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cách hoạt động:</strong> - <strong>Dùng mã hóa khóa đối xứng
+để mã hóa TÀI LIỆU</strong> (nhanh) - <strong>Dùng mã hóa khóa công khai
+để mã hóa và gửi KHÓA ĐỐI XỨNG</strong> (an toàn)</p>
+<h3 id="f-chứng-thư-số-và-pki">f) Chứng thư số và PKI ⭐⭐</h3>
+<p><strong>Digital certificate bao gồm:</strong> 1. <strong>Tên chủ
+thể/công ty</strong> 2. <strong>Khóa công khai của chủ thể</strong> 3.
+<strong>Số sê-ri của chứng thư số</strong> 4. <strong>Ngày hết hạn, ngày
+cấp</strong> 5. <strong>Chữ ký số của CA (Certification
+Authority)</strong></p>
+<p><strong>PKI (Public Key Infrastructure):</strong> các <strong>CA và
+quy trình chứng thư số</strong>; <strong>PGP</strong>.</p>
+<p><strong>Hạn chế của PKI:</strong> 1. <strong>Không bảo vệ việc lưu
+trữ khóa riêng</strong> — PKI <strong>không hiệu quả với người bên
+trong, nhân viên</strong>; việc bảo vệ khóa riêng của cá nhân có thể rất
+tùy tiện. 2. <strong>Không đảm bảo máy tính xác minh của người bán là an
+toàn.</strong> 3. <strong>CA không phổ biến và không được kiểm
+soát.</strong></p>
+<h3 id="g-bảo-mật-kênh-truyền-thông">g) Bảo mật kênh truyền thông
+⭐</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Công nghệ</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SSL/TLS</strong></td>
+<td><strong>Thiết lập phiên client–server an toàn, được thương lượng
+(negotiated)</strong></td>
+</tr>
+<tr>
+<td><strong>VPN (Virtual Private Network)</strong></td>
+<td>Cho phép <strong>người dùng từ xa truy cập mạng nội bộ an toàn qua
+Internet</strong></td>
+</tr>
+<tr>
+<td><strong>Wireless (Wi-Fi)</strong></td>
+<td><strong>WPA2, WPA3</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="h-bảo-vệ-mạng">h) Bảo vệ mạng ⭐</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Công nghệ</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Firewall</strong></td>
+<td>Phần cứng hoặc phần mềm <strong>dùng chính sách bảo mật để lọc gói
+tin</strong>: <strong>Packet filters</strong>, <strong>Application
+gateways</strong>; <strong>Next-generation firewalls</strong></td>
+</tr>
+<tr>
+<td><strong>Proxy servers</strong></td>
+<td><strong>Máy chủ phần mềm xử lý mọi liên lạc từ hoặc gửi tới
+Internet</strong></td>
+</tr>
+<tr>
+<td><strong>IDS (Intrusion Detection Systems)</strong></td>
+<td>Hệ thống phát hiện xâm nhập</td>
+</tr>
+<tr>
+<td><strong>IPS (Intrusion Prevention Systems)</strong></td>
+<td>Hệ thống ngăn chặn xâm nhập</td>
+</tr>
+</tbody>
+</table>
+<h3 id="i-bảo-vệ-server-và-client">i) Bảo vệ server và client</h3>
+<ul>
+<li><strong>Tăng cường bảo mật hệ điều hành:</strong> nâng cấp, vá lỗi
+(upgrades, patches).</li>
+<li><strong>Phần mềm diệt virus:</strong> cách <strong>dễ nhất và rẻ
+nhất</strong> để ngăn các mối đe dọa tới tính toàn vẹn hệ thống;
+<strong>cần cập nhật hằng ngày</strong>.</li>
+</ul>
+<h2 id="chính-sách-quản-trị-quy-trình-nghiệp-vụ-và-luật-công">3.6. CHÍNH
+SÁCH QUẢN TRỊ, QUY TRÌNH NGHIỆP VỤ VÀ LUẬT CÔNG ⭐⭐</h2>
+<ul>
+<li>Toàn cầu, doanh nghiệp chi hơn <strong>86 tỷ USD</strong> cho phần
+cứng, phần mềm và dịch vụ bảo mật.</li>
+<li><strong>Quản trị rủi ro bao gồm:</strong> <strong>Công nghệ · Chính
+sách quản trị hiệu quả · Luật công và thực thi tích cực</strong>.</li>
+</ul>
+<h3 id="kế-hoạch-an-ninh-quy-trình-5-bước">KẾ HOẠCH AN NINH: QUY TRÌNH 5
+BƯỚC ⭐⭐⭐</h3>
+<figure>
+<img src="assets/C3p3-49.png"
+alt="Developing an E-commerce Security Plan" />
+<figcaption aria-hidden="true">Developing an E-commerce Security
+Plan</figcaption>
+</figure>
+<p><em>Hình 36 — Developing an E-commerce Security Plan.</em></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Bước</th>
+<th>Nội dung</th>
+<th>Giải thích</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Perform a risk assessment</strong></td>
+<td><strong>Đánh giá rủi ro</strong> — xác định tài sản, mối đe dọa, xác
+suất và mức thiệt hại</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Develop a security policy</strong></td>
+<td><strong>Xây dựng chính sách an ninh</strong> — tuyên bố về các rủi
+ro ưu tiên và mức chấp nhận được</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Develop an implementation plan</strong></td>
+<td><strong>Xây dựng kế hoạch triển khai</strong> — gồm <strong>Security
+organization</strong>, <strong>Access controls</strong>,
+<strong>Authentication procedures</strong> (kể cả
+<strong>biometrics</strong>), <strong>Authorization policies &amp;
+authorization management systems</strong></td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Create a security organization</strong></td>
+<td><strong>Thành lập bộ phận an ninh</strong> — đào tạo, thiết lập công
+cụ truy cập</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Perform a security audit</strong></td>
+<td><strong>Kiểm toán an ninh</strong> — rà soát định kỳ nhật ký truy
+cập và đánh giá lại</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>📌 <strong>Đây là quy trình vòng tròn — sau audit lại quay về risk
+assessment.</strong></p>
+</blockquote>
+<p><strong>Vai trò của luật pháp và chính sách công:</strong> - Luật
+cung cấp công cụ <strong>nhận diện, truy vết, truy tố tội phạm
+mạng</strong>: <strong>USA Patriot Act</strong>, <strong>Homeland
+Security Act</strong>. - <strong>Hợp tác tư nhân và công-tư:</strong>
+<strong>US-CERT</strong>, <strong>CERT Coordination Center</strong>. -
+<strong>Chính sách chính phủ và kiểm soát phần mềm mã hóa:</strong>
+OECD, G7/G8, Council of Europe. - <strong>Việt Nam: Luật An ninh mạng
+(Cybersecurity Law)</strong>…</p>
+<hr />
+<h1 id="phần-4.-hệ-thống-thanh-toán-trực-tuyến">PHẦN 4. HỆ THỐNG THANH
+TOÁN TRỰC TUYẾN</h1>
+<h2 id="các-thực-thể-của-e-payment">4.1. Các thực thể của E-payment
+⭐⭐</h2>
+<figure>
+<img src="assets/C3p3-54.png" alt="Entities in An E-Payment System" />
+<figcaption aria-hidden="true">Entities in An E-Payment
+System</figcaption>
+</figure>
+<p><em>Hình 37 — Entities in an e-payment system.</em></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Thực thể</th>
+<th>Vai trò</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Payer</strong> (Người trả tiền)</td>
+<td><strong>Người mua/khách hàng</strong> — thực thể thực hiện thanh
+toán</td>
+</tr>
+<tr>
+<td><strong>Payee</strong> (Người nhận tiền)</td>
+<td><strong>Người bán/thương nhân</strong> — thực thể nhận thanh
+toán</td>
+</tr>
+<tr>
+<td><strong>Financial institution</strong></td>
+<td><strong>Tổ chức tài chính</strong> (ngân hàng) — gồm
+<strong>Issuer</strong> (ngân hàng phát hành, phía người trả) và
+<strong>Acquirer</strong> (ngân hàng thanh toán, phía người nhận)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Các luồng trong sơ đồ:</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Luồng</th>
+<th>Giữa</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Invoice</strong></td>
+<td>Payee → Payer</td>
+<td>Hóa đơn</td>
+</tr>
+<tr>
+<td><strong>Payment</strong></td>
+<td>Payer → Payee</td>
+<td>Thanh toán</td>
+</tr>
+<tr>
+<td><strong>E-checkbook Issuance</strong></td>
+<td>Issuer ↔︎ Payer</td>
+<td>Phát hành sổ séc điện tử</td>
+</tr>
+<tr>
+<td><strong>Deposit</strong></td>
+<td>Payee ↔︎ Acquirer</td>
+<td>Gửi tiền vào tài khoản</td>
+</tr>
+<tr>
+<td><strong>Inter-bank Transactions</strong></td>
+<td>Issuer ↔︎ Acquirer</td>
+<td>Giao dịch liên ngân hàng</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Mục đích chính của giao thức thanh toán điện tử: chuyển giá
+trị tiền tệ từ Payer sang Payee.</strong></p>
+</blockquote>
+<h2 id="bốn-giai-đoạn-của-e-payment">4.2. BỐN GIAI ĐOẠN CỦA E-PAYMENT
+⭐⭐⭐</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Giai đoạn</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Registration</strong> (Đăng ký)</td>
+<td><strong>Payer đăng ký với Issuer</strong> và <strong>Payee đăng ký
+với Acquirer</strong>. Hầu hết hệ thống thanh toán điện tử đều yêu cầu
+đăng ký để <strong>tạo liên kết giữa danh tính và tài khoản</strong> tại
+ngân hàng</td>
+</tr>
+<tr>
+<td><strong>2. Invoicing</strong> (Lập hóa đơn)</td>
+<td><strong>Payer nhận hóa đơn thanh toán từ Payee.</strong> Thực hiện
+bằng cách <strong>duyệt và chọn sản phẩm trên website của người
+bán</strong> (nếu mua qua Internet) hoặc <strong>nhận hóa đơn điện tử
+qua phương tiện điện tử khác như e-mail</strong></td>
+</tr>
+<tr>
+<td><strong>3. Payment selection and processing</strong> (Chọn và xử lý
+thanh toán)</td>
+<td><strong>Payer chọn loại hình thanh toán</strong> (thẻ, E-cash,
+E-cheque…) <strong>dựa trên loại thanh toán mà Payee chấp nhận</strong>.
+Sau đó Payer <strong>gửi thông tin thanh toán liên quan</strong> (số tài
+khoản, định danh duy nhất) tới Payee <strong>cùng số tiền đã chấp nhận
+theo hóa đơn</strong></td>
+</tr>
+<tr>
+<td><strong>4. Payment authorization and confirmation</strong> (Ủy quyền
+và xác nhận thanh toán)</td>
+<td><strong>Acquirer nhận thông tin thanh toán từ Payee, ủy quyền thanh
+toán và phát hành biên nhận</strong> thông báo <strong>thành công hay
+thất bại</strong> cho Payee. <strong>Payee dựa trên thông điệp đó có thể
+phát hành biên nhận thanh toán cho Payer</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="phân-loại-hệ-thống-thanh-toán">4.3. Phân loại hệ thống thanh
+toán ⭐⭐</h2>
+<h3 id="a-theo-công-cụ-thanh-toán-payment-instruments">a) Theo công cụ
+thanh toán (Payment instruments)</h3>
+<p>Ba công cụ thanh toán phổ biến: <strong>cheque (séc) và card
+(thẻ)</strong>…</p>
+<h3 id="b-theo-thời-điểm-thanh-toán-payment-time">b) Theo thời điểm
+thanh toán (Payment time) ⭐⭐</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Hệ thống</th>
+<th>Cơ chế</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pre-paid system</strong> (Trả trước)</td>
+<td><strong>Tài khoản của Payer bị ghi nợ TRƯỚC khi giao dịch được xử
+lý</strong></td>
+</tr>
+<tr>
+<td><strong>Pay-now system</strong> (Trả ngay)</td>
+<td><strong>Khi giao dịch điện tử được xử lý, tài khoản Payer bị ghi nợ
+và tài khoản Payee được ghi có</strong></td>
+</tr>
+<tr>
+<td><strong>Post-pay system</strong> (Trả sau)</td>
+<td><strong>Tài khoản Payer chỉ bị ghi nợ khi Payee yêu cầu quyết toán
+thanh toán với Acquirer</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="c-ưu-điểm-của-hệ-thống-online">c) Ưu điểm của hệ thống
+online</h3>
+<ul>
+<li><strong>Payee kết nối tới ngân hàng để có được ủy quyền thanh
+toán</strong> ⇒ <strong>tăng yêu cầu truyền thông</strong> cho hệ thống
+thanh toán.</li>
+<li><strong>Payee có được bảo đảm về khoản thanh toán</strong>, vì ngân
+hàng <strong>ủy quyền và kiểm tra được khả năng chi trả trong tài khoản
+của Payer</strong>.</li>
+</ul>
+<h2 id="giao-thức-set-secure-electronic-transaction">4.4. GIAO THỨC SET
+(SECURE ELECTRONIC TRANSACTION) ⭐⭐⭐</h2>
+<h3 id="a-set-là-gì">a) SET là gì?</h3>
+<blockquote>
+<p><strong>SET</strong> là một dạng <strong>giao thức cho thanh toán
+bằng thẻ tín dụng điện tử</strong>, dùng để <strong>truyền thông tin thẻ
+tín dụng của người tiêu dùng một cách an toàn qua các kênh điện tử như
+Internet</strong>.</p>
+</blockquote>
+<p><strong>SET che giấu chi tiết thông tin thẻ tín dụng, ngăn người bán,
+hacker và kẻ trộm điện tử truy cập thông tin này.</strong></p>
+<h3 id="b-năm-đặc-tính-chính-của-set">b) Năm đặc tính chính của SET</h3>
+<ol type="1">
+<li><strong>Confidentiality of information</strong> — Bảo mật thông
+tin</li>
+<li><strong>Integrity of data</strong> — Toàn vẹn dữ liệu</li>
+<li><strong>Cardholder account authentication</strong> — Xác thực tài
+khoản chủ thẻ</li>
+<li><strong>Merchant authentication</strong> — Xác thực người bán</li>
+<li><strong>Participants</strong> — Các bên tham gia</li>
+</ol>
+<h3 id="c-sáu-bên-tham-gia-hệ-thống-set">c) Sáu bên tham gia hệ thống
+SET ⭐</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Bên tham gia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Card holder</strong> (Chủ thẻ)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Merchant</strong> (Người bán)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Issuer</strong> (Ngân hàng phát hành thẻ)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Acquirer</strong> (Ngân hàng thanh toán của người bán)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Payment gateway</strong> (Cổng thanh toán)</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Certification authority</strong> (Tổ chức chứng thực)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="d-trình-tự-giao-dịch-set-11-bước">d) TRÌNH TỰ GIAO DỊCH SET (11
+bước) ⭐⭐⭐</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Bước</th>
+<th>Hoạt động</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Khách hàng mở tài khoản thẻ tín dụng</strong> tại ngân hàng
+hỗ trợ thanh toán điện tử và SET</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Khách hàng nhận chứng thư số do ngân hàng ký</strong></td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Người bán có chứng thư riêng của mình.</strong> Khách hàng
+<strong>đặt hàng</strong> với người bán</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Người bán gửi cho khách hàng khóa công khai và bản sao chứng
+thư của mình</strong> để khách xác minh đây là cửa hàng hợp lệ</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Khách hàng gửi cho người bán:</strong><br>• Chứng thư của
+mình<br>• <strong>Chi tiết đơn hàng — đã mã hóa</strong><br>•
+<strong>Chi tiết tài khoản ngân hàng — mã hóa bằng khóa công khai của
+NGÂN HÀNG</strong></td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Người bán yêu cầu ủy quyền thanh toán</strong> bằng cách gửi
+cho ngân hàng:<br>• <strong>Chi tiết thanh toán mã hóa bằng khóa công
+khai của ngân hàng</strong><br>• <strong>Chi tiết tài khoản ngân hàng
+của khách hàng, mã hóa bằng khóa công khai của ngân hàng</strong></td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td>⚠️ <strong>NGƯỜI BÁN KHÔNG BIẾT chi tiết thanh toán và tài khoản
+ngân hàng của khách hàng</strong> <em>(đặc tính cốt lõi của
+SET!)</em></td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td><strong>Ngân hàng gửi cho người bán xác nhận, mã hóa bằng khóa công
+khai của người bán</strong></td>
+</tr>
+<tr>
+<td><strong>9</strong></td>
+<td><strong>Người bán gửi cho khách hàng phản hồi của ngân hàng, mã hóa
+bằng khóa công khai của khách hàng</strong></td>
+</tr>
+<tr>
+<td><strong>10</strong></td>
+<td><strong>Người bán giao hàng hoặc cung cấp dịch vụ</strong> cho khách
+hàng</td>
+</tr>
+<tr>
+<td><strong>11</strong></td>
+<td><strong>Người bán gửi cho ngân hàng yêu cầu giao dịch, mã hóa bằng
+khóa công khai của ngân hàng → Ngân hàng chuyển tiền cho người
+bán</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="e-ưu-và-nhược-điểm-của-set">e) Ưu và nhược điểm của SET
+⭐⭐</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Ưu điểm</strong></th>
+<th><strong>Nhược điểm</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Đủ an toàn để bảo vệ số thẻ tín dụng và thông tin cá
+nhân</strong> của người dùng khỏi tấn công</td>
+<td><strong>Người dùng phải có thẻ tín dụng</strong></td>
+</tr>
+<tr>
+<td><strong>Độc lập phần cứng</strong> (hardware independent)</td>
+<td><strong>Không hiệu quả về chi phí khi giá trị thanh toán
+nhỏ</strong></td>
+</tr>
+<tr>
+<td><strong>Được dùng trên toàn thế giới</strong></td>
+<td><strong>Không ẩn danh và có thể truy vết</strong> (traceable)</td>
+</tr>
+<tr>
+<td>Cung cấp <strong>tính bảo mật của thông tin</strong></td>
+<td><strong>Hiệu ứng mạng (network effect)</strong> — cần cài phần mềm
+client (<strong>e-wallet</strong>)</td>
+</tr>
+<tr>
+<td>Cung cấp <strong>tính toàn vẹn dữ liệu</strong></td>
+<td><strong>Chi phí và độ phức tạp cho người bán</strong> để hỗ trợ, so
+với <strong>giải pháp dựa trên SSL rẻ và đơn giản hơn</strong></td>
+</tr>
+<tr>
+<td>Cung cấp <strong>xác thực tài khoản chủ thẻ</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Cung cấp <strong>xác thực người bán</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="hệ-thống-thanh-toán-tmđt">4.5. HỆ THỐNG THANH TOÁN TMĐT</h2>
+<ul>
+<li>Tại <strong>Mỹ, thẻ tín dụng và thẻ ghi nợ là phương thức thanh toán
+trực tuyến chính</strong>; các nước khác có hệ thống khác.</li>
+<li><strong>Hạn chế của thanh toán thẻ tín dụng trực tuyến:</strong>
+<ul>
+<li><strong>Security, merchant risk</strong> (bảo mật, rủi ro cho người
+bán)</li>
+<li><strong>Cost</strong> (chi phí)</li>
+<li><strong>Social equity</strong> (công bằng xã hội — không phải ai
+cũng có thẻ)</li>
+</ul></li>
+</ul>
+<h3 id="chu-trình-giao-dịch-thẻ-tín-dụng-trực-tuyến">CHU TRÌNH GIAO DỊCH
+THẺ TÍN DỤNG TRỰC TUYẾN ⭐⭐⭐</h3>
+<figure>
+<img src="assets/C3p3-72.png"
+alt="How an Online Credit Card Transaction Works" />
+<figcaption aria-hidden="true">How an Online Credit Card Transaction
+Works</figcaption>
+</figure>
+<p><em>Hình 38 — How an Online Credit Card Transaction Works.</em></p>
+<p><strong>SÁU BƯỚC (HỌC THUỘC ĐỂ VẼ LẠI):</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Bước</th>
+<th>Hoạt động</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Consumer makes purchase</strong> — Người tiêu dùng thực hiện
+mua hàng</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>SSL/TLS provides secure connection through the Internet to
+merchant server</strong> — SSL/TLS cung cấp kết nối an toàn qua Internet
+tới máy chủ người bán</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Merchant software contacts clearinghouse</strong> (qua
+<strong>secure line</strong> — đường truyền an toàn) — Phần mềm của
+người bán liên hệ trung tâm thanh toán bù trừ</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Clearinghouse verifies account and balance with issuing
+bank</strong> — Clearinghouse xác minh tài khoản và số dư với ngân hàng
+phát hành thẻ</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Issuing bank credits merchant account</strong> (qua
+<strong>Merchant bank</strong>) — Ngân hàng phát hành ghi có vào tài
+khoản người bán</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Monthly statement issued with debit for purchase</strong> —
+Sao kê hằng tháng được phát hành, ghi nợ khoản mua hàng cho người tiêu
+dùng</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Các bên tham gia:</strong> <strong>Consumer · Merchant ·
+Clearinghouse · Consumer’s card-issuing bank · Merchant
+bank.</strong></p>
+<h2 id="các-hệ-thống-thanh-toán-thay-thế">4.6. Các hệ thống thanh toán
+thay thế ⭐</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Mô tả</th>
+<th>Ví dụ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Online stored value systems</strong></td>
+<td>Dựa trên <strong>giá trị lưu trong tài khoản ngân hàng, tài khoản
+séc hoặc thẻ tín dụng</strong> của người tiêu dùng</td>
+<td><strong>PayPal</strong></td>
+</tr>
+<tr>
+<td><strong>Khác</strong></td>
+<td>—</td>
+<td><strong>Amazon Pay</strong>, <strong>Visa Checkout</strong>,
+<strong>Mastercard MasterPass</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Hệ thống thanh toán di động (Mobile Payment
+Systems):</strong> - Dùng <strong>điện thoại di động làm thiết bị thanh
+toán</strong>; đã phổ biến ở <strong>châu Âu và châu Á</strong>, đang mở
+rộng ở Mỹ. - Công nghệ: <strong>NFC (Near Field Communication)</strong>.
+- <strong>Ba loại ví di động:</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Loại ví</th>
+<th>Ví dụ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Universal proximity mobile wallets</strong></td>
+<td><strong>Apple Pay, Google Pay, Samsung Pay, PayPal
+Mobile</strong></td>
+</tr>
+<tr>
+<td><strong>Branded store proximity wallets</strong></td>
+<td><strong>Walmart, Target, Starbucks</strong></td>
+</tr>
+<tr>
+<td><strong>P2P mobile payment apps</strong></td>
+<td><strong>Zelle, Venmo</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="blockchain-và-tiền-mã-hóa">4.7. Blockchain và Tiền mã hóa
+⭐⭐</h2>
+<h3 id="a-blockchain">a) Blockchain</h3>
+<blockquote>
+<p><strong>Blockchain</strong> cho phép tổ chức <strong>tạo và xác minh
+giao dịch gần như tức thời bằng cách dùng CSDL P2P phân tán (sổ cái phân
+tán — distributed ledger).</strong></p>
+</blockquote>
+<p><strong>Lợi ích:</strong> - <strong>Giảm chi phí xác minh người
+dùng</strong> - <strong>Giảm chi phí xác thực giao dịch</strong> -
+<strong>Giảm rủi ro của việc lưu trữ và xử lý thông tin giao
+dịch</strong></p>
+<p><strong>Ứng dụng:</strong> Là <strong>công nghệ nền tảng cho tiền mã
+hóa và quản trị chuỗi cung ứng</strong>, cũng như tiềm năng trong
+<strong>dịch vụ tài chính và y tế</strong>.</p>
+<h3 id="b-cryptocurrencies-tiền-mã-hóa">b) Cryptocurrencies (Tiền mã
+hóa)</h3>
+<ul>
+<li><strong>Dùng công nghệ blockchain và mật mã học để tạo ra một phương
+tiện trao đổi thuần số.</strong></li>
+<li><strong>Bitcoin</strong> là ví dụ nổi bật nhất:
+<ul>
+<li><strong>Giá trị biến động mạnh</strong></li>
+<li><strong>Vấn đề lớn về trộm cắp và gian lận</strong></li>
+<li><strong>Một số chính phủ đã cấm Bitcoin</strong>, tuy nó đang được
+chấp nhận dần ở Mỹ</li>
+</ul></li>
+<li><strong>Các altcoin khác:</strong> <strong>Ethereum/Ether, Ripple,
+Litecoin, Monero</strong>.</li>
+</ul>
+<hr />
+<h2 id="checklist-ôn-chương-3">❖ CHECKLIST ÔN CHƯƠNG 3</h2>
+<p><strong>Pháp luật – Thuế:</strong> - [ ] 4 nhóm vấn đề đạo đức; 4
+quyền information privacy; GDPR - [ ] 4 hình thức bảo hộ SHTT
+(Copyright/Patent/Trademark/Trade secret) + DMCA + vụ Alice 2014 - [ ]
+Nghị quyết 57/59/66/68; <strong>Luật TMĐT 122/2025/QH15 hiệu lực
+01/7/2026</strong>; NĐ 52/2013 + 85/2021; NĐ 117/2025; NĐ 98/2020 - [ ]
+8 loại thuế chính</p>
+<p><strong>Phần mềm &amp; Hosting:</strong> - [ ] <strong>SDLC 5
+bước</strong> + best practices - [ ] <strong>Bảng Business objective –
+System functionality – Information requirements</strong> (10 dòng) - [ ]
+<strong>DFD website đơn giản</strong> (vẽ lại được) - [ ] Ma trận Build
+× Host (4 ô) - [ ] 5 loại testing; kiến trúc 2-tier vs multi-tier (3
+lớp) - [ ] 16 tính năng gây khó chịu + 8 yếu tố thiết kế thành công - [
+] 4 loại phần mềm m-commerce; 4 đặc điểm riêng của mobile; RWD vs AWD -
+[ ] <strong>Quy trình 7 bước mua hàng qua shopping cart</strong> ⭐ - [
+] 3 loại phần mềm giỏ hàng - [ ] <strong>CRM: 4 giai đoạn (gather –
+store – analyze – recommend)</strong> ⭐ - [ ] <strong>SCM:
+upstream/downstream; sơ đồ thành viên chuỗi; chuỗi B2B Company</strong>
+⭐ - [ ] <strong>PUSH vs PULL (bảng 3 dòng: aim / characteristics / use
+of IS)</strong> ⭐⭐ - [ ] <strong>Chuỗi giá trị truyền thống vs sửa
+đổi</strong> ⭐ - [ ] <strong>IS infrastructure cho SCM (planning – DB –
+execution)</strong> ⭐ - [ ] 5 lợi ích của IS cho SCM - [ ]
+<strong>E-procurement: định nghĩa, 5 rights, quy trình 8 bước, 3 mô
+hình, rủi ro, triển khai</strong> ⭐⭐⭐ - [ ] <strong>ERP + EDI
+(Internet EDI / VAN)</strong> ⭐ - [ ] 5 loại web hosting</p>
+<p><strong>An ninh:</strong> - [ ] <strong>6 chiều an ninh × 2 góc
+nhìn</strong> ⭐⭐ - [ ] 3 điểm yếu; <strong>sơ đồ giao dịch TMĐT và các
+điểm tấn công</strong> ⭐⭐ - [ ] Các loại tấn công (phishing, DoS/DDoS,
+MITM, SQLi, spoofing, pharming, insider…) - [ ] Mã hóa: đối xứng vs khóa
+công khai; chữ ký số; digital envelope; PKI + 3 hạn chế - [ ] <strong>Kế
+hoạch an ninh 5 bước</strong> ⭐⭐</p>
+<p><strong>Thanh toán:</strong> - [ ] Payer/Payee/Issuer/Acquirer + 5
+luồng - [ ] <strong>4 giai đoạn E-payment</strong> ⭐⭐ - [ ] Pre-paid /
+Pay-now / Post-pay - [ ] <strong>SET: 6 bên, 11 bước, ưu –
+nhược</strong> ⭐⭐ - [ ] <strong>6 bước giao dịch thẻ tín dụng trực
+tuyến</strong> ⭐⭐ - [ ] Blockchain + cryptocurrency</p>
+</body>
+</html>

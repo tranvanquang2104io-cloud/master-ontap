@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>E-Business — Ôn thi cuối kỳ</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">E-Business — Ôn thi cuối kỳ</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#chương-4-xác-định-và-triển-khai-e-business"
+id="toc-chương-4-xác-định-và-triển-khai-e-business">CHƯƠNG 4 — XÁC ĐỊNH
+VÀ TRIỂN KHAI E-BUSINESS</a></li>
+<li><a href="#phần-1.-xác-định-lợi-ích-và-ước-tính-chi-phí"
+id="toc-phần-1.-xác-định-lợi-ích-và-ước-tính-chi-phí">PHẦN 1. XÁC ĐỊNH
+LỢI ÍCH VÀ ƯỚC TÍNH CHI PHÍ</a>
+<ul>
+<li><a href="#xác-định-mục-tiêu-identifying-objectives"
+id="toc-xác-định-mục-tiêu-identifying-objectives">1.1. Xác định mục tiêu
+(Identifying Objectives) ⭐⭐</a></li>
+<li><a href="#liên-kết-mục-tiêu-với-chiến-lược-kinh-doanh"
+id="toc-liên-kết-mục-tiêu-với-chiến-lược-kinh-doanh">1.2. Liên kết mục
+tiêu với chiến lược kinh doanh ⭐⭐</a></li>
+<li><a href="#xác-định-và-đo-lường-lợi-ích"
+id="toc-xác-định-và-đo-lường-lợi-ích">1.3. Xác định và đo lường lợi ích
+⭐⭐⭐</a>
+<ul>
+<li><a href="#bảng-đo-lường-lợi-ích-của-các-sáng-kiến-tmđt"
+id="toc-bảng-đo-lường-lợi-ích-của-các-sáng-kiến-tmđt">BẢNG ĐO LƯỜNG LỢI
+ÍCH CỦA CÁC SÁNG KIẾN TMĐT ⭐⭐⭐</a></li>
+</ul></li>
+<li><a href="#xác-định-và-ước-tính-chi-phí"
+id="toc-xác-định-và-ước-tính-chi-phí">1.4. Xác định và ước tính chi phí
+⭐⭐⭐</a>
+<ul>
+<li><a href="#a-total-cost-of-ownership-tco-tổng-chi-phí-sở-hữu"
+id="toc-a-total-cost-of-ownership-tco-tổng-chi-phí-sở-hữu">a) Total Cost
+of Ownership (TCO) — Tổng chi phí sở hữu</a></li>
+<li><a href="#b-opportunity-cost-chi-phí-cơ-hội"
+id="toc-b-opportunity-cost-chi-phí-cơ-hội">b) Opportunity Cost (Chi phí
+cơ hội) ⭐⭐</a></li>
+<li><a href="#c-chi-phí-website" id="toc-c-chi-phí-website">c) Chi phí
+website</a></li>
+<li><a href="#d-cấp-vốn-cho-start-up-trực-tuyến"
+id="toc-d-cấp-vốn-cho-start-up-trực-tuyến">d) Cấp vốn cho start-up trực
+tuyến ⭐</a></li>
+<li><a href="#e-so-sánh-lợi-ích-với-chi-phí"
+id="toc-e-so-sánh-lợi-ích-với-chi-phí">e) So sánh lợi ích với chi phí
+⭐⭐⭐</a></li>
+<li><a href="#f-return-on-investment-roi"
+id="toc-f-return-on-investment-roi">f) Return on Investment (ROI)
+⭐⭐</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#phần-2.-chiến-lược-phát-triển-website"
+id="toc-phần-2.-chiến-lược-phát-triển-website">PHẦN 2. CHIẾN LƯỢC PHÁT
+TRIỂN WEBSITE</a>
+<ul>
+<li><a href="#phát-triển-nội-bộ-hay-thuê-ngoài"
+id="toc-phát-triển-nội-bộ-hay-thuê-ngoài">2.1. Phát triển nội bộ hay
+thuê ngoài? ⭐⭐⭐</a>
+<ul>
+<li><a href="#a-the-internal-team-đội-nội-bộ"
+id="toc-a-the-internal-team-đội-nội-bộ">a) The Internal Team (Đội nội
+bộ)</a></li>
+<li><a href="#b-ba-mô-hình-thuê-ngoài"
+id="toc-b-ba-mô-hình-thuê-ngoài">b) Ba mô hình thuê ngoài
+⭐⭐⭐</a></li>
+</ul></li>
+<li><a href="#vườn-ươm-doanh-nghiệp-incubators"
+id="toc-vườn-ươm-doanh-nghiệp-incubators">2.2. Vườn ươm doanh nghiệp
+(Incubators) ⭐⭐</a></li>
+</ul></li>
+<li><a href="#phần-3.-quản-trị-thực-thi-tmđt"
+id="toc-phần-3.-quản-trị-thực-thi-tmđt">PHẦN 3. QUẢN TRỊ THỰC THI
+TMĐT</a>
+<ul>
+<li><a href="#quản-lý-một-triển-khai-tmđt-phức-tạp-như-thế-nào"
+id="toc-quản-lý-một-triển-khai-tmđt-phức-tạp-như-thế-nào">3.1. Quản lý
+một triển khai TMĐT phức tạp như thế nào? ⭐</a></li>
+<li><a href="#quản-trị-dự-án-project-management"
+id="toc-quản-trị-dự-án-project-management">3.2. Quản trị dự án (Project
+Management) ⭐⭐</a></li>
+<li><a href="#quản-trị-danh-mục-dự-án-project-portfolio-management"
+id="toc-quản-trị-danh-mục-dự-án-project-portfolio-management">3.3. Quản
+trị danh mục dự án (Project Portfolio Management) ⭐⭐</a></li>
+<li><a href="#bố-trí-nhân-sự-cho-tmđt-staffing"
+id="toc-bố-trí-nhân-sự-cho-tmđt-staffing">3.4. Bố trí nhân sự cho TMĐT
+(Staffing) ⭐⭐⭐</a></li>
+<li><a href="#kiểm-toán-sau-triển-khai-post-implementation-audits"
+id="toc-kiểm-toán-sau-triển-khai-post-implementation-audits">3.5. Kiểm
+toán sau triển khai (Post-implementation Audits) ⭐⭐⭐</a></li>
+<li><a href="#quản-trị-thay-đổi-change-management"
+id="toc-quản-trị-thay-đổi-change-management">3.6. Quản trị thay đổi
+(Change Management) ⭐⭐⭐</a></li>
+<li><a href="#checklist-ôn-chương-4" id="toc-checklist-ôn-chương-4">❖
+CHECKLIST ÔN CHƯƠNG 4</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="chương-4-xác-định-và-triển-khai-e-business">CHƯƠNG 4 — XÁC ĐỊNH
+VÀ TRIỂN KHAI E-BUSINESS</h1>
+<blockquote>
+<p><strong>Nội dung chương (3 phần):</strong> 1. Xác định lợi ích và ước
+tính chi phí của các sáng kiến E-business 2. Chiến lược phát triển
+website 3. Quản trị thực thi TMĐT (E-commerce enforcement
+management)</p>
+</blockquote>
+<hr />
+<h1 id="phần-1.-xác-định-lợi-ích-và-ước-tính-chi-phí">PHẦN 1. XÁC ĐỊNH
+LỢI ÍCH VÀ ƯỚC TÍNH CHI PHÍ</h1>
+<h2 id="xác-định-mục-tiêu-identifying-objectives">1.1. Xác định mục tiêu
+(Identifying Objectives) ⭐⭐</h2>
+<p>Doanh nghiệp triển khai sáng kiến TMĐT vì nhiều lý do khác nhau.
+<strong>Sáu mục tiêu điển hình:</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>Mục tiêu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Increasing sales in existing markets</strong> — Tăng doanh
+số ở thị trường hiện có</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Opening new markets</strong> — Mở thị trường mới</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Serving existing customers better</strong> — Phục vụ khách
+hàng hiện tại tốt hơn</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Identifying new vendors</strong> — Tìm nhà cung cấp mới</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Coordinating with existing vendors</strong> — Phối hợp với
+nhà cung cấp hiện có</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Recruiting employees more effectively</strong> — Tuyển dụng
+hiệu quả hơn</td>
+</tr>
+</tbody>
+</table>
+<h2 id="liên-kết-mục-tiêu-với-chiến-lược-kinh-doanh">1.2. Liên kết mục
+tiêu với chiến lược kinh doanh ⭐⭐</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Loại chiến lược</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Downstream strategies</strong> (Chiến lược hạ nguồn)</td>
+<td>Các chiến thuật nhằm <strong>cải thiện giá trị doanh nghiệp mang lại
+cho KHÁCH HÀNG</strong></td>
+</tr>
+<tr>
+<td><strong>Upstream strategies</strong> (Chiến lược thượng nguồn)</td>
+<td>Các chiến thuật nhằm <strong>giảm chi phí hoặc tạo giá trị bằng cách
+làm việc với NHÀ CUNG CẤP</strong> hoặc các nhà cung cấp dịch vụ vận
+chuyển, giao nhận đầu vào</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Web là <strong>kênh bán hàng hấp dẫn</strong>; tuy nhiên doanh nghiệp
+dùng TMĐT để làm <strong>nhiều hơn là bán hàng</strong> — họ dùng Web để
+<strong>bổ trợ cho chiến lược kinh doanh và cải thiện vị thế cạnh
+tranh</strong>.</p>
+</blockquote>
+<p><strong>Mười cơ hội kinh doanh trực tuyến:</strong></p>
+<ol type="1">
+<li><strong>Building brands</strong> — Xây dựng thương hiệu</li>
+<li><strong>Enhancing existing marketing programs</strong> — Nâng cao
+các chương trình marketing hiện có</li>
+<li><strong>Selling products and services</strong> — Bán sản phẩm và
+dịch vụ</li>
+<li><strong>Selling advertising</strong> — Bán quảng cáo</li>
+<li><strong>Developing a better understanding of customer needs</strong>
+— Hiểu rõ hơn nhu cầu khách hàng</li>
+<li><strong>Improving after-sale service and support</strong> — Cải
+thiện dịch vụ và hỗ trợ sau bán</li>
+<li><strong>Purchasing products and services</strong> — Mua sản phẩm và
+dịch vụ</li>
+<li><strong>Managing supply chains</strong> — Quản trị chuỗi cung
+ứng</li>
+<li><strong>Operating auctions</strong> — Vận hành đấu giá</li>
+<li><strong>Building or using virtual communities</strong> để duy trì
+quan hệ với khách hàng và nhà cung cấp</li>
+</ol>
+<h2 id="xác-định-và-đo-lường-lợi-ích">1.3. Xác định và đo lường lợi ích
+⭐⭐⭐</h2>
+<p><strong>Nguyên tắc:</strong> - Một số lợi ích <strong>rõ ràng, hữu
+hình, dễ đo</strong> (tăng doanh số, giảm chi phí). - Một số lợi ích
+<strong>vô hình, khó xác định và đo lường hơn nhiều</strong> (tăng sự
+hài lòng khách hàng). - <strong>Khi xác định lợi ích, nhà quản lý phải
+cố gắng đặt ra những mục tiêu ĐO LƯỜNG ĐƯỢC, ngay cả với lợi ích vô
+hình.</strong></p>
+<p><strong>Ví dụ cách “đo lường cái vô hình”:</strong> - Thành công của
+mục tiêu <strong>tăng sự hài lòng khách hàng</strong> có thể đo bằng
+<strong>số khách hàng mua lần đầu quay lại và mua tiếp</strong>. - Doanh
+nghiệp tạo website để <strong>xây thương hiệu hoặc nâng cao chương trình
+marketing</strong> có thể đặt mục tiêu về <strong>tăng nhận biết thương
+hiệu</strong>, đo bằng <strong>nghiên cứu thị trường và thăm dò ý
+kiến</strong>. - Doanh nghiệp bán hàng/dịch vụ online có thể <strong>đo
+mức tăng sản lượng bán</strong>. - <strong>Đội nghiên cứu marketing hoặc
+công ty tư vấn bên ngoài</strong> có thể giúp xác định tác động cụ thể
+của các sáng kiến marketing/bán hàng trực tuyến, và giúp <strong>đặt và
+đánh giá mục tiêu cụ thể</strong>. - Doanh nghiệp muốn dùng website để
+<strong>cải thiện dịch vụ hoặc hỗ trợ sau bán</strong> có thể đặt mục
+tiêu <strong>tăng sự hài lòng hoặc giảm chi phí cung cấp dịch vụ/hỗ trợ
+khách hàng</strong>.</p>
+<h3 id="bảng-đo-lường-lợi-ích-của-các-sáng-kiến-tmđt">BẢNG ĐO LƯỜNG LỢI
+ÍCH CỦA CÁC SÁNG KIẾN TMĐT ⭐⭐⭐</h3>
+<figure>
+<img src="assets/C4-11.png"
+alt="Measuring the benefits of electronic commerce initiatives" />
+<figcaption aria-hidden="true">Measuring the benefits of electronic
+commerce initiatives</figcaption>
+</figure>
+<p><em>Hình 1 — Measuring the benefits of electronic commerce
+initiatives (Schneider, Electronic Commerce 12th).</em></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Sáng kiến TMĐT</strong></th>
+<th><strong>Thước đo lợi ích thường dùng</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Build brands</strong> (Xây dựng thương hiệu)</td>
+<td><strong>Khảo sát hoặc thăm dò ý kiến</strong> đo <strong>nhận biết
+thương hiệu</strong>, <strong>thay đổi thị phần</strong></td>
+</tr>
+<tr>
+<td><strong>Enhance existing marketing programs and create new marketing
+programs</strong> (Nâng cao và tạo mới chương trình marketing)</td>
+<td><strong>Thay đổi sản lượng bán trên đơn vị</strong>, <strong>tần
+suất tiếp xúc khách hàng</strong>, <strong>tỷ lệ chuyển đổi thành người
+mua (conversion rate)</strong></td>
+</tr>
+<tr>
+<td><strong>Improve customer service</strong> (Cải thiện dịch vụ khách
+hàng)</td>
+<td><strong>Khảo sát hài lòng khách hàng</strong>, <strong>số lượng
+khiếu nại</strong>, <strong>lòng trung thành của khách
+hàng</strong></td>
+</tr>
+<tr>
+<td><strong>Reduce cost of after-sale support</strong> (Giảm chi phí hỗ
+trợ sau bán)</td>
+<td><strong>Số lượng và loại hoạt động hỗ trợ</strong> (điện thoại, fax,
+e-mail), <strong>thay đổi chi phí hỗ trợ ròng trên mỗi khách
+hàng</strong></td>
+</tr>
+<tr>
+<td><strong>Improve supply chain operation</strong> (Cải thiện vận hành
+chuỗi cung ứng)</td>
+<td><strong>Chi phí, chất lượng và mức giao hàng đúng hạn</strong> của
+vật tư/dịch vụ mua vào; <strong>mức giảm tổng thể trong giá vốn hàng bán
+(COGS)</strong></td>
+</tr>
+<tr>
+<td><strong>Hold auctions</strong> (Tổ chức đấu giá)</td>
+<td><strong>Số lượng phiên đấu giá, số người đặt giá và người bán, số
+món hàng bán được, số người tham gia đã đăng ký; giá trị bằng tiền của
+hàng đã bán; tỷ lệ tham gia</strong></td>
+</tr>
+<tr>
+<td><strong>Provide portals, social networks, and virtual
+communities</strong></td>
+<td><strong>Số khách truy cập, số lượt quay lại trên mỗi khách, thời
+lượng trung bình mỗi lượt truy cập, mức tham gia thảo luận trực
+tuyến</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Các thước đo khác:</strong> - <strong>Nhà quản trị chuỗi cung
+ứng</strong> có thể đo <strong>mức giảm chi phí cung ứng, cải thiện chất
+lượng, hoặc giao hàng nhanh hơn</strong>. - <strong>Site đấu
+giá</strong> có thể đặt mục tiêu về <strong>số phiên đấu giá, số người
+đặt giá và bán, giá trị bằng tiền các món hàng bán được</strong>. -
+<strong>Cộng đồng ảo và cổng web</strong> đo <strong>số khách truy
+cập</strong> và cố gắng đo <strong>chất lượng trải nghiệm của
+khách</strong>.</p>
+<h2 id="xác-định-và-ước-tính-chi-phí">1.4. Xác định và ước tính chi phí
+⭐⭐⭐</h2>
+<h3 id="a-total-cost-of-ownership-tco-tổng-chi-phí-sở-hữu">a) Total Cost
+of Ownership (TCO) — Tổng chi phí sở hữu</h3>
+<blockquote>
+<p>Ngoài chi phí phần cứng và phần mềm, <strong>ngân sách dự án phải bao
+gồm chi phí tuyển dụng, đào tạo và trả lương cho người thiết kế website,
+viết hoặc tùy biến phần mềm, tạo nội dung, vận hành và bảo trì
+site.</strong></p>
+</blockquote>
+<p>Nhiều tổ chức nay <strong>theo dõi chi phí theo hoạt động</strong> và
+tính <strong>tổng chi phí cho mỗi hoạt động</strong> — đó chính là
+<strong>TCO</strong>, bao gồm <strong>toàn bộ chi phí liên quan tới hoạt
+động đó</strong>.</p>
+<p><strong>TCO của một triển khai TMĐT bao gồm:</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Nhóm chi phí</th>
+<th>Chi tiết</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hardware</strong></td>
+<td>Server computers, routers, <strong>firewalls</strong>,
+<strong>load-balancing devices</strong></td>
+</tr>
+<tr>
+<td><strong>Software</strong></td>
+<td>License cho hệ điều hành, phần mềm web server, phần mềm CSDL, phần
+mềm ứng dụng</td>
+</tr>
+<tr>
+<td><strong>Internet connections</strong></td>
+<td>Kết nối Internet</td>
+</tr>
+<tr>
+<td><strong>Design work outsourced</strong></td>
+<td>Thiết kế thuê ngoài</td>
+</tr>
+<tr>
+<td><strong>Salaries and benefits</strong></td>
+<td>Lương và phúc lợi cho nhân viên tham gia dự án</td>
+</tr>
+<tr>
+<td><strong>Maintenance costs</strong></td>
+<td>Chi phí duy trì site sau khi vận hành</td>
+</tr>
+</tbody>
+</table>
+<h3 id="b-opportunity-cost-chi-phí-cơ-hội">b) Opportunity Cost (Chi phí
+cơ hội) ⭐⭐</h3>
+<blockquote>
+<p>Với nhiều công ty, <strong>một trong những chi phí lớn nhất và quan
+trọng nhất liên quan tới sáng kiến TMĐT chính là CƠ HỘI BỊ MẤT DO KHÔNG
+TRIỂN KHAI sáng kiến đó.</strong></p>
+</blockquote>
+<ul>
+<li>Nhà quản lý và kế toán dùng thuật ngữ <strong>opportunity
+cost</strong> để mô tả <strong>các lợi ích bị mất do một hành động KHÔNG
+được thực hiện</strong>.</li>
+<li><strong>Ví dụ:</strong> <strong>giá trị của khách hàng không có
+được, doanh số không thực hiện được, nhà cung cấp không tìm ra, hoặc mức
+giảm chi phí không đạt được trong chuỗi cung ứng.</strong></li>
+</ul>
+<h3 id="c-chi-phí-website">c) Chi phí website</h3>
+<blockquote>
+<p><strong>Chi phí vận hành hằng năm của một website kinh doanh trực
+tuyến thường nằm trong khoảng 50–200% chi phí ban đầu của
+site.</strong></p>
+</blockquote>
+<h3 id="d-cấp-vốn-cho-start-up-trực-tuyến">d) Cấp vốn cho start-up trực
+tuyến ⭐</h3>
+<ul>
+<li>Các công ty khởi nghiệp trực tuyến <strong>nhìn chung KHÔNG thể vay
+ngân hàng hay phát hành trái phiếu/cổ phiếu cho nhà đầu tư</strong>:
+<ul>
+<li><strong>Ngân hàng ngại cho vay chỉ dựa trên một ý tưởng
+tốt</strong></li>
+<li><strong>Tiếp cận thị trường chứng khoán và trái phiếu bị giới
+hạn</strong> cho các công ty có <strong>bề dày lợi nhuận lâu
+dài</strong></li>
+</ul></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Nguồn vốn</th>
+<th>Đặc điểm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Angel investors</strong> (Nhà đầu tư thiên thần)</td>
+<td><strong>Cấp vốn khởi nghiệp ban đầu và trở thành cổ đông</strong>.
+<strong>Trong nhiều trường hợp, angel investor cuối cùng sở hữu phần lớn
+hơn cả nhà sáng lập</strong></td>
+</tr>
+<tr>
+<td><strong>Venture capitalists</strong> (Nhà đầu tư mạo hiểm)</td>
+<td><strong>Cá nhân rất giàu, nhóm cá nhân giàu, hoặc quỹ đầu
+tư</strong>, đầu tư <strong>số tiền lớn</strong> với kỳ vọng trong vài
+năm công ty sẽ <strong>đủ lớn để bán cổ phiếu ra công chúng</strong>
+trong một sự kiện gọi là <strong>IPO (initial public
+offering)</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="e-so-sánh-lợi-ích-với-chi-phí">e) So sánh lợi ích với chi phí
+⭐⭐⭐</h3>
+<figure>
+<img src="assets/C4-20.png"
+alt="Cost/benefit evaluation of electronic commerce strategy elements" />
+<figcaption aria-hidden="true">Cost/benefit evaluation of electronic
+commerce strategy elements</figcaption>
+</figure>
+<p><em>Hình 3 — Cost/benefit evaluation of electronic commerce strategy
+elements.</em></p>
+<p><strong>Quy trình đánh giá chi phí – lợi ích (5 bước):</strong></p>
+<pre><code>[Identify benefits] ──→ [Determine value of benefits] ──┐
+                                                          ├──→ [Compare value of benefits to total costs]
+[Identify costs] ──────→ [Determine total costs] ────────┘</code></pre>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Bước</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Identify benefits</strong> — Xác định lợi ích (kể cả
+<strong>vô hình</strong> như <strong>sự hài lòng của nhân viên và uy tín
+công ty</strong>)</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Identify costs</strong> — Xác định chi phí</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Determine value of benefits</strong> — Định lượng giá trị
+lợi ích</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Determine total costs</strong> — Xác định tổng chi phí cần
+để tạo ra các lợi ích đó</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Compare value of benefits to total costs</strong> — So sánh
+và <strong>đánh giá xem giá trị lợi ích có vượt tổng chi phí
+không</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Hầu hết công ty đều có quy trình đánh giá mọi khoản chi
+lớn.</strong></li>
+<li><strong>Nếu lợi ích vượt chi phí với biên độ an toàn, công ty sẽ đầu
+tư vào dự án.</strong></li>
+</ul>
+<h3 id="f-return-on-investment-roi">f) Return on Investment (ROI)
+⭐⭐</h3>
+<ul>
+<li><strong>Kỹ thuật ROI cung cấp một biểu diễn ĐỊNH LƯỢNG về việc lợi
+ích của một khoản đầu tư có vượt chi phí hay không (bao gồm cả chi phí
+cơ hội).</strong></li>
+<li>Gọi là <strong>ROI technique</strong> vì chúng <strong>đo lượng thu
+nhập (return) mà một khoản chi hiện tại (investment) sẽ mang
+lại</strong>.</li>
+</ul>
+<p><strong>Các kỹ thuật hoạch định vốn (Capital budgeting
+techniques):</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Kỹ thuật</th>
+<th>Tên đầy đủ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PBP</strong></td>
+<td><strong>Payback method</strong> — Phương pháp thời gian hoàn
+vốn</td>
+</tr>
+<tr>
+<td><strong>NPV</strong></td>
+<td><strong>Net present value method</strong> — Phương pháp giá trị hiện
+tại ròng</td>
+</tr>
+<tr>
+<td><strong>IRR</strong></td>
+<td><strong>Internal rate of return method</strong> — Phương pháp tỷ
+suất hoàn vốn nội bộ</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ví dụ thực tế — Cisco Systems:</strong> - Cisco tạo
+<strong>diễn đàn khách hàng trực tuyến</strong> để khách hàng thảo luận
+vấn đề sản phẩm với nhau. - <strong>Lợi ích chính:</strong> <strong>giảm
+chi phí dịch vụ khách hàng</strong> và <strong>tăng sự hài lòng của
+khách hàng</strong> về tính sẵn có của thông tin sản phẩm.</p>
+<hr />
+<h1 id="phần-2.-chiến-lược-phát-triển-website">PHẦN 2. CHIẾN LƯỢC PHÁT
+TRIỂN WEBSITE</h1>
+<h2 id="phát-triển-nội-bộ-hay-thuê-ngoài">2.1. Phát triển nội bộ hay
+thuê ngoài? ⭐⭐⭐</h2>
+<h3 id="a-the-internal-team-đội-nội-bộ">a) The Internal Team (Đội nội
+bộ)</h3>
+<ul>
+<li><strong>Bước đầu tiên</strong> để quyết định phần nào của dự án TMĐT
+cần thuê ngoài là <strong>thành lập một đội nội bộ (internal
+team)</strong>.</li>
+<li>Đội này phải có <strong>thành viên hiểu biết đủ về công nghệ để biết
+những gì là khả thi</strong>.</li>
+<li>Đội nội bộ phải <strong>chịu trách nhiệm cho toàn bộ sáng kiến TMĐT
+— từ đặt mục tiêu tới triển khai và vận hành site cuối
+cùng</strong>.</li>
+<li>⚠️ <strong>Sai lầm thường gặp:</strong> một số công ty <strong>bổ
+nhiệm trưởng dự án TMĐT là một người kỹ thuật KHÔNG hiểu nhiều về kinh
+doanh và không được biết đến rộng rãi trong công ty.</strong>
+<ul>
+<li><strong>Trưởng dự án cần hiểu rõ mục tiêu và văn hóa công
+ty</strong> để quản lý triển khai hiệu quả.</li>
+</ul></li>
+</ul>
+<h3 id="b-ba-mô-hình-thuê-ngoài">b) Ba mô hình thuê ngoài ⭐⭐⭐</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Mô hình</th>
+<th>Cơ chế</th>
+<th>Ưu điểm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Early Outsourcing</strong> (Thuê ngoài sớm)</td>
+<td>Công ty <strong>thuê ngoài việc thiết kế và phát triển site ban đầu
+để khởi động dự án nhanh</strong>. Đội thuê ngoài sau đó <strong>đào tạo
+nhân sự HTTT của công ty về công nghệ mới trước khi bàn giao việc vận
+hành site cho họ</strong></td>
+<td><strong>Vận hành site TMĐT có thể NHANH CHÓNG trở thành lợi thế cạnh
+tranh</strong> cho công ty</td>
+</tr>
+<tr>
+<td><strong>Late Outsourcing</strong> (Thuê ngoài muộn)</td>
+<td><strong>Nhân sự HTTT của công ty tự thiết kế và phát triển ban đầu,
+triển khai và vận hành</strong> cho tới khi hệ thống trở thành một phần
+ổn định của hoạt động kinh doanh. Sau khi đã đạt được lợi thế cạnh
+tranh, <strong>việc bảo trì hệ thống được thuê ngoài</strong></td>
+<td>Chuyên gia của công ty <strong>được giải phóng để phát triển công
+nghệ mới nhằm tạo thêm lợi thế cạnh tranh</strong></td>
+</tr>
+<tr>
+<td><strong>Partial Outsourcing</strong> (Thuê ngoài một phần)</td>
+<td>Trong hai mô hình trên, <strong>MỘT nhóm chịu trách nhiệm cho toàn
+bộ thiết kế, phát triển và vận hành</strong> — trong hoặc ngoài công ty.
+Mô hình này phù hợp cho nhiều dự án HTTT, <strong>nhưng sáng kiến TMĐT
+cũng có thể hưởng lợi từ thuê ngoài MỘT PHẦN</strong></td>
+<td><strong>Ví dụ:</strong> nhiều website nhỏ <strong>thuê ngoài chức
+năng xử lý và phản hồi e-mail</strong>; một số công ty chuyên cung cấp
+<strong>e-mail auto-response</strong>. Một dạng khác là <strong>thuê
+ngoài xử lý thanh toán</strong> — nhiều nhà cung cấp sẵn sàng xử lý trọn
+gói thanh toán của khách hàng</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vườn-ươm-doanh-nghiệp-incubators">2.2. Vườn ươm doanh nghiệp
+(Incubators) ⭐⭐</h2>
+<blockquote>
+<p><strong>Incubator</strong> là một công ty <strong>cung cấp cho các
+start-up một địa điểm vật lý với văn phòng, hỗ trợ kế toán và pháp lý,
+máy tính và kết nối Internet với chi phí hằng tháng rất
+thấp.</strong></p>
+</blockquote>
+<ul>
+<li>Đôi khi incubator còn cung cấp <strong>vốn mồi (seed
+money)</strong>, <strong>tư vấn quản trị</strong> và <strong>hỗ trợ
+marketing</strong>.</li>
+<li><strong>Đổi lại, incubator nhận một phần sở hữu trong công ty,
+thường từ 10% tới 50%.</strong></li>
+<li>Khi công ty phát triển đến mức có thể <strong>huy động vốn đầu tư
+mạo hiểm hoặc phát hành cổ phiếu ra công chúng</strong>,
+<strong>incubator bán toàn bộ hoặc một phần cổ phần của mình và tái đầu
+tư vào một ứng viên incubator mới.</strong></li>
+<li>Một số công ty đã tạo <strong>internal incubators (vườn ươm nội
+bộ)</strong> để phát triển công nghệ dùng trong hoạt động kinh
+doanh.</li>
+<li>Các ý tưởng kinh doanh phát triển trong incubator <strong>cuối cùng
+được tách ra thành công ty riêng biệt</strong>, sở hữu các tài sản dùng
+để tạo ra ý tưởng hoặc sản phẩm đó.</li>
+</ul>
+<hr />
+<h1 id="phần-3.-quản-trị-thực-thi-tmđt">PHẦN 3. QUẢN TRỊ THỰC THI
+TMĐT</h1>
+<h2 id="quản-lý-một-triển-khai-tmđt-phức-tạp-như-thế-nào">3.1. Quản lý
+một triển khai TMĐT phức tạp như thế nào? ⭐</h2>
+<blockquote>
+<p><strong>Cách tốt nhất để quản lý bất kỳ triển khai TMĐT phức tạp nào
+là sử dụng các KỸ THUẬT QUẢN TRỊ CHÍNH THỨC (formal management
+techniques).</strong></p>
+</blockquote>
+<p><strong>Bốn phương pháp doanh nghiệp dùng để quản lý hiệu quả dự án
+TMĐT:</strong> 1. <strong>Project management</strong> — Quản trị dự án
+2. <strong>Project portfolio management</strong> — Quản trị danh mục dự
+án 3. <strong>Specific staffing</strong> — Bố trí nhân sự cụ thể 4.
+<strong>Post-implementation audits</strong> — Kiểm toán sau triển
+khai</p>
+<h2 id="quản-trị-dự-án-project-management">3.2. Quản trị dự án (Project
+Management) ⭐⭐</h2>
+<blockquote>
+<p><strong>Project management</strong> là <strong>tập hợp các kỹ thuật
+chính thức để lập kế hoạch và kiểm soát các hoạt động được thực hiện
+nhằm đạt một mục tiêu cụ thể.</strong></p>
+</blockquote>
+<p><strong>Kế hoạch dự án bao gồm tiêu chí về BA yếu tố: COST (chi phí),
+SCHEDULE (tiến độ), PERFORMANCE (hiệu năng)</strong> — giúp quản lý dự
+án <strong>đưa ra quyết định đánh đổi (trade-off) thông minh giữa ba
+tiêu chí này</strong>.</p>
+<blockquote>
+<p><strong>Ví dụ đánh đổi:</strong> Nếu dự án cần <strong>hoàn thành sớm
+hơn</strong>, quản lý dự án có thể <strong>nén tiến độ bằng cách (a)
+TĂNG chi phí hoặc (b) GIẢM hiệu năng.</strong></p>
+</blockquote>
+<p><strong>Phần mềm quản trị dự án:</strong> - Quản lý dự án dùng
+<strong>project management software</strong> (ví dụ <strong>Microsoft
+Project</strong>) — cung cấp nhiều công cụ tích hợp để <strong>quản lý
+nguồn lực và tiến độ</strong>. - Phần mềm giúp <strong>quản lý các tác
+vụ giao cho tư vấn, đối tác công nghệ, nhà cung cấp dịch vụ thuê
+ngoài</strong>… - Quản lý dự án có thể <strong>cập nhật ước tính chi phí
+và thời gian hoàn thành cho các tác vụ tương lai</strong>.</p>
+<h2 id="quản-trị-danh-mục-dự-án-project-portfolio-management">3.3. Quản
+trị danh mục dự án (Project Portfolio Management) ⭐⭐</h2>
+<blockquote>
+<p><strong>Project portfolio management</strong> là kỹ thuật trong đó
+<strong>từng dự án được giám sát</strong> (như một khoản mục trong danh
+mục).</p>
+</blockquote>
+<ul>
+<li>Tổ chức lớn thường có <strong>nhiều dự án triển khai CNTT diễn ra
+đồng thời</strong>, một số là triển khai hoặc nâng cấp TMĐT.</li>
+<li><strong>Nhà quản lý công nghệ cao nhất của công ty là CIO (Chief
+Information Officer)</strong>.</li>
+<li>CIO của một số công ty lớn nay dùng <strong>cách tiếp cận danh
+mục</strong> để quản lý nhiều dự án này.</li>
+<li><strong>Hầu hết phần mềm quản trị dự án được thiết kế cho từng dự án
+riêng lẻ và KHÔNG hợp nhất tốt các hoạt động xuyên nhiều dự
+án.</strong></li>
+<li><strong>Thông tin dùng trong quản trị danh mục KHÁC với thông tin
+dùng để quản lý từng dự án cụ thể.</strong></li>
+<li>Trong project portfolio management, <strong>CIO gán một thứ hạng
+(ranking) cho mỗi dự án dựa trên: (1) TẦM QUAN TRỌNG với mục tiêu chiến
+lược của doanh nghiệp và (2) MỨC RỦI RO (xác suất thất
+bại).</strong></li>
+</ul>
+<h2 id="bố-trí-nhân-sự-cho-tmđt-staffing">3.4. Bố trí nhân sự cho TMĐT
+(Staffing) ⭐⭐⭐</h2>
+<p>Bất kể đội nội bộ có quyết định thuê ngoài phần nào của thiết kế và
+triển khai hay không, <strong>đội phải xác định nhu cầu nhân sự</strong>
+cho sáng kiến TMĐT.</p>
+<p><strong>Các vị trí nhân sự quan trọng nhất:</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>Vị trí</th>
+<th>Trách nhiệm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Chief Information Officer (CIO)</strong></td>
+<td>Ngoài triển khai dự án CNTT, chịu trách nhiệm <strong>giám sát toàn
+bộ hệ thống thông tin và các yếu tố công nghệ liên quan</strong> cần để
+thực hiện và vận hành hoạt động kinh doanh trực tuyến. <strong>Góc nhìn
+mang tính CHIẾN LƯỢC</strong>; thường là <strong>người ủng hộ quan trọng
+cho các sáng kiến kinh doanh trực tuyến</strong>. Phải có <strong>nhiều
+năm kinh nghiệm ở vị trí quản lý</strong></td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Business manager</strong></td>
+<td>Phải là <strong>thành viên của đội nội bộ đặt ra mục tiêu dự
+án</strong>. Chịu trách nhiệm <strong>thực hiện các thành tố của kế
+hoạch kinh doanh và đạt các mục tiêu do đội nội bộ đặt ra</strong>. Phải
+có <strong>kinh nghiệm và kiến thức liên quan tới hoạt động kinh doanh
+đang được triển khai trên site</strong>. <em>(Ví dụ: nếu quản lý một
+site bán lẻ cho người tiêu dùng thì phải có kinh nghiệm quản lý hoạt
+động bán lẻ.)</em></td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Project manager</strong></td>
+<td>Người có <strong>đào tạo hoặc kỹ năng cụ thể về theo dõi chi phí và
+việc hoàn thành các mục tiêu cụ thể trong dự án</strong>. Nhiều người
+được <strong>chứng nhận bởi các tổ chức như Project Management Institute
+(PMI)</strong> và có kỹ năng dùng phần mềm quản trị dự án</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>Project portfolio manager</strong></td>
+<td>Thường được <strong>thăng tiến từ hàng ngũ project manager</strong>;
+chịu trách nhiệm <strong>theo dõi toàn bộ các dự án đang diễn ra và quản
+lý chúng như một danh mục</strong>. Là người <strong>thực hiện các đánh
+đổi về chi phí, tiến độ và chất lượng XUYÊN các dự án</strong> và
+<strong>cân bằng nhu cầu của tổ chức với nguồn lực dành cho tất cả các
+dự án</strong></td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Applications specialists</strong></td>
+<td>Khi ngày càng nhiều nhà cung cấp bán giải pháp phần mềm đóng gói cho
+TMĐT, công ty cần nhân sự HTTT <strong>cài đặt và bảo trì phần
+mềm</strong>. Hầu hết doanh nghiệp lớn có <strong>applications
+specialists</strong> bảo trì phần mềm kế toán, nhân sự và logistics.
+Tương tự, site TMĐT mua phần mềm xử lý <strong>catalogue, xử lý thanh
+toán</strong> cần applications specialists bảo trì</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Social networking administrator</strong></td>
+<td>Chịu trách nhiệm <strong>quản lý các yếu tố cộng đồng ảo trong hoạt
+động Web</strong>. Có thể có nền tảng công nghệ, bán hàng, dịch vụ khách
+hàng, <strong>hoặc các ngành rất khác như xã hội học hay nhân
+học</strong>. Phải <strong>điều phối mọi công nghệ làm site vận hành như
+một mạng xã hội theo cách tạo ra giá trị cho tổ chức</strong></td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><strong>Customer service reps / Call center</strong></td>
+<td><strong>Call center</strong> là công ty <strong>xử lý cuộc gọi điện
+thoại và e-mail đến từ khách hàng thay cho công ty khác</strong>. Một số
+call center làm việc với nhiều doanh nghiệp; số khác <strong>chuyên về
+một lĩnh vực</strong> (ví dụ: hợp đồng với nhà sản xuất phần mềm để hỗ
+trợ cài đặt sản phẩm)</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td><strong>Systems administrator</strong></td>
+<td>Chịu trách nhiệm <strong>vận hành hệ thống một cách đáng tin cậy và
+an toàn</strong>. Nếu vận hành site được thuê ngoài cho nhà cung cấp
+dịch vụ thì nhà cung cấp đảm nhiệm chức năng này. <strong>Systems
+administrator nội bộ cần đủ nhân sự để duy trì vận hành 24/7 và bảo mật
+site</strong></td>
+</tr>
+<tr>
+<td><strong>9</strong></td>
+<td><strong>Network operators</strong></td>
+<td>Chức năng gồm <strong>ước tính và giám sát tải (load estimation and
+load monitoring)</strong>, <strong>xử lý sự cố mạng</strong>,
+<strong>thiết kế và triển khai công nghệ chống lỗi (fault-resistant
+technologies)</strong></td>
+</tr>
+<tr>
+<td><strong>10</strong></td>
+<td><strong>Database administrator</strong></td>
+<td>Hầu hết site TMĐT cần chức năng quản trị CSDL để hỗ trợ <strong>xử
+lý giao dịch, nhập đơn hàng, quản lý yêu cầu (inquiry management),
+logistics giao hàng</strong>. Cần <strong>CSDL sẵn có để tích
+hợp</strong> hoặc <strong>CSDL riêng cho sáng kiến TMĐT</strong>. Cần
+<strong>DBA quản lý hiệu quả việc thiết kế và triển khai chức năng
+này</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Các vị trí khác:</strong> Web programmers · Web graphics
+designers · Content creators · Online marketing managers.</p>
+<h2 id="kiểm-toán-sau-triển-khai-post-implementation-audits">3.5. Kiểm
+toán sau triển khai (Post-implementation Audits) ⭐⭐⭐</h2>
+<blockquote>
+<p><strong>Post-implementation audit</strong> (còn gọi
+<strong>post-audit review</strong>) là <strong>một cuộc rà soát chính
+thức về một dự án SAU KHI dự án đã hoạt động.</strong></p>
+</blockquote>
+<p><strong>Mục đích:</strong> cho nhà quản lý cơ hội <strong>xem xét lại
+các MỤC TIÊU, ĐẶC TẢ HIỆU NĂNG, ƯỚC TÍNH CHI PHÍ và LỊCH GIAO HÀNG đã
+được thiết lập cho dự án trong giai đoạn lập kế hoạch, rồi SO SÁNH với
+những gì thực sự đã xảy ra.</strong></p>
+<p><strong>Kết quả của audit:</strong> một <strong>báo cáo toàn
+diện</strong> phân tích: 1. <strong>Hiệu quả tổng thể của dự án</strong>
+2. <strong>Dự án được quản trị tốt tới mức nào</strong> 3. <strong>Cấu
+trúc tổ chức có phù hợp với dự án không</strong> 4. <strong>Hiệu quả cụ
+thể của (các) đội dự án</strong></p>
+<ul>
+<li><strong>Nhiều công ty điều chỉnh cấu trúc tổ chức quản trị dự án của
+mình sau mỗi dự án</strong> dựa trên nội dung báo cáo post-audit.</li>
+<li><strong>Mỗi phần của báo cáo phải SO SÁNH KẾT QUẢ THỰC TẾ VỚI MỤC
+TIÊU CỦA DỰ ÁN.</strong></li>
+</ul>
+<h2 id="quản-trị-thay-đổi-change-management">3.6. Quản trị thay đổi
+(Change Management) ⭐⭐⭐</h2>
+<p><strong>Vấn đề:</strong> - <strong>Mọi dự án hệ thống thông tin đều
+bao hàm THAY ĐỔI, và thay đổi có thể gây xáo trộn cho con
+người.</strong> - Khi thay đổi được đưa vào nơi làm việc, <strong>nhân
+viên lo lắng về khả năng đối phó với thay đổi và khả năng tiếp tục làm
+việc tốt.</strong> - <strong>Nhân viên thường lo mất việc làm.</strong>
+Những lo lắng này dẫn tới <strong>tăng căng thẳng, gây hại cho tinh thần
+và hiệu quả công việc.</strong></p>
+<p><strong>Chiến lược quản trị thay đổi — TRUYỀN THÔNG về sự cần thiết
+phải thay đổi:</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>Chiến lược</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Cho phép nhân viên THAM GIA vào quá trình ra quyết định dẫn
+tới thay đổi</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Cho phép nhân viên THAM GIA lập kế hoạch cho thay đổi và các
+vấn đề khác</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Các biện pháp này giúp nhân viên vượt qua CẢM GIÁC BẤT LỰC
+(powerlessness) — thứ có thể dẫn tới căng thẳng và giảm hiệu quả công
+việc.</strong></p>
+</blockquote>
+<hr />
+<h2 id="checklist-ôn-chương-4">❖ CHECKLIST ÔN CHƯƠNG 4</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" /><strong>6 mục tiêu TMĐT điển
+hình</strong></label></li>
+<li><label><input type="checkbox" /><strong>Downstream vs Upstream
+strategies</strong> + 10 cơ hội kinh doanh trực tuyến</label></li>
+<li><label><input type="checkbox" /><strong>Bảng đo lường lợi ích (7
+sáng kiến × thước đo)</strong> ⭐⭐</label></li>
+<li><label><input type="checkbox" />Nguyên tắc: <strong>lợi ích vô hình
+cũng phải đặt mục tiêu ĐO LƯỜNG ĐƯỢC</strong></label></li>
+<li><label><input type="checkbox" /><strong>TCO</strong> — gồm những
+khoản nào</label></li>
+<li><label><input type="checkbox" /><strong>Opportunity cost</strong> —
+định nghĩa + 4 ví dụ</label></li>
+<li><label><input type="checkbox" />Chi phí vận hành hằng năm =
+<strong>50–200%</strong> chi phí ban đầu</label></li>
+<li><label><input type="checkbox" /><strong>Angel investors vs Venture
+capitalists + IPO</strong></label></li>
+<li><label><input type="checkbox" /><strong>Quy trình 5 bước so sánh lợi
+ích và chi phí</strong> (vẽ được sơ đồ)</label></li>
+<li><label><input type="checkbox" /><strong>ROI + PBP / NPV /
+IRR</strong>; ví dụ Cisco</label></li>
+<li><label><input type="checkbox" /><strong>Early / Late / Partial
+Outsourcing</strong> — so sánh 3 mô hình ⭐⭐</label></li>
+<li><label><input type="checkbox" /><strong>Incubator</strong> — định
+nghĩa, đổi lại 10–50% sở hữu, internal incubator</label></li>
+<li><label><input type="checkbox" /><strong>Project management: 3 tiêu
+chí COST–SCHEDULE–PERFORMANCE và đánh đổi</strong></label></li>
+<li><label><input type="checkbox" /><strong>Project portfolio
+management: CIO xếp hạng theo TẦM QUAN TRỌNG CHIẾN LƯỢC và MỨC RỦI
+RO</strong></label></li>
+<li><label><input type="checkbox" /><strong>10 vị trí nhân sự
+TMĐT</strong> (đặc biệt CIO, business manager, project manager,
+portfolio manager)</label></li>
+<li><label><input type="checkbox" /><strong>Post-implementation audit —
+so sánh mục tiêu / hiệu năng / chi phí / tiến độ với thực tế; 4 nội dung
+báo cáo</strong></label></li>
+<li><label><input type="checkbox" /><strong>Change management — nguyên
+nhân kháng cự và 2 chiến lược tham gia</strong></label></li>
+</ul>
+</body>
+</html>
