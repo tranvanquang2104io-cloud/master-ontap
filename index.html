@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Master Ôn Tập</title>
+<meta name="description" content="Tủ tài liệu ôn thi — mỗi môn một bộ giáo trình tiếng Việt và ngân hàng câu hỏi.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --ground:#F4F6F5; --surface:#FFFFFF; --surface-2:#EAEEEC; --line:#D3DAD7;
+  --ink:#14191B; --ink-2:#4A5558; --ink-3:#778286;
+  --accent:#0E7C5A; --accent-soft:#D9EFE6; --accent-ink:#0A5A41;
+  --shadow:0 1px 2px rgba(20,25,27,.06),0 8px 24px -12px rgba(20,25,27,.18);
+  --display:"Chivo",-apple-system,"Segoe UI",sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0D1214; --surface:#141B1E; --surface-2:#1C2528; --line:#2B3639;
+    --ink:#E7EDEB; --ink-2:#A4B0AE; --ink-3:#76837F;
+    --accent:#4FD1A0; --accent-soft:#13312A; --accent-ink:#8CE8C4;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0D1214; --surface:#141B1E; --surface-2:#1C2528; --line:#2B3639;
+  --ink:#E7EDEB; --ink-2:#A4B0AE; --ink-3:#76837F;
+  --accent:#4FD1A0; --accent-soft:#13312A; --accent-ink:#8CE8C4;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+header{border-bottom:1px solid var(--line);background:var(--surface)}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px}
+.topwrap{display:flex;align-items:center;gap:14px;padding:13px 22px;max-width:920px;margin:0 auto}
+.brand{font-family:var(--display);font-weight:800;font-size:16px;letter-spacing:-.01em;margin-right:auto}
+.brand span{display:block;font-weight:400;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.iconbtn{border:1px solid var(--line);background:var(--surface);color:var(--ink-2);width:34px;height:34px;border-radius:8px;cursor:pointer;font-size:15px;display:grid;place-items:center}
+h1{font-family:var(--display);font-size:38px;font-weight:800;letter-spacing:-.03em;margin:44px 0 12px;text-wrap:balance}
+.lede{font-size:19px;color:var(--ink-2);border-left:3px solid var(--accent);padding-left:16px;margin:0 0 40px;max-width:62ch}
+h2.sec{font-family:var(--display);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin:0 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-bottom:46px}
+.card{display:flex;flex-direction:column;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:20px 22px;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.code{font-family:var(--mono);font-size:11.5px;color:var(--accent-ink);background:var(--accent-soft);padding:2px 8px;border-radius:20px;align-self:flex-start;letter-spacing:.04em}
+.card h3{font-family:var(--display);font-size:20px;font-weight:600;letter-spacing:-.015em;margin:0}
+.card p{margin:0;font-size:15px;color:var(--ink-2);flex:1}
+.facts{display:flex;flex-wrap:wrap;gap:6px;font-family:var(--display);font-size:11.5px;color:var(--ink-3)}
+.facts span{background:var(--surface-2);padding:3px 9px;border-radius:6px;white-space:nowrap}
+.go{font-family:var(--display);font-size:13.5px;font-weight:600;color:var(--accent-ink)}
+.note{background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:18px 22px;font-size:15px;color:var(--ink-2);margin-bottom:40px}
+.note b{font-family:var(--display);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);display:block;margin-bottom:5px}
+.note code{font-family:var(--mono);font-size:12.5px;background:var(--surface-2);padding:1.5px 6px;border-radius:4px}
+footer{border-top:1px solid var(--line);font-family:var(--display);font-size:12.5px;color:var(--ink-3);padding:26px 22px 50px;max-width:920px;margin:0 auto}
+</style>
+</head>
+<body>
+<header>
+  <div class="topwrap">
+    <div class="brand">Master Ôn Tập<span>Tủ tài liệu ôn thi</span></div>
+    <button class="iconbtn" id="theme" title="Đổi nền sáng/tối" aria-label="Đổi nền sáng tối">◐</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Chọn môn cần ôn</h1>
+  <p class="lede">Mỗi môn là một bộ tài liệu tiếng Việt soạn lại từ slide và giáo trình gốc, kèm ngân hàng câu hỏi trắc nghiệm để tự kiểm tra trước kỳ thi.</p>
+
+  <h2 class="sec">Các môn hiện có</h2>
+  <div class="grid">
+    <a class="card" href="mobile/">
+      <span class="code">CS 4153</span>
+      <h3>Xây dựng hệ thống phần mềm di động</h3>
+      <p>Android từ kiến trúc hệ điều hành tới Activity, Fragment, RESTful API, tác vụ nền, lưu trữ, cảm biến, IoT, OpenCV và Vibe Coding.</p>
+      <div class="facts"><span>13 chương</span><span>255 câu hỏi</span><span>Thi thử 60 câu · 65 phút</span></div>
+      <span class="go">Mở tài liệu →</span>
+    </a>
+
+    <a class="card" href="e-business/">
+      <span class="code">IS6101.CH201</span>
+      <h3>E-Business</h3>
+      <p>Tổng quan E-business, chiến lược, công nghệ nền tảng, xác định và triển khai dự án, nghiên cứu đường dài — kèm ngân hàng đề và đề thi mẫu.</p>
+      <div class="facts"><span>5 chương</span><span>Ngân hàng câu hỏi</span><span>Đề thi mẫu</span></div>
+      <span class="go">Mở tài liệu →</span>
+    </a>
+  </div>
+
+  <div class="note">
+    <b>Thêm một môn mới</b>
+    Tạo thư mục mới ở gốc repo theo tên môn, đặt trang chính tên <code>index.html</code> trong đó, rồi thêm một thẻ <code>&lt;a class="card"&gt;</code> vào trang này trỏ tới thư mục vừa tạo. Cấu trúc phẳng nên không cần cấu hình gì thêm.
+  </div>
+</main>
+
+<footer>Tài liệu ôn tập cá nhân, soạn lại từ slide và giáo trình của giảng viên. Không thay thế bài giảng gốc.</footer>
+
+<script>
+const b = document.getElementById("theme");
+try { const t = localStorage.getItem("mo-theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch(e){}
+b.addEventListener("click", () => {
+  const cur = document.documentElement.getAttribute("data-theme");
+  const dark = cur ? cur === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  const next = dark ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  try { localStorage.setItem("mo-theme", next); } catch(e){}
+});
+</script>
+</body>
+</html>
