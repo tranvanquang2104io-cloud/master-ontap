@@ -126,7 +126,12 @@ id="toc-phân-loại-thuật-toán-machine-learning">5.3. Phân loại thuật t
 Machine Learning ⭐⭐⭐</a></li>
 <li><a href="#vai-trò-của-machine-learning-trong-tmđt"
 id="toc-vai-trò-của-machine-learning-trong-tmđt">5.4. Vai trò của
-Machine Learning trong TMĐT ⭐⭐</a></li>
+Machine Learning trong TMĐT ⭐⭐</a>
+<ul>
+<li><a href="#bis.-chuyên-đề-phát-hiện-gian-lận-bằng-cây-quyết-định"
+id="toc-bis.-chuyên-đề-phát-hiện-gian-lận-bằng-cây-quyết-định">5.4bis.
+CHUYÊN ĐỀ: PHÁT HIỆN GIAN LẬN BẰNG CÂY QUYẾT ĐỊNH ⭐⭐⭐</a></li>
+</ul></li>
 <li><a href="#phân-loại-cảm-xúc-trong-tmđt-sentiment-classification"
 id="toc-phân-loại-cảm-xúc-trong-tmđt-sentiment-classification">5.5. Phân
 loại cảm xúc trong TMĐT (Sentiment Classification) ⭐⭐</a></li>
@@ -973,11 +978,205 @@ thẻ thường <strong>cung cấp số thẻ, ngày hết hạn và mã kiểm 
 </tr>
 </tbody>
 </table>
+<h3 id="bis.-chuyên-đề-phát-hiện-gian-lận-bằng-cây-quyết-định">5.4bis.
+CHUYÊN ĐỀ: PHÁT HIỆN GIAN LẬN BẰNG CÂY QUYẾT ĐỊNH ⭐⭐⭐</h3>
+<blockquote>
+<p>⚠️ <strong>CHỦ ĐỀ ĐÃ RA TRONG ĐỀ THI THẬT HK2/2024–2025 (Câu 2 — 3
+điểm, câu nặng điểm nhất).</strong> Xem bài giải mẫu đầy đủ tại
+<strong>TL3 – Câu 2</strong>.</p>
+</blockquote>
 <p><strong>Cây quyết định cho phát hiện gian lận (Decision tree for
-fraud detection)</strong> <em>(Hình 6)</em> — dùng cấu trúc cây phân
-nhánh theo các thuộc tính giao dịch để phân loại giao dịch là
-<strong>gian lận (fraud)</strong> hay <strong>hợp lệ
-(legitimate)</strong>.</p>
+fraud detection)</strong> <em>(Hình 6)</em> dùng cấu trúc cây phân nhánh
+theo các thuộc tính giao dịch để phân loại giao dịch là <strong>gian lận
+(Fraud)</strong> hay <strong>hợp lệ (Non-Fraud)</strong>.</p>
+<p><strong>Nguyên lý:</strong> cây quyết định <strong>chia nhỏ tập dữ
+liệu theo từng đặc trưng sao cho các nhóm con càng thuần nhất càng
+tốt</strong>. Một đặc trưng có giá trị khi nó (1) <strong>có sức phân
+biệt</strong> — phân phối giá trị ở nhóm gian lận khác rõ nhóm bình
+thường, và (2) <strong>phản ánh hành vi mà kẻ gian khó che
+giấu</strong>.</p>
+<h4
+id="a-ý-nghĩa-của-từng-đặc-trưng-trong-mô-hình-phát-hiện-gian-lận">a) Ý
+nghĩa của từng đặc trưng trong mô hình phát hiện gian lận</h4>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Đặc trưng</th>
+<th>Vì sao giúp phát hiện gian lận</th>
+<th>Dấu hiệu bất thường</th>
+<th>Ví dụ thực tế</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sign Up Time</strong><br>(Thời gian đăng ký)</td>
+<td>Kẻ gian dùng <strong>tài khoản dùng một lần (throwaway)</strong> tạo
+bằng script; người thật có khoảng cách hợp lý giữa đăng ký và mua vì còn
+duyệt, so sánh</td>
+<td>Sign-up → purchase chỉ vài giây; hàng loạt tài khoản tạo cùng khung
+giờ bất thường (2–4h sáng); tài khoản tăng đột biến trước khuyến
+mãi</td>
+<td>500 tài khoản tạo trong 10 phút lúc 3h sáng, <strong>tất cả đặt hàng
+trong 60 giây sau khi đăng ký</strong> → bot săn mã giảm giá</td>
+</tr>
+<tr>
+<td><strong>Purchase Value</strong><br>(Giá trị đơn hàng)</td>
+<td>Gian lận thẻ có 2 mô thức: <strong>card testing</strong> (giao dịch
+cực nhỏ thử thẻ ăn cắp) và <strong>cash-out</strong> (đơn rất lớn tận
+dụng thẻ trước khi bị khóa)</td>
+<td>Giá trị lệch xa trung bình ngành hàng; chuỗi giao dịch nhỏ rồi một
+giao dịch rất lớn; đơn lớn nhưng chọn giao nhanh nhất bất chấp phí</td>
+<td>12 giao dịch 10.000đ liên tiếp, sau đó <strong>một đơn 45 triệu toàn
+hàng dễ thanh khoản</strong> + giao hỏa tốc</td>
+</tr>
+<tr>
+<td><strong>Source</strong><br>(Nguồn truy cập)</td>
+<td>Kênh dẫn người dùng phản ánh <strong>ý định mua</strong>. Khách thật
+đến từ quảng cáo/SEO/email và có hành trình duyệt; gian lận thường đi
+thẳng vào checkout</td>
+<td>Direct traffic cao bất thường ở tài khoản mới; referral từ diễn đàn
+chia sẻ thẻ; nguồn không khớp chiến dịch nào đang chạy</td>
+<td>Cụm đơn hàng đều <strong>Source = Direct</strong>, vào thẳng URL
+checkout mà <strong>không có lượt xem trang sản phẩm nào</strong> →
+script tự động</td>
+</tr>
+<tr>
+<td><strong>IP</strong><br>(Địa chỉ IP)</td>
+<td>Cho biết <strong>vị trí, nhà mạng, loại hạ tầng</strong>; khó che
+giấu hoàn toàn và cho phép <strong>liên kết nhiều tài khoản với
+nhau</strong></td>
+<td>Lệch vị trí (geolocation mismatch); IP thuộc
+VPN/proxy/Tor/datacenter; nhiều tài khoản chung 1 IP; một tài khoản đổi
+IP qua nhiều quốc gia trong vài phút</td>
+<td>IP từ Đông Âu + thẻ phát hành tại Mỹ + giao hàng quận 7 TP.HCM →
+<strong>ba tín hiệu địa lý mâu thuẫn</strong></td>
+</tr>
+<tr>
+<td><strong>Browser</strong><br>(Trình duyệt)</td>
+<td>Chuỗi User-Agent bất thường hoặc trùng lặp hàng loạt là dấu hiệu
+công cụ tự động</td>
+<td>User-Agent hiếm gặp/đã lỗi thời; hàng trăm tài khoản dùng đúng một
+chuỗi User-Agent</td>
+<td>Toàn bộ cụm đơn nghi vấn dùng chung một phiên bản trình duyệt cũ 5
+năm</td>
+</tr>
+<tr>
+<td><strong>Age</strong><br>(Tuổi)</td>
+<td>Hồ sơ khai báo không khớp hành vi mua; tuổi khai giả hàng loạt để
+vượt kiểm tra</td>
+<td>Tuổi khai báo tập trung bất thường vào một vài giá trị; tuổi không
+khớp ngành hàng</td>
+<td>Hàng trăm tài khoản đều khai đúng 25 tuổi và mua cùng một mặt hàng
+giá trị cao</td>
+</tr>
+</tbody>
+</table>
+<h4 id="b-vì-sao-user-id-không-được-dùng-làm-đặc-trưng-học">b) Vì sao
+User ID KHÔNG được dùng làm đặc trưng học ⭐</h4>
+<p>Nếu đưa <strong>User ID</strong> vào làm biến đầu vào, cây quyết định
+sẽ <strong>“học thuộc” từng ID cụ thể</strong> thay vì học quy luật hành
+vi → <strong>overfitting</strong>: mô hình chính xác rất cao trên dữ
+liệu huấn luyện nhưng <strong>vô dụng với người dùng mới</strong> chưa
+từng xuất hiện. User ID chỉ là <strong>định danh bản ghi</strong>, không
+mang thông tin hành vi tổng quát hóa được.</p>
+<h4 id="c-sức-mạnh-nằm-ở-sự-kết-hợp-không-ở-đặc-trưng-đơn-lẻ">c) Sức
+mạnh nằm ở SỰ KẾT HỢP, không ở đặc trưng đơn lẻ</h4>
+<p>Riêng “giá trị đơn hàng lớn” là bình thường với khách VIP. Nhưng
+<strong>“giá trị lớn” + “tài khoản vừa đăng ký 2 phút trước” + “IP từ
+datacenter nước ngoài”</strong> thì xác suất gian lận tăng vọt. Đây
+chính là lý do cây quyết định đi theo <strong>đường dẫn nhiều
+tầng</strong>: <code>Source → IP → Browser → Fraud/Non-Fraud</code>.</p>
+<h4 id="d-các-đặc-trưng-có-thể-mở-rộng-để-cải-thiện-mô-hình">d) Các đặc
+trưng có thể MỞ RỘNG để cải thiện mô hình ⭐⭐</h4>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Nhóm</th>
+<th>Đặc trưng đề xuất</th>
+<th>Vì sao cải thiện</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Thiết bị</strong></td>
+<td><strong>Device fingerprint / Device ID</strong>, hệ điều hành, độ
+phân giải màn hình, <strong>múi giờ thiết bị</strong></td>
+<td>Đổi IP bằng VPN thì dễ, <strong>thay dấu vân tay thiết bị thì
+khó</strong>; phát hiện một thiết bị tạo hàng chục tài khoản;
+<strong>múi giờ lệch với vị trí IP</strong> là tín hiệu rất mạnh</td>
+</tr>
+<tr>
+<td><strong>2. Thanh toán</strong></td>
+<td><strong>Phương thức thanh toán</strong>, <strong>BIN thẻ</strong> (6
+số đầu — biết ngân hàng &amp; quốc gia phát hành), <strong>số lần đổi
+thẻ</strong>, tỷ lệ giao dịch bị từ chối</td>
+<td>Kiểm tra <strong>quốc gia phát hành thẻ có khớp IP và địa chỉ giao
+hàng</strong>; tài khoản <strong>thử 5 thẻ trong 10 phút</strong> gần
+như chắc chắn gian lận</td>
+</tr>
+<tr>
+<td><strong>3. Giao hàng</strong></td>
+<td><strong>Địa chỉ giao hàng</strong>, <strong>độ lệch billing vs
+shipping address</strong>, số lần đổi địa chỉ, địa chỉ có phải kho trung
+chuyển/tủ đồ công cộng</td>
+<td>Hàng gian lận thường giao tới <strong>địa chỉ trung gian</strong>;
+<strong>lệch billing–shipping</strong> là chỉ báo kinh điển của ngành
+thanh toán</td>
+</tr>
+<tr>
+<td><strong>4. Tốc độ hành vi</strong><br><em>(velocity
+features)</em></td>
+<td>Số giao dịch/giờ của tài khoản, số tài khoản/IP/ngày, <strong>thời
+gian ở lại trang trước khi đặt hàng</strong>, số lần thử mã giảm giá
+thất bại</td>
+<td><strong>Nhóm mạnh nhất nhưng vắng mặt trong Hình 1</strong>; chuyển
+mô hình từ xét <strong>một giao dịch riêng lẻ</strong> sang xét
+<strong>chuỗi hành vi theo thời gian</strong></td>
+</tr>
+<tr>
+<td><strong>5. Quan hệ mạng lưới</strong><br><em>(graph
+features)</em></td>
+<td>Số tài khoản dùng chung IP/thiết bị/số điện thoại/địa chỉ; khoảng
+cách đồ thị tới tài khoản đã bị gắn cờ</td>
+<td>Gian lận hiện đại hoạt động <strong>theo tổ chức</strong>; đặc trưng
+đồ thị cho phép <strong>phát hiện cả cụm (fraud ring)</strong> khi mới
+bắt được một mắt xích</td>
+</tr>
+</tbody>
+</table>
+<h4
+id="e-ba-ràng-buộc-khi-mở-rộng-đặc-trưng-ý-phản-biện-làm-bài-có-chiều-sâu">e)
+Ba ràng buộc khi mở rộng đặc trưng <em>(ý phản biện làm bài có chiều
+sâu)</em></h4>
+<ol type="1">
+<li><strong>Tuân thủ pháp lý về quyền riêng tư</strong> — thu thập
+device fingerprint và vị trí phải tuân thủ <strong>GDPR</strong> (châu
+Âu), <strong>Luật An ninh mạng</strong> và <strong>Luật Thương mại điện
+tử 122/2025/QH15</strong> (Việt Nam).</li>
+<li><strong>Cân bằng false positive</strong> — mô hình quá nhạy
+<strong>chặn nhầm khách thật</strong>, gây thiệt hại doanh thu lớn hơn
+chính khoản gian lận ngăn được.</li>
+<li><strong>Chi phí tính toán và độ trễ</strong> — hệ thống phải quyết
+định trong <strong>vài trăm mili-giây</strong> tại thời điểm thanh
+toán.</li>
+</ol>
+<h4 id="f-đánh-đổi-giữa-độ-chính-xác-và-khả-năng-giải-thích">f) Đánh đổi
+giữa độ chính xác và khả năng giải thích</h4>
+<p><strong>Random Forest</strong> thường chính xác hơn một cây đơn lẻ
+(giảm phương sai), nhưng <strong>cây quyết định đơn lẻ có ưu thế về
+explainability</strong> — rất quan trọng khi phải <strong>giải trình lý
+do từ chối một giao dịch</strong> cho khách hàng và cơ quan quản lý.</p>
 <h2 id="phân-loại-cảm-xúc-trong-tmđt-sentiment-classification">5.5. Phân
 loại cảm xúc trong TMĐT (Sentiment Classification) ⭐⭐</h2>
 <blockquote>

@@ -303,7 +303,52 @@
 | **Dynamic pricing** (Định giá động) | **Đã cho thấy là một thành công lớn cho các tổ chức kinh doanh trực tuyến.** AI có thể **điều chỉnh giá bằng cách xem xét NHIỀU khía cạnh CÙNG LÚC** |
 | **Phát hiện gian lận thẻ** | Các kết quả chính xác nhất từ tập dữ liệu giao dịch TMĐT được so sánh bằng kỹ thuật Machine Learning để **phát hiện việc sử dụng trái phép dữ liệu thẻ tín dụng (gian lận Mastercard/Visa)**. Chủ thẻ thường **cung cấp số thẻ, ngày hết hạn và mã kiểm tra thẻ qua điện thoại hoặc trên web** ⇒ tạo ra rủi ro |
 
-**Cây quyết định cho phát hiện gian lận (Decision tree for fraud detection)** *(Hình 6)* — dùng cấu trúc cây phân nhánh theo các thuộc tính giao dịch để phân loại giao dịch là **gian lận (fraud)** hay **hợp lệ (legitimate)**.
+### 5.4bis. CHUYÊN ĐỀ: PHÁT HIỆN GIAN LẬN BẰNG CÂY QUYẾT ĐỊNH ⭐⭐⭐
+
+> ⚠️ **CHỦ ĐỀ ĐÃ RA TRONG ĐỀ THI THẬT HK2/2024–2025 (Câu 2 — 3 điểm, câu nặng điểm nhất).** Xem bài giải mẫu đầy đủ tại **TL3 – Câu 2**.
+
+**Cây quyết định cho phát hiện gian lận (Decision tree for fraud detection)** *(Hình 6)* dùng cấu trúc cây phân nhánh theo các thuộc tính giao dịch để phân loại giao dịch là **gian lận (Fraud)** hay **hợp lệ (Non-Fraud)**.
+
+**Nguyên lý:** cây quyết định **chia nhỏ tập dữ liệu theo từng đặc trưng sao cho các nhóm con càng thuần nhất càng tốt**. Một đặc trưng có giá trị khi nó (1) **có sức phân biệt** — phân phối giá trị ở nhóm gian lận khác rõ nhóm bình thường, và (2) **phản ánh hành vi mà kẻ gian khó che giấu**.
+
+#### a) Ý nghĩa của từng đặc trưng trong mô hình phát hiện gian lận
+
+| Đặc trưng | Vì sao giúp phát hiện gian lận | Dấu hiệu bất thường | Ví dụ thực tế |
+|---|---|---|---|
+| **Sign Up Time**<br>(Thời gian đăng ký) | Kẻ gian dùng **tài khoản dùng một lần (throwaway)** tạo bằng script; người thật có khoảng cách hợp lý giữa đăng ký và mua vì còn duyệt, so sánh | Sign-up → purchase chỉ vài giây; hàng loạt tài khoản tạo cùng khung giờ bất thường (2–4h sáng); tài khoản tăng đột biến trước khuyến mãi | 500 tài khoản tạo trong 10 phút lúc 3h sáng, **tất cả đặt hàng trong 60 giây sau khi đăng ký** → bot săn mã giảm giá |
+| **Purchase Value**<br>(Giá trị đơn hàng) | Gian lận thẻ có 2 mô thức: **card testing** (giao dịch cực nhỏ thử thẻ ăn cắp) và **cash-out** (đơn rất lớn tận dụng thẻ trước khi bị khóa) | Giá trị lệch xa trung bình ngành hàng; chuỗi giao dịch nhỏ rồi một giao dịch rất lớn; đơn lớn nhưng chọn giao nhanh nhất bất chấp phí | 12 giao dịch 10.000đ liên tiếp, sau đó **một đơn 45 triệu toàn hàng dễ thanh khoản** + giao hỏa tốc |
+| **Source**<br>(Nguồn truy cập) | Kênh dẫn người dùng phản ánh **ý định mua**. Khách thật đến từ quảng cáo/SEO/email và có hành trình duyệt; gian lận thường đi thẳng vào checkout | Direct traffic cao bất thường ở tài khoản mới; referral từ diễn đàn chia sẻ thẻ; nguồn không khớp chiến dịch nào đang chạy | Cụm đơn hàng đều **Source = Direct**, vào thẳng URL checkout mà **không có lượt xem trang sản phẩm nào** → script tự động |
+| **IP**<br>(Địa chỉ IP) | Cho biết **vị trí, nhà mạng, loại hạ tầng**; khó che giấu hoàn toàn và cho phép **liên kết nhiều tài khoản với nhau** | Lệch vị trí (geolocation mismatch); IP thuộc VPN/proxy/Tor/datacenter; nhiều tài khoản chung 1 IP; một tài khoản đổi IP qua nhiều quốc gia trong vài phút | IP từ Đông Âu + thẻ phát hành tại Mỹ + giao hàng quận 7 TP.HCM → **ba tín hiệu địa lý mâu thuẫn** |
+| **Browser**<br>(Trình duyệt) | Chuỗi User-Agent bất thường hoặc trùng lặp hàng loạt là dấu hiệu công cụ tự động | User-Agent hiếm gặp/đã lỗi thời; hàng trăm tài khoản dùng đúng một chuỗi User-Agent | Toàn bộ cụm đơn nghi vấn dùng chung một phiên bản trình duyệt cũ 5 năm |
+| **Age**<br>(Tuổi) | Hồ sơ khai báo không khớp hành vi mua; tuổi khai giả hàng loạt để vượt kiểm tra | Tuổi khai báo tập trung bất thường vào một vài giá trị; tuổi không khớp ngành hàng | Hàng trăm tài khoản đều khai đúng 25 tuổi và mua cùng một mặt hàng giá trị cao |
+
+#### b) Vì sao User ID KHÔNG được dùng làm đặc trưng học ⭐
+
+Nếu đưa **User ID** vào làm biến đầu vào, cây quyết định sẽ **"học thuộc" từng ID cụ thể** thay vì học quy luật hành vi → **overfitting**: mô hình chính xác rất cao trên dữ liệu huấn luyện nhưng **vô dụng với người dùng mới** chưa từng xuất hiện. User ID chỉ là **định danh bản ghi**, không mang thông tin hành vi tổng quát hóa được.
+
+#### c) Sức mạnh nằm ở SỰ KẾT HỢP, không ở đặc trưng đơn lẻ
+
+Riêng "giá trị đơn hàng lớn" là bình thường với khách VIP. Nhưng **"giá trị lớn" + "tài khoản vừa đăng ký 2 phút trước" + "IP từ datacenter nước ngoài"** thì xác suất gian lận tăng vọt. Đây chính là lý do cây quyết định đi theo **đường dẫn nhiều tầng**: `Source → IP → Browser → Fraud/Non-Fraud`.
+
+#### d) Các đặc trưng có thể MỞ RỘNG để cải thiện mô hình ⭐⭐
+
+| Nhóm | Đặc trưng đề xuất | Vì sao cải thiện |
+|---|---|---|
+| **1. Thiết bị** | **Device fingerprint / Device ID**, hệ điều hành, độ phân giải màn hình, **múi giờ thiết bị** | Đổi IP bằng VPN thì dễ, **thay dấu vân tay thiết bị thì khó**; phát hiện một thiết bị tạo hàng chục tài khoản; **múi giờ lệch với vị trí IP** là tín hiệu rất mạnh |
+| **2. Thanh toán** | **Phương thức thanh toán**, **BIN thẻ** (6 số đầu — biết ngân hàng & quốc gia phát hành), **số lần đổi thẻ**, tỷ lệ giao dịch bị từ chối | Kiểm tra **quốc gia phát hành thẻ có khớp IP và địa chỉ giao hàng**; tài khoản **thử 5 thẻ trong 10 phút** gần như chắc chắn gian lận |
+| **3. Giao hàng** | **Địa chỉ giao hàng**, **độ lệch billing vs shipping address**, số lần đổi địa chỉ, địa chỉ có phải kho trung chuyển/tủ đồ công cộng | Hàng gian lận thường giao tới **địa chỉ trung gian**; **lệch billing–shipping** là chỉ báo kinh điển của ngành thanh toán |
+| **4. Tốc độ hành vi**<br>*(velocity features)* | Số giao dịch/giờ của tài khoản, số tài khoản/IP/ngày, **thời gian ở lại trang trước khi đặt hàng**, số lần thử mã giảm giá thất bại | **Nhóm mạnh nhất nhưng vắng mặt trong Hình 1**; chuyển mô hình từ xét **một giao dịch riêng lẻ** sang xét **chuỗi hành vi theo thời gian** |
+| **5. Quan hệ mạng lưới**<br>*(graph features)* | Số tài khoản dùng chung IP/thiết bị/số điện thoại/địa chỉ; khoảng cách đồ thị tới tài khoản đã bị gắn cờ | Gian lận hiện đại hoạt động **theo tổ chức**; đặc trưng đồ thị cho phép **phát hiện cả cụm (fraud ring)** khi mới bắt được một mắt xích |
+
+#### e) Ba ràng buộc khi mở rộng đặc trưng *(ý phản biện làm bài có chiều sâu)*
+
+1. **Tuân thủ pháp lý về quyền riêng tư** — thu thập device fingerprint và vị trí phải tuân thủ **GDPR** (châu Âu), **Luật An ninh mạng** và **Luật Thương mại điện tử 122/2025/QH15** (Việt Nam).
+2. **Cân bằng false positive** — mô hình quá nhạy **chặn nhầm khách thật**, gây thiệt hại doanh thu lớn hơn chính khoản gian lận ngăn được.
+3. **Chi phí tính toán và độ trễ** — hệ thống phải quyết định trong **vài trăm mili-giây** tại thời điểm thanh toán.
+
+#### f) Đánh đổi giữa độ chính xác và khả năng giải thích
+
+**Random Forest** thường chính xác hơn một cây đơn lẻ (giảm phương sai), nhưng **cây quyết định đơn lẻ có ưu thế về explainability** — rất quan trọng khi phải **giải trình lý do từ chối một giao dịch** cho khách hàng và cơ quan quản lý.
 
 ## 5.5. Phân loại cảm xúc trong TMĐT (Sentiment Classification) ⭐⭐
 

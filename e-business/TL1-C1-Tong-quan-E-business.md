@@ -203,13 +203,60 @@ Internet được định nghĩa là mạng: dùng **địa chỉ IP**, hỗ tr�
 - **Client/Server:** các máy tính cá nhân mạnh (client) nối mạng với một hoặc nhiều **server**; server thực hiện các chức năng chung: lưu trữ tệp, chạy ứng dụng, chia sẻ máy in…
 - **Mobile platform:** truy cập Internet chủ yếu hiện nay qua **máy tính bảng và smartphone**; smartphone là **công nghệ đột phá (disruptive technology)**; hơn **3,3 tỷ** người truy cập Internet bằng smartphone.
 
-### 2.6. Điện toán đám mây (Cloud Computing)
+### 2.6. Điện toán đám mây (Cloud Computing) ⭐⭐⭐
 
-- Doanh nghiệp và cá nhân **thuê năng lực tính toán và phần mềm qua Internet**.
-- **Ba loại dịch vụ:** **IaaS** (hạ tầng), **SaaS** (phần mềm), **PaaS** (nền tảng).
-- **Ba mô hình triển khai:** public, private, hybrid cloud.
-- **Nhược điểm:** rủi ro bảo mật; chuyển trách nhiệm lưu trữ và kiểm soát sang nhà cung cấp.
-- **Ưu điểm:** giảm mạnh chi phí xây dựng & vận hành website, hạ tầng, hỗ trợ CNTT, phần cứng, phần mềm.
+> ⚠️ **CHỦ ĐỀ ĐÃ RA TRONG ĐỀ THI THẬT HK2/2024–2025 (Câu 1 — 2 điểm).** Xem bài giải mẫu đầy đủ tại **TL3 – Câu 1**.
+
+**Khái niệm:** Doanh nghiệp và cá nhân **thuê năng lực tính toán và phần mềm qua Internet** thay vì tự đầu tư hạ tầng.
+
+- **Ba loại dịch vụ:** **IaaS** (hạ tầng), **PaaS** (nền tảng), **SaaS** (phần mềm).
+- **Ba mô hình triển khai:** **public** (dùng chung, rẻ nhất), **private** (riêng, kiểm soát cao — phù hợp ngân hàng, y tế), **hybrid** (kết hợp — dữ liệu nhạy cảm để private, tải cao điểm đẩy sang public).
+- **Ưu điểm:** **giảm mạnh chi phí** xây dựng và vận hành website, hạ tầng, hỗ trợ CNTT, phần cứng, phần mềm.
+- **Nhược điểm:** **rủi ro bảo mật**; **chuyển trách nhiệm lưu trữ và kiểm soát dữ liệu sang nhà cung cấp**.
+
+#### a) Bảng phân biệt IaaS – PaaS – SaaS ⭐⭐⭐
+
+| Tiêu chí | **IaaS**<br>Infrastructure as a Service | **PaaS**<br>Platform as a Service | **SaaS**<br>Software as a Service |
+|---|---|---|---|
+| **Nhà cung cấp cung cấp** | Hạ tầng ảo hóa: máy chủ ảo, lưu trữ, mạng, tường lửa | Hạ tầng **+ hệ điều hành, runtime, middleware, CSDL, công cụ triển khai** | **Toàn bộ ứng dụng hoàn chỉnh** chạy sẵn |
+| **Khách hàng tự quản lý** | Hệ điều hành, middleware, runtime, ứng dụng, dữ liệu | **Chỉ ứng dụng và dữ liệu** | **Chỉ dữ liệu và cấu hình người dùng** |
+| **Đối tượng sử dụng chính** | Quản trị hệ thống, kỹ sư hạ tầng | **Lập trình viên** | **Người dùng cuối / nhân viên nghiệp vụ** |
+| **Mức kiểm soát** | **Cao nhất** | Trung bình | **Thấp nhất** |
+| **Mức tùy biến** | Rất cao | Trung bình (bị ràng buộc bởi nền tảng) | Thấp (chỉ cấu hình theo tham số cho sẵn) |
+| **Tốc độ triển khai** | Chậm nhất | Nhanh | **Nhanh nhất — dùng ngay** |
+| **Cách tính phí** | Theo tài nguyên (giờ CPU, GB lưu trữ, băng thông) | Theo tài nguyên ứng dụng / số instance | **Theo thuê bao, số người dùng/tháng** |
+| **Rủi ro vendor lock-in** | Thấp | **Cao** | Trung bình – cao |
+| **Ai lo vá lỗi, nâng cấp** | Khách hàng chịu từ OS trở lên | Nhà cung cấp lo tới runtime | **Nhà cung cấp lo toàn bộ** |
+
+**Mẹo nhớ:** IaaS = *thuê đất và móng, tự xây nhà* · PaaS = *thuê nhà thô có sẵn điện nước, chỉ việc bài trí* · SaaS = *thuê phòng khách sạn, vào ở ngay*.
+
+#### b) Mô hình trách nhiệm phân chia — "ai quản lý tầng nào"
+
+| Tầng công nghệ | On-premise | IaaS | PaaS | SaaS |
+|---|---|---|---|---|
+| Applications | KH | KH | KH | **NCC** |
+| Data | KH | KH | KH | KH* |
+| Runtime | KH | KH | **NCC** | **NCC** |
+| Middleware | KH | KH | **NCC** | **NCC** |
+| Operating System | KH | KH | **NCC** | **NCC** |
+| Virtualization | KH | **NCC** | **NCC** | **NCC** |
+| Servers | KH | **NCC** | **NCC** | **NCC** |
+| Storage | KH | **NCC** | **NCC** | **NCC** |
+| Networking | KH | **NCC** | **NCC** | **NCC** |
+
+*(KH = khách hàng tự quản lý · NCC = nhà cung cấp lo. Dữ liệu ở SaaS vẫn thuộc sở hữu khách hàng nhưng do NCC lưu trữ.)*
+
+#### c) Ví dụ minh họa thực tế ⭐⭐
+
+| Loại hình | Ví dụ quốc tế | Ví dụ Việt Nam | Tình huống sử dụng |
+|---|---|---|---|
+| **IaaS** | **Amazon EC2, Google Compute Engine, Azure Virtual Machines** | **Viettel Cloud, VNPT Cloud, FPT Cloud, CMC Cloud** | Sàn TMĐT thuê 20 máy chủ ảo dịp Tết để chịu tải, hết cao điểm trả lại — không phải mua máy chủ vật lý |
+| **PaaS** | **Google App Engine, Heroku, AWS Elastic Beanstalk, Azure App Service** | Nền tảng low-code trong nước (Base.vn, akaBot — một phần) | Nhóm 3 lập trình viên của startup đẩy code Node.js lên Heroku là chạy được, không cần cài đặt và vá lỗi hệ điều hành |
+| **SaaS** | **Gmail/Google Workspace, Microsoft 365, Salesforce, Shopify, Zoom** | **MISA AMIS, KiotViet, Base.vn, Haravan** | Cửa hàng FMCG trả 300.000đ/tháng dùng KiotViet quản lý bán hàng — không cần lập trình viên, không cần máy chủ |
+
+#### d) Liên hệ với E-business
+
+**ERP cung cấp online chính là SaaS**: thay vì cài đặt và tùy biến ERP trên mạng nội bộ, doanh nghiệp **dùng trình duyệt truy cập ERP trên site của nhà cung cấp** (ví dụ **NetSuite**) — xem Chương 3 §2.12c. Đây là lý do cloud đặc biệt quan trọng với **doanh nghiệp vừa và nhỏ** và **startup**: cho phép khởi động nhanh với chi phí đầu tư ban đầu gần bằng 0.
 
 ### 2.7. Các giao thức & tiện ích khác
 

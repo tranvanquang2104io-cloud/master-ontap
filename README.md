@@ -9,7 +9,7 @@ Tủ tài liệu ôn thi. Mỗi môn là một thư mục ở gốc repo, mở �
 | Môn | Mã | Nội dung | Đường dẫn |
 |---|---|---|---|
 | Xây dựng hệ thống phần mềm di động | CS 4153 | 13 chương tiếng Việt + 255 câu trắc nghiệm + chế độ thi thử 60 câu / 65 phút | [`/mobile`](./mobile/) |
-| E-Business | IS6101.CH201 | 5 chương giáo trình + ngân hàng câu hỏi + đề thi mẫu (kèm bản `.docx` để in) | [`/e-business`](./e-business/) |
+| E-Business | IS6101.CH201 | Phân tích xu hướng ra đề + giải chi tiết đề thật HK2/2024-2025 + 5 chương giáo trình + ngân hàng câu hỏi + 3 đề thi mẫu (kèm bản `.docx` để in) | [`/e-business`](./e-business/) |
 
 ## Cấu trúc
 
@@ -20,6 +20,7 @@ Tủ tài liệu ôn thi. Mỗi môn là một thư mục ở gốc repo, mở �
 │   └── index.html      tài liệu + ngân hàng câu hỏi + thi thử (một file, chạy offline)
 └── e-business/
     ├── index.html      mục lục môn
+    ├── TL3-*.html      phân tích xu hướng ra đề + giải đề thật (đọc đầu tiên)
     ├── TL1-C*.html     giáo trình từng chương
     ├── TL2-*.html      ngân hàng câu hỏi, đề thi mẫu
     ├── *.md / *.docx   bản nguồn và bản để in
