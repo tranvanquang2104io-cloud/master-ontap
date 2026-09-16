@@ -1,0 +1,7 @@
+# File tam cua Microsoft Office
+~$*
+.~lock.*
+
+# File he thong
+Thumbs.db
+.DS_Store
